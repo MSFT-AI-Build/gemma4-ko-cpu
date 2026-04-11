@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 benchmark_output.log
 benchmark_results.json
+benchmark_full_output.log
+benchmark_raw_*.json
+benchmark_intermediate/
+awesomekorean_data/
+backup_*/
