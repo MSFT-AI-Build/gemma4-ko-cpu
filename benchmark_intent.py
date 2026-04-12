@@ -14,7 +14,8 @@ import json
 import time
 import sys
 import os
-from datetime import datetime
+import threading
+from datetime import datetime, timedelta
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import requests
@@ -23,6 +24,9 @@ from test_cases_3000 import TEST_CASES as TEST_CASES_3000
 
 OLLAMA_CHAT_API = "http://localhost:11434/api/chat"
 PARALLEL_WORKERS = 4
+PROGRESS_FILE = os.path.join("/home/azureuser/workspace/h01", "benchmark_live_progress.md")
+INTERMEDIATE_DIR = os.path.join("/home/azureuser/workspace/h01", "benchmark_intermediate")
+_print_lock = threading.Lock()
 
 MODELS = [
     "gemma4:e2b",     # Edge 2.3B
@@ -100,9 +104,16 @@ BASE_DIR = "/home/azureuser/workspace/h01"
 # Core functions
 # ─────────────────────────────────────────────
 
+def log(msg: str):
+    """스레드 안전 로그 출력 (flush 포함)"""
+    with _print_lock:
+        print(msg, flush=True)
+
+
 def query_model(model: str, user_message: str, think: bool = False,
                 num_predict: int = 50) -> dict:
     """모델에 쿼리하고 상세 결과를 반환"""
+    timeout = 1800 if think else 600
     payload = {
         "model": model,
         "messages": [
@@ -115,7 +126,7 @@ def query_model(model: str, user_message: str, think: bool = False,
     }
     start = time.time()
     try:
-        resp = requests.post(OLLAMA_CHAT_API, json=payload, timeout=600)
+        resp = requests.post(OLLAMA_CHAT_API, json=payload, timeout=timeout)
         elapsed = time.time() - start
         data = resp.json()
         msg_data = data.get("message", {})
@@ -147,7 +158,10 @@ def normalize_intent(raw: str) -> str:
 
 def warmup_model(model: str):
     """모델 로딩을 위한 웜업 호출"""
+    log(f"  ⏳ [{MODEL_LABELS[model]}] 모델 로딩 중 (웜업)...")
+    start = time.time()
     query_model(model, "테스트", think=False, num_predict=5)
+    log(f"  ⏳ [{MODEL_LABELS[model]}] 모델 로딩 완료 ({time.time()-start:.1f}s)")
 
 
 def run_single_test(args):
@@ -168,11 +182,52 @@ def run_single_test(args):
     }
 
 
+def update_progress_file(bench_name: str, completed_results: list, current_model: str = None,
+                         current_progress: dict = None):
+    """실시간 진행 상황 파일 업데이트"""
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    lines = [f"# 벤치마크 실시간 진행 현황", f"", f"**마지막 업데이트**: {now}", ""]
+
+    for r in completed_results:
+        think_str = "ON" if r["think"] else "OFF"
+        lines.append(f"✅ [{r['label']}] think={think_str}: "
+                      f"{r['accuracy']:.1f}% ({r['correct']}/{r['total']}), "
+                      f"평균 {r['avg_time']:.2f}s, 총 {r['wall_time']:.0f}s")
+
+    if current_model and current_progress:
+        p = current_progress
+        lines.append(f"")
+        lines.append(f"🔄 **진행 중**: [{current_model}] {bench_name}")
+        lines.append(f"   {p['completed']}/{p['total']} ({p['pct']:.1f}%) "
+                      f"| 정확도 {p['acc']:.1f}% | 경과 {p['elapsed']:.0f}s | ETA {p['eta']:.0f}s")
+        errors = p.get('errors', 0)
+        if errors > 0:
+            lines.append(f"   ⚠️ 에러 {errors}건 감지")
+
+    lines.append("")
+    with open(PROGRESS_FILE, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+
+def save_intermediate(bench_name: str, model_label: str, result: dict):
+    """모델별 중간 결과 JSON 저장"""
+    os.makedirs(INTERMEDIATE_DIR, exist_ok=True)
+    safe_label = model_label.replace(" ", "_").replace("(", "").replace(")", "")
+    path = os.path.join(INTERMEDIATE_DIR, f"{bench_name}_{safe_label}.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+    log(f"  💾 중간 결과 저장: {path}")
+
+
 def run_model_benchmark(model: str, test_cases: list, think: bool,
-                        num_predict: int, label: str) -> dict:
+                        num_predict: int, label: str,
+                        all_completed: list = None) -> dict:
     """단일 모델 벤치마크 실행 (병렬)"""
-    print(f"\n🔄 [{MODEL_LABELS[model]}] 테스트 시작... (think={'ON' if think else 'OFF'}, "
-          f"workers={PARALLEL_WORKERS})")
+    if all_completed is None:
+        all_completed = []
+
+    log(f"\n🔄 [{MODEL_LABELS[model]}] 테스트 시작... (think={'ON' if think else 'OFF'}, "
+        f"workers={PARALLEL_WORKERS}, cases={len(test_cases)})")
 
     # 웜업
     warmup_model(model)
@@ -185,7 +240,10 @@ def run_model_benchmark(model: str, test_cases: list, think: bool,
     details = []
     completed = 0
     correct = 0
+    error_count = 0
     start_time = time.time()
+    # 진행 로그 간격: think ON은 10건마다, OFF는 25건마다
+    log_interval = 10 if think else 25
 
     with ThreadPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
         futures = {executor.submit(run_single_test, t): t for t in tasks}
@@ -195,14 +253,24 @@ def run_model_benchmark(model: str, test_cases: list, think: bool,
             completed += 1
             if r["correct"]:
                 correct += 1
+            if r["done_reason"] == "error":
+                error_count += 1
 
-            if completed % 100 == 0 or completed == len(test_cases):
+            if completed % log_interval == 0 or completed == len(test_cases):
                 elapsed = time.time() - start_time
                 rate = completed / elapsed if elapsed > 0 else 0
                 eta = (len(test_cases) - completed) / rate if rate > 0 else 0
-                print(f"  📊 {completed}/{len(test_cases)} "
-                      f"({correct}/{completed} correct, {correct/completed*100:.1f}%) "
-                      f"[{elapsed:.0f}s elapsed, ETA {eta:.0f}s]")
+                acc = correct / completed * 100
+                err_str = f" ⚠️err={error_count}" if error_count else ""
+                log(f"  📊 {completed}/{len(test_cases)} "
+                    f"({correct}/{completed} correct, {acc:.1f}%) "
+                    f"[{elapsed:.0f}s elapsed, ETA {eta:.0f}s]{err_str}")
+                # 진행 파일 업데이트
+                update_progress_file(label, all_completed, MODEL_LABELS[model], {
+                    "completed": completed, "total": len(test_cases),
+                    "pct": completed / len(test_cases) * 100,
+                    "acc": acc, "elapsed": elapsed, "eta": eta, "errors": error_count,
+                })
 
     total_time = time.time() - start_time
     details.sort(key=lambda x: x["index"])
@@ -210,10 +278,10 @@ def run_model_benchmark(model: str, test_cases: list, think: bool,
     accuracy = correct / len(test_cases) * 100
     avg_time = sum(d["time"] for d in details) / len(details)
 
-    print(f"  ✅ [{MODEL_LABELS[model]}] 완료: {accuracy:.1f}% ({correct}/{len(test_cases)}), "
-          f"평균 {avg_time:.2f}s/건, 총 {total_time:.0f}s (wall)")
+    log(f"  ✅ [{MODEL_LABELS[model]}] 완료: {accuracy:.1f}% ({correct}/{len(test_cases)}), "
+        f"평균 {avg_time:.2f}s/건, 총 {total_time:.0f}s (wall), 에러 {error_count}건")
 
-    return {
+    result = {
         "model": model,
         "label": MODEL_LABELS[model],
         "think": think,
@@ -225,7 +293,13 @@ def run_model_benchmark(model: str, test_cases: list, think: bool,
         "avg_time": avg_time,
         "total_time": total_time,
         "wall_time": total_time,
+        "error_count": error_count,
     }
+
+    # 모델 완료 시 중간 결과 저장
+    save_intermediate(label, MODEL_LABELS[model], result)
+
+    return result
 
 
 # ─────────────────────────────────────────────
@@ -365,43 +439,54 @@ def main():
     run_fair = "--max-only" not in args
     run_max = "--fair-only" not in args
 
+    os.makedirs(INTERMEDIATE_DIR, exist_ok=True)
+
     size_label = f"{len(test_cases)}개"
-    print("=" * 70)
-    print("  한글 Intent 분석 벤치마크 - gemma4 모델 크기별 비교")
-    print(f"  테스트: {size_label} | "
-          f"모드: {'공정+최대성능' if run_fair and run_max else '공정' if run_fair else '최대성능'}")
-    print(f"  병렬: {PARALLEL_WORKERS} workers")
-    print("=" * 70)
+    log("=" * 70)
+    log("  한글 Intent 분석 벤치마크 - gemma4 모델 크기별 비교")
+    log(f"  테스트: {size_label} | "
+        f"모드: {'공정+최대성능' if run_fair and run_max else '공정' if run_fair else '최대성능'}")
+    log(f"  병렬: {PARALLEL_WORKERS} workers")
+    log(f"  시작 시각: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    log("=" * 70)
 
     all_results = {}
+    all_completed = []  # 완료된 모델 결과 추적
 
     # ── 벤치마크 1: 공정 비교 (think OFF 통일) ──
     if run_fair:
-        print("\n" + "=" * 70)
-        print("  🏁 벤치마크 1: 공정 비교 (think OFF, num_predict=50)")
-        print("=" * 70)
+        log("\n" + "=" * 70)
+        log("  🏁 벤치마크 1: 공정 비교 (think OFF, num_predict=50)")
+        log("=" * 70)
         fair_results = []
         for model in MODELS:
             r = run_model_benchmark(model, test_cases, think=False,
-                                    num_predict=50, label="fair")
+                                    num_predict=50, label="fair",
+                                    all_completed=all_completed)
             fair_results.append(r)
+            all_completed.append(r)
         all_results["fair"] = {
             "label": "벤치마크 1: 공정 비교 (think OFF 통일)",
             "results": fair_results,
         }
+        # 벤치마크1 완료 시점에 중간 전체 저장
+        interim_path = os.path.join(INTERMEDIATE_DIR, "fair_complete.json")
+        save_raw_log(all_results, interim_path)
 
     # ── 벤치마크 2: 최대 성능 (26b/31b think ON) ──
     if run_max:
-        print("\n" + "=" * 70)
-        print("  🏁 벤치마크 2: 최대 성능 (26b/31b think ON, num_predict=1000)")
-        print("=" * 70)
+        log("\n" + "=" * 70)
+        log("  🏁 벤치마크 2: 최대 성능 (26b/31b think ON, num_predict=1000)")
+        log("=" * 70)
         max_results = []
         for model in MODELS:
             use_think = model in ("gemma4:26b", "gemma4:31b")
             np = 1000 if use_think else 50
             r = run_model_benchmark(model, test_cases, think=use_think,
-                                    num_predict=np, label="max")
+                                    num_predict=np, label="max",
+                                    all_completed=all_completed)
             max_results.append(r)
+            all_completed.append(r)
         all_results["max"] = {
             "label": "벤치마크 2: 최대 성능 (26b/31b think ON)",
             "results": max_results,
@@ -419,7 +504,7 @@ def main():
     md_path = os.path.join(BASE_DIR, f"BENCHMARK_RESULTS_{timestamp}.md")
     with open(md_path, "w", encoding="utf-8") as f:
         f.write(report)
-    print(f"📝 리포트 저장: {md_path}")
+    log(f"📝 리포트 저장: {md_path}")
 
     # latest 심볼릭 (편의용)
     latest_md = os.path.join(BASE_DIR, "BENCHMARK_RESULTS.md")
@@ -429,8 +514,11 @@ def main():
             os.remove(dst)
         os.symlink(src, dst)
 
-    print(f"\n🔗 최신 결과: {latest_md}")
-    print("✅ 벤치마크 완료!")
+    # 진행 파일 최종 업데이트
+    update_progress_file("완료", all_completed)
+
+    log(f"\n🔗 최신 결과: {latest_md}")
+    log("✅ 벤치마크 완료!")
 
 
 if __name__ == "__main__":
