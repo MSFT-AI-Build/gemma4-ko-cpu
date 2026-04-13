@@ -1,0 +1,58 @@
+{
+  "model": "GPT-5.4",
+  "total": 3000,
+  "correct": 3000,
+  "accuracy": 100.0,
+  "per_intent": {
+    "주문조회": {
+      "total": 300,
+      "correct": 300,
+      "accuracy": 100.0
+    },
+    "배송조회": {
+      "total": 300,
+      "correct": 300,
+      "accuracy": 100.0
+    },
+    "환불요청": {
+      "total": 300,
+      "correct": 300,
+      "accuracy": 100.0
+    },
+    "교환요청": {
+      "total": 300,
+      "correct": 300,
+      "accuracy": 100.0
+    },
+    "상품문의": {
+      "total": 300,
+      "correct": 300,
+      "accuracy": 100.0
+    },
+    "결제문의": {
+      "total": 300,
+      "correct": 300,
+      "accuracy": 100.0
+    },
+    "불만접수": {
+      "total": 300,
+      "correct": 300,
+      "accuracy": 100.0
+    },
+    "회원정보": {
+      "total": 300,
+      "correct": 300,
+      "accuracy": 100.0
+    },
+    "쿠폰/적립금": {
+      "total": 300,
+      "correct": 300,
+      "accuracy": 100.0
+    },
+    "기타": {
+      "total": 300,
+      "correct": 300,
+      "accuracy": 100.0
+    }
+  }
+}
