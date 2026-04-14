@@ -1,0 +1,60 @@
+{
+  "model": "GPT-5.4-mini",
+  "date": "2026-04-14T01:45:41.324828",
+  "method": "Copilot CLI task agent (model: gpt-5.4-mini)",
+  "bm1_intent": {
+    "overall_accuracy": 93.3,
+    "correct": 2800,
+    "total": 3000,
+    "per_intent": {
+      "결제문의": 98.0,
+      "교환요청": 100.0,
+      "기타": 91.0,
+      "배송조회": 72.7,
+      "불만접수": 90.3,
+      "상품문의": 87.3,
+      "주문조회": 100.0,
+      "쿠폰/적립금": 100.0,
+      "환불요청": 100.0,
+      "회원정보": 94.0
+    }
+  },
+  "bm2_korean_nlp": {
+    "NSMC": 100.0,
+    "KorNLI": 100.0,
+    "KorSTS": 100.0,
+    "Question Pair": 100.0,
+    "Hate Speech": 54.0,
+    "K-MHaS": 100.0,
+    "DKTC": 100.0,
+    "Kocasm": 100.0,
+    "APEACH": 100.0,
+    "3i4K": 78.0,
+    "Chatbot": 47.0,
+    "Unsmile": 74.0,
+    "average": 87.8
+  },
+  "bm3_usecase": {
+    "PII_NER": 100.0,
+    "Doc_Routing": 100.0,
+    "Spam": 100.0,
+    "average": 100.0
+  },
+  "bm4_prompt_optimization": {
+    "NER": {
+      "baseline": 100.0,
+      "system_prompt": 100.0,
+      "few_shot": 100.0
+    },
+    "Doc_Routing": {
+      "baseline": 100.0,
+      "system_prompt": 100.0,
+      "few_shot": 100.0
+    },
+    "Spam": {
+      "baseline": 100.0,
+      "system_prompt": 100.0,
+      "few_shot": 100.0
+    }
+  }
+}
