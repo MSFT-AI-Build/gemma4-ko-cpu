@@ -1,0 +1,113 @@
+{
+  "doc_routing_gpt54_baseline": {
+    "correct": 48,
+    "total": 48,
+    "accuracy": 100.0
+  },
+  "doc_routing_gpt54_system_prompt": {
+    "correct": 48,
+    "total": 48,
+    "accuracy": 100.0
+  },
+  "doc_routing_gpt54_few_shot": {
+    "correct": 48,
+    "total": 48,
+    "accuracy": 100.0
+  },
+  "doc_routing_gpt54mini_baseline": {
+    "correct": 48,
+    "total": 48,
+    "accuracy": 100.0
+  },
+  "doc_routing_gpt54mini_system_prompt": {
+    "correct": 48,
+    "total": 48,
+    "accuracy": 100.0
+  },
+  "doc_routing_gpt54mini_few_shot": {
+    "correct": 48,
+    "total": 48,
+    "accuracy": 100.0
+  },
+  "doc_routing_gpt5mini_baseline": {
+    "correct": 48,
+    "total": 48,
+    "accuracy": 100.0
+  },
+  "doc_routing_gpt5mini_system_prompt": {
+    "correct": 48,
+    "total": 48,
+    "accuracy": 100.0
+  },
+  "doc_routing_gpt5mini_few_shot": {
+    "correct": 48,
+    "total": 48,
+    "accuracy": 100.0
+  },
+  "spam_gpt54_baseline": {
+    "correct": 50,
+    "total": 50,
+    "accuracy": 100.0
+  },
+  "spam_gpt54_system_prompt": {
+    "correct": 50,
+    "total": 50,
+    "accuracy": 100.0
+  },
+  "spam_gpt54_few_shot": {
+    "correct": 50,
+    "total": 50,
+    "accuracy": 100.0
+  },
+  "spam_gpt54mini": {
+    "status": "pending"
+  },
+  "spam_gpt5mini": {
+    "status": "pending"
+  },
+  "ner_gpt54_baseline": {
+    "correct": 50,
+    "total": 50,
+    "accuracy": 100.0
+  },
+  "ner_gpt54_system_prompt": {
+    "correct": 50,
+    "total": 50,
+    "accuracy": 100.0
+  },
+  "ner_gpt54_few_shot": {
+    "correct": 50,
+    "total": 50,
+    "accuracy": 100.0
+  },
+  "ner_gpt54mini_baseline": {
+    "correct": 50,
+    "total": 50,
+    "accuracy": 100.0
+  },
+  "ner_gpt54mini_system_prompt": {
+    "correct": 50,
+    "total": 50,
+    "accuracy": 100.0
+  },
+  "ner_gpt54mini_few_shot": {
+    "correct": 50,
+    "total": 50,
+    "accuracy": 100.0
+  },
+  "ner_gpt5mini_baseline": {
+    "correct": 50,
+    "total": 50,
+    "accuracy": 100.0
+  },
+  "ner_gpt5mini_system_prompt": {
+    "correct": 50,
+    "total": 50,
+    "accuracy": 100.0
+  },
+  "ner_gpt5mini_few_shot": {
+    "correct": 50,
+    "total": 50,
+    "accuracy": 100.0
+  }
+}

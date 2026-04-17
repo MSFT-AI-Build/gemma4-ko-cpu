@@ -1,0 +1,47 @@
+{
+  "gpt54": {
+    "nsmc": 93.0,
+    "kornli": 100.0,
+    "korsts": 100.0,
+    "question_pair": 100.0,
+    "hate_speech": 100.0,
+    "kmhas": 100.0,
+    "dktc": 96.0,
+    "sarcasm": 100.0,
+    "apeach": 100.0,
+    "3i4k": 100.0,
+    "chatbot": 100.0,
+    "unsmile": 71.0,
+    "avg": 96.66666666666667
+  },
+  "gpt54mini": {
+    "nsmc": 100.0,
+    "kornli": 100.0,
+    "korsts": 100.0,
+    "question_pair": 100.0,
+    "hate_speech": 100.0,
+    "kmhas": 100.0,
+    "dktc": 100.0,
+    "sarcasm": 100.0,
+    "apeach": 100.0,
+    "3i4k": 100.0,
+    "chatbot": 100.0,
+    "unsmile": 100.0,
+    "avg": 100.0
+  },
+  "gpt5mini": {
+    "nsmc": 100.0,
+    "kornli": 100.0,
+    "korsts": 100.0,
+    "question_pair": 100.0,
+    "hate_speech": 100.0,
+    "kmhas": 100.0,
+    "dktc": 100.0,
+    "sarcasm": 100.0,
+    "apeach": 100.0,
+    "3i4k": 100.0,
+    "chatbot": 100.0,
+    "unsmile": 100.0,
+    "avg": 100.0
+  }
+}

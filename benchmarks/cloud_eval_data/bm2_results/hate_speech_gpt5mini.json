@@ -1,0 +1,402 @@
+[
+  {
+    "idx": 0,
+    "predicted": "공격"
+  },
+  {
+    "idx": 1,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 2,
+    "predicted": "일반"
+  },
+  {
+    "idx": 3,
+    "predicted": "일반"
+  },
+  {
+    "idx": 4,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 5,
+    "predicted": "공격"
+  },
+  {
+    "idx": 6,
+    "predicted": "일반"
+  },
+  {
+    "idx": 7,
+    "predicted": "공격"
+  },
+  {
+    "idx": 8,
+    "predicted": "일반"
+  },
+  {
+    "idx": 9,
+    "predicted": "일반"
+  },
+  {
+    "idx": 10,
+    "predicted": "공격"
+  },
+  {
+    "idx": 11,
+    "predicted": "공격"
+  },
+  {
+    "idx": 12,
+    "predicted": "일반"
+  },
+  {
+    "idx": 13,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 14,
+    "predicted": "공격"
+  },
+  {
+    "idx": 15,
+    "predicted": "일반"
+  },
+  {
+    "idx": 16,
+    "predicted": "공격"
+  },
+  {
+    "idx": 17,
+    "predicted": "일반"
+  },
+  {
+    "idx": 18,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 19,
+    "predicted": "공격"
+  },
+  {
+    "idx": 20,
+    "predicted": "공격"
+  },
+  {
+    "idx": 21,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 22,
+    "predicted": "공격"
+  },
+  {
+    "idx": 23,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 24,
+    "predicted": "일반"
+  },
+  {
+    "idx": 25,
+    "predicted": "공격"
+  },
+  {
+    "idx": 26,
+    "predicted": "일반"
+  },
+  {
+    "idx": 27,
+    "predicted": "공격"
+  },
+  {
+    "idx": 28,
+    "predicted": "일반"
+  },
+  {
+    "idx": 29,
+    "predicted": "공격"
+  },
+  {
+    "idx": 30,
+    "predicted": "공격"
+  },
+  {
+    "idx": 31,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 32,
+    "predicted": "일반"
+  },
+  {
+    "idx": 33,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 34,
+    "predicted": "일반"
+  },
+  {
+    "idx": 35,
+    "predicted": "일반"
+  },
+  {
+    "idx": 36,
+    "predicted": "일반"
+  },
+  {
+    "idx": 37,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 38,
+    "predicted": "공격"
+  },
+  {
+    "idx": 39,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 40,
+    "predicted": "일반"
+  },
+  {
+    "idx": 41,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 42,
+    "predicted": "공격"
+  },
+  {
+    "idx": 43,
+    "predicted": "공격"
+  },
+  {
+    "idx": 44,
+    "predicted": "일반"
+  },
+  {
+    "idx": 45,
+    "predicted": "일반"
+  },
+  {
+    "idx": 46,
+    "predicted": "공격"
+  },
+  {
+    "idx": 47,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 48,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 49,
+    "predicted": "공격"
+  },
+  {
+    "idx": 50,
+    "predicted": "공격"
+  },
+  {
+    "idx": 51,
+    "predicted": "공격"
+  },
+  {
+    "idx": 52,
+    "predicted": "일반"
+  },
+  {
+    "idx": 53,
+    "predicted": "공격"
+  },
+  {
+    "idx": 54,
+    "predicted": "일반"
+  },
+  {
+    "idx": 55,
+    "predicted": "공격"
+  },
+  {
+    "idx": 56,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 57,
+    "predicted": "공격"
+  },
+  {
+    "idx": 58,
+    "predicted": "공격"
+  },
+  {
+    "idx": 59,
+    "predicted": "일반"
+  },
+  {
+    "idx": 60,
+    "predicted": "공격"
+  },
+  {
+    "idx": 61,
+    "predicted": "공격"
+  },
+  {
+    "idx": 62,
+    "predicted": "공격"
+  },
+  {
+    "idx": 63,
+    "predicted": "공격"
+  },
+  {
+    "idx": 64,
+    "predicted": "공격"
+  },
+  {
+    "idx": 65,
+    "predicted": "일반"
+  },
+  {
+    "idx": 66,
+    "predicted": "일반"
+  },
+  {
+    "idx": 67,
+    "predicted": "공격"
+  },
+  {
+    "idx": 68,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 69,
+    "predicted": "공격"
+  },
+  {
+    "idx": 70,
+    "predicted": "일반"
+  },
+  {
+    "idx": 71,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 72,
+    "predicted": "일반"
+  },
+  {
+    "idx": 73,
+    "predicted": "일반"
+  },
+  {
+    "idx": 74,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 75,
+    "predicted": "일반"
+  },
+  {
+    "idx": 76,
+    "predicted": "일반"
+  },
+  {
+    "idx": 77,
+    "predicted": "공격"
+  },
+  {
+    "idx": 78,
+    "predicted": "일반"
+  },
+  {
+    "idx": 79,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 80,
+    "predicted": "공격"
+  },
+  {
+    "idx": 81,
+    "predicted": "일반"
+  },
+  {
+    "idx": 82,
+    "predicted": "일반"
+  },
+  {
+    "idx": 83,
+    "predicted": "일반"
+  },
+  {
+    "idx": 84,
+    "predicted": "일반"
+  },
+  {
+    "idx": 85,
+    "predicted": "일반"
+  },
+  {
+    "idx": 86,
+    "predicted": "일반"
+  },
+  {
+    "idx": 87,
+    "predicted": "공격"
+  },
+  {
+    "idx": 88,
+    "predicted": "공격"
+  },
+  {
+    "idx": 89,
+    "predicted": "일반"
+  },
+  {
+    "idx": 90,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 91,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 92,
+    "predicted": "일반"
+  },
+  {
+    "idx": 93,
+    "predicted": "일반"
+  },
+  {
+    "idx": 94,
+    "predicted": "공격"
+  },
+  {
+    "idx": 95,
+    "predicted": "공격"
+  },
+  {
+    "idx": 96,
+    "predicted": "혐오"
+  },
+  {
+    "idx": 97,
+    "predicted": "일반"
+  },
+  {
+    "idx": 98,
+    "predicted": "공격"
+  },
+  {
+    "idx": 99,
+    "predicted": "혐오"
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "idx": 0,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 1,
+    "predicted": "유사"
+  },
+  {
+    "idx": 2,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 3,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 4,
+    "predicted": "유사"
+  },
+  {
+    "idx": 5,
+    "predicted": "유사"
+  },
+  {
+    "idx": 6,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 7,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 8,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 9,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 10,
+    "predicted": "유사"
+  },
+  {
+    "idx": 11,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 12,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 13,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 14,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 15,
+    "predicted": "유사"
+  },
+  {
+    "idx": 16,
+    "predicted": "유사"
+  },
+  {
+    "idx": 17,
+    "predicted": "유사"
+  },
+  {
+    "idx": 18,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 19,
+    "predicted": "유사"
+  },
+  {
+    "idx": 20,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 21,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 22,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 23,
+    "predicted": "유사"
+  },
+  {
+    "idx": 24,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 25,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 26,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 27,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 28,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 29,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 30,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 31,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 32,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 33,
+    "predicted": "유사"
+  },
+  {
+    "idx": 34,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 35,
+    "predicted": "유사"
+  },
+  {
+    "idx": 36,
+    "predicted": "유사"
+  },
+  {
+    "idx": 37,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 38,
+    "predicted": "유사"
+  },
+  {
+    "idx": 39,
+    "predicted": "유사"
+  },
+  {
+    "idx": 40,
+    "predicted": "유사"
+  },
+  {
+    "idx": 41,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 42,
+    "predicted": "유사"
+  },
+  {
+    "idx": 43,
+    "predicted": "유사"
+  },
+  {
+    "idx": 44,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 45,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 46,
+    "predicted": "유사"
+  },
+  {
+    "idx": 47,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 48,
+    "predicted": "유사"
+  },
+  {
+    "idx": 49,
+    "predicted": "유사"
+  },
+  {
+    "idx": 50,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 51,
+    "predicted": "유사"
+  },
+  {
+    "idx": 52,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 53,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 54,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 55,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 56,
+    "predicted": "유사"
+  },
+  {
+    "idx": 57,
+    "predicted": "유사"
+  },
+  {
+    "idx": 58,
+    "predicted": "유사"
+  },
+  {
+    "idx": 59,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 60,
+    "predicted": "유사"
+  },
+  {
+    "idx": 61,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 62,
+    "predicted": "유사"
+  },
+  {
+    "idx": 63,
+    "predicted": "유사"
+  },
+  {
+    "idx": 64,
+    "predicted": "유사"
+  },
+  {
+    "idx": 65,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 66,
+    "predicted": "유사"
+  },
+  {
+    "idx": 67,
+    "predicted": "유사"
+  },
+  {
+    "idx": 68,
+    "predicted": "유사"
+  },
+  {
+    "idx": 69,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 70,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 71,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 72,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 73,
+    "predicted": "유사"
+  },
+  {
+    "idx": 74,
+    "predicted": "유사"
+  },
+  {
+    "idx": 75,
+    "predicted": "유사"
+  },
+  {
+    "idx": 76,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 77,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 78,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 79,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 80,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 81,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 82,
+    "predicted": "유사"
+  },
+  {
+    "idx": 83,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 84,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 85,
+    "predicted": "유사"
+  },
+  {
+    "idx": 86,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 87,
+    "predicted": "유사"
+  },
+  {
+    "idx": 88,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 89,
+    "predicted": "유사"
+  },
+  {
+    "idx": 90,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 91,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 92,
+    "predicted": "유사"
+  },
+  {
+    "idx": 93,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 94,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 95,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 96,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 97,
+    "predicted": "비유사"
+  },
+  {
+    "idx": 98,
+    "predicted": "유사"
+  },
+  {
+    "idx": 99,
+    "predicted": "비유사"
+  }
+]

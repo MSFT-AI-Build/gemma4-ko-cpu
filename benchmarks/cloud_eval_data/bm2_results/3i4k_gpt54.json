@@ -1,0 +1,402 @@
+[
+  {
+    "idx": 0,
+    "predicted": "질문"
+  },
+  {
+    "idx": 1,
+    "predicted": "감탄문"
+  },
+  {
+    "idx": 2,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 3,
+    "predicted": "질문"
+  },
+  {
+    "idx": 4,
+    "predicted": "질문"
+  },
+  {
+    "idx": 5,
+    "predicted": "반어문"
+  },
+  {
+    "idx": 6,
+    "predicted": "질문"
+  },
+  {
+    "idx": 7,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 8,
+    "predicted": "질문"
+  },
+  {
+    "idx": 9,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 10,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 11,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 12,
+    "predicted": "감탄문"
+  },
+  {
+    "idx": 13,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 14,
+    "predicted": "질문"
+  },
+  {
+    "idx": 15,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 16,
+    "predicted": "감탄문"
+  },
+  {
+    "idx": 17,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 18,
+    "predicted": "수사의문문"
+  },
+  {
+    "idx": 19,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 20,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 21,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 22,
+    "predicted": "감탄문"
+  },
+  {
+    "idx": 23,
+    "predicted": "질문"
+  },
+  {
+    "idx": 24,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 25,
+    "predicted": "감탄문"
+  },
+  {
+    "idx": 26,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 27,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 28,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 29,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 30,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 31,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 32,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 33,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 34,
+    "predicted": "질문"
+  },
+  {
+    "idx": 35,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 36,
+    "predicted": "질문"
+  },
+  {
+    "idx": 37,
+    "predicted": "단편발화"
+  },
+  {
+    "idx": 38,
+    "predicted": "감탄문"
+  },
+  {
+    "idx": 39,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 40,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 41,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 42,
+    "predicted": "단편발화"
+  },
+  {
+    "idx": 43,
+    "predicted": "단편발화"
+  },
+  {
+    "idx": 44,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 45,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 46,
+    "predicted": "반어문"
+  },
+  {
+    "idx": 47,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 48,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 49,
+    "predicted": "질문"
+  },
+  {
+    "idx": 50,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 51,
+    "predicted": "단편발화"
+  },
+  {
+    "idx": 52,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 53,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 54,
+    "predicted": "질문"
+  },
+  {
+    "idx": 55,
+    "predicted": "질문"
+  },
+  {
+    "idx": 56,
+    "predicted": "질문"
+  },
+  {
+    "idx": 57,
+    "predicted": "질문"
+  },
+  {
+    "idx": 58,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 59,
+    "predicted": "단편발화"
+  },
+  {
+    "idx": 60,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 61,
+    "predicted": "질문"
+  },
+  {
+    "idx": 62,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 63,
+    "predicted": "단편발화"
+  },
+  {
+    "idx": 64,
+    "predicted": "질문"
+  },
+  {
+    "idx": 65,
+    "predicted": "질문"
+  },
+  {
+    "idx": 66,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 67,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 68,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 69,
+    "predicted": "수사의문문"
+  },
+  {
+    "idx": 70,
+    "predicted": "단편발화"
+  },
+  {
+    "idx": 71,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 72,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 73,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 74,
+    "predicted": "질문"
+  },
+  {
+    "idx": 75,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 76,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 77,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 78,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 79,
+    "predicted": "질문"
+  },
+  {
+    "idx": 80,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 81,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 82,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 83,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 84,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 85,
+    "predicted": "질문"
+  },
+  {
+    "idx": 86,
+    "predicted": "질문"
+  },
+  {
+    "idx": 87,
+    "predicted": "질문"
+  },
+  {
+    "idx": 88,
+    "predicted": "질문"
+  },
+  {
+    "idx": 89,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 90,
+    "predicted": "질문"
+  },
+  {
+    "idx": 91,
+    "predicted": "질문"
+  },
+  {
+    "idx": 92,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 93,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 94,
+    "predicted": "단편발화"
+  },
+  {
+    "idx": 95,
+    "predicted": "명령문"
+  },
+  {
+    "idx": 96,
+    "predicted": "감탄문"
+  },
+  {
+    "idx": 97,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 98,
+    "predicted": "평서문"
+  },
+  {
+    "idx": 99,
+    "predicted": "명령문"
+  }
+]

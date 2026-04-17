@@ -1,0 +1,608 @@
+{
+  "baseline": [
+    {
+      "idx": 0,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 1,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 2,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 3,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 4,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 5,
+      "predicted": "정상"
+    },
+    {
+      "idx": 6,
+      "predicted": "정상"
+    },
+    {
+      "idx": 7,
+      "predicted": "정상"
+    },
+    {
+      "idx": 8,
+      "predicted": "정상"
+    },
+    {
+      "idx": 9,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 10,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 11,
+      "predicted": "정상"
+    },
+    {
+      "idx": 12,
+      "predicted": "정상"
+    },
+    {
+      "idx": 13,
+      "predicted": "정상"
+    },
+    {
+      "idx": 14,
+      "predicted": "정상"
+    },
+    {
+      "idx": 15,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 16,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 17,
+      "predicted": "정상"
+    },
+    {
+      "idx": 18,
+      "predicted": "정상"
+    },
+    {
+      "idx": 19,
+      "predicted": "정상"
+    },
+    {
+      "idx": 20,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 21,
+      "predicted": "정상"
+    },
+    {
+      "idx": 22,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 23,
+      "predicted": "정상"
+    },
+    {
+      "idx": 24,
+      "predicted": "정상"
+    },
+    {
+      "idx": 25,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 26,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 27,
+      "predicted": "정상"
+    },
+    {
+      "idx": 28,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 29,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 30,
+      "predicted": "정상"
+    },
+    {
+      "idx": 31,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 32,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 33,
+      "predicted": "정상"
+    },
+    {
+      "idx": 34,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 35,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 36,
+      "predicted": "정상"
+    },
+    {
+      "idx": 37,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 38,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 39,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 40,
+      "predicted": "정상"
+    },
+    {
+      "idx": 41,
+      "predicted": "정상"
+    },
+    {
+      "idx": 42,
+      "predicted": "정상"
+    },
+    {
+      "idx": 43,
+      "predicted": "정상"
+    },
+    {
+      "idx": 44,
+      "predicted": "정상"
+    },
+    {
+      "idx": 45,
+      "predicted": "정상"
+    },
+    {
+      "idx": 46,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 47,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 48,
+      "predicted": "정상"
+    },
+    {
+      "idx": 49,
+      "predicted": "스팸"
+    }
+  ],
+  "system_prompt": [
+    {
+      "idx": 0,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 1,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 2,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 3,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 4,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 5,
+      "predicted": "정상"
+    },
+    {
+      "idx": 6,
+      "predicted": "정상"
+    },
+    {
+      "idx": 7,
+      "predicted": "정상"
+    },
+    {
+      "idx": 8,
+      "predicted": "정상"
+    },
+    {
+      "idx": 9,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 10,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 11,
+      "predicted": "정상"
+    },
+    {
+      "idx": 12,
+      "predicted": "정상"
+    },
+    {
+      "idx": 13,
+      "predicted": "정상"
+    },
+    {
+      "idx": 14,
+      "predicted": "정상"
+    },
+    {
+      "idx": 15,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 16,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 17,
+      "predicted": "정상"
+    },
+    {
+      "idx": 18,
+      "predicted": "정상"
+    },
+    {
+      "idx": 19,
+      "predicted": "정상"
+    },
+    {
+      "idx": 20,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 21,
+      "predicted": "정상"
+    },
+    {
+      "idx": 22,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 23,
+      "predicted": "정상"
+    },
+    {
+      "idx": 24,
+      "predicted": "정상"
+    },
+    {
+      "idx": 25,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 26,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 27,
+      "predicted": "정상"
+    },
+    {
+      "idx": 28,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 29,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 30,
+      "predicted": "정상"
+    },
+    {
+      "idx": 31,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 32,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 33,
+      "predicted": "정상"
+    },
+    {
+      "idx": 34,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 35,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 36,
+      "predicted": "정상"
+    },
+    {
+      "idx": 37,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 38,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 39,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 40,
+      "predicted": "정상"
+    },
+    {
+      "idx": 41,
+      "predicted": "정상"
+    },
+    {
+      "idx": 42,
+      "predicted": "정상"
+    },
+    {
+      "idx": 43,
+      "predicted": "정상"
+    },
+    {
+      "idx": 44,
+      "predicted": "정상"
+    },
+    {
+      "idx": 45,
+      "predicted": "정상"
+    },
+    {
+      "idx": 46,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 47,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 48,
+      "predicted": "정상"
+    },
+    {
+      "idx": 49,
+      "predicted": "스팸"
+    }
+  ],
+  "few_shot": [
+    {
+      "idx": 0,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 1,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 2,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 3,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 4,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 5,
+      "predicted": "정상"
+    },
+    {
+      "idx": 6,
+      "predicted": "정상"
+    },
+    {
+      "idx": 7,
+      "predicted": "정상"
+    },
+    {
+      "idx": 8,
+      "predicted": "정상"
+    },
+    {
+      "idx": 9,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 10,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 11,
+      "predicted": "정상"
+    },
+    {
+      "idx": 12,
+      "predicted": "정상"
+    },
+    {
+      "idx": 13,
+      "predicted": "정상"
+    },
+    {
+      "idx": 14,
+      "predicted": "정상"
+    },
+    {
+      "idx": 15,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 16,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 17,
+      "predicted": "정상"
+    },
+    {
+      "idx": 18,
+      "predicted": "정상"
+    },
+    {
+      "idx": 19,
+      "predicted": "정상"
+    },
+    {
+      "idx": 20,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 21,
+      "predicted": "정상"
+    },
+    {
+      "idx": 22,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 23,
+      "predicted": "정상"
+    },
+    {
+      "idx": 24,
+      "predicted": "정상"
+    },
+    {
+      "idx": 25,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 26,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 27,
+      "predicted": "정상"
+    },
+    {
+      "idx": 28,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 29,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 30,
+      "predicted": "정상"
+    },
+    {
+      "idx": 31,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 32,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 33,
+      "predicted": "정상"
+    },
+    {
+      "idx": 34,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 35,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 36,
+      "predicted": "정상"
+    },
+    {
+      "idx": 37,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 38,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 39,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 40,
+      "predicted": "정상"
+    },
+    {
+      "idx": 41,
+      "predicted": "정상"
+    },
+    {
+      "idx": 42,
+      "predicted": "정상"
+    },
+    {
+      "idx": 43,
+      "predicted": "정상"
+    },
+    {
+      "idx": 44,
+      "predicted": "정상"
+    },
+    {
+      "idx": 45,
+      "predicted": "정상"
+    },
+    {
+      "idx": 46,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 47,
+      "predicted": "스팸"
+    },
+    {
+      "idx": 48,
+      "predicted": "정상"
+    },
+    {
+      "idx": 49,
+      "predicted": "스팸"
+    }
+  ]
+}

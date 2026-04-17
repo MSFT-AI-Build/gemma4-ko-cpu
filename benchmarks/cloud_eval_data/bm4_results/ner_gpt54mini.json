@@ -1,0 +1,2066 @@
+{
+  "baseline": [
+    {
+      "idx": 0,
+      "entities": [
+        {
+          "entity": "강",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "entities": [
+        {
+          "entity": "서울",
+          "type": "장소"
+        },
+        {
+          "entity": "일본",
+          "type": "기관"
+        },
+        {
+          "entity": "도쿄",
+          "type": "기관"
+        },
+        {
+          "entity": "가와바타 미술학교",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "entities": [
+        {
+          "entity": "엔소닉",
+          "type": "기관"
+        },
+        {
+          "entity": "7일",
+          "type": "날짜"
+        },
+        {
+          "entity": "8일",
+          "type": "날짜"
+        },
+        {
+          "entity": "일본",
+          "type": "장소"
+        },
+        {
+          "entity": "9일",
+          "type": "날짜"
+        },
+        {
+          "entity": "한국",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "entities": [
+        {
+          "entity": "트럼프",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "entities": [
+        {
+          "entity": "2월 2일",
+          "type": "날짜"
+        },
+        {
+          "entity": "폴 라이언",
+          "type": "인명"
+        },
+        {
+          "entity": "매코널",
+          "type": "인명"
+        },
+        {
+          "entity": "백악관",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 5,
+      "entities": [
+        {
+          "entity": "NC",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 6,
+      "entities": [
+        {
+          "entity": "2011년",
+          "type": "날짜"
+        },
+        {
+          "entity": "2013년",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 7,
+      "entities": [
+        {
+          "entity": "문재인",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 8,
+      "entities": [
+        {
+          "entity": "허창수",
+          "type": "인명"
+        },
+        {
+          "entity": "미르",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 9,
+      "entities": [
+        {
+          "entity": "5일",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 10,
+      "entities": [
+        {
+          "entity": "APEC",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 11,
+      "entities": [
+        {
+          "entity": "조현영",
+          "type": "인명"
+        },
+        {
+          "entity": "박두식",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 12,
+      "entities": [
+        {
+          "entity": "박근혜",
+          "type": "인명"
+        },
+        {
+          "entity": "12일",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 13,
+      "entities": [
+        {
+          "entity": "대한민국",
+          "type": "기관"
+        },
+        {
+          "entity": "남태평양",
+          "type": "장소"
+        },
+        {
+          "entity": "오뚜기",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 14,
+      "entities": [
+        {
+          "entity": "11일",
+          "type": "날짜"
+        },
+        {
+          "entity": "윤다훈",
+          "type": "인명"
+        },
+        {
+          "entity": "사임당",
+          "type": "인명"
+        },
+        {
+          "entity": "이영애",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 15,
+      "entities": [
+        {
+          "entity": "폴크스바겐",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 16,
+      "entities": [
+        {
+          "entity": "오전 10시45분",
+          "type": "시간"
+        },
+        {
+          "entity": "박한철",
+          "type": "인명"
+        },
+        {
+          "entity": "헌재",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 17,
+      "entities": [
+        {
+          "entity": "12일",
+          "type": "날짜"
+        },
+        {
+          "entity": "북한",
+          "type": "기관"
+        },
+        {
+          "entity": "2013년",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 18,
+      "entities": [
+        {
+          "entity": "유럽 왕실",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 19,
+      "entities": [
+        {
+          "entity": "이준",
+          "type": "인명"
+        },
+        {
+          "entity": "고아성",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 20,
+      "entities": [
+        {
+          "entity": "인천항",
+          "type": "기관"
+        },
+        {
+          "entity": "크루즈",
+          "type": "인명"
+        },
+        {
+          "entity": "인천시",
+          "type": "기관"
+        },
+        {
+          "entity": "서울",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 21,
+      "entities": [
+        {
+          "entity": "박유천",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 22,
+      "entities": [
+        {
+          "entity": "제주도",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 23,
+      "entities": [
+        {
+          "entity": "팬스타라인닷컴",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 24,
+      "entities": [
+        {
+          "entity": "미국",
+          "type": "기관"
+        },
+        {
+          "entity": "유럽",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 25,
+      "entities": [
+        {
+          "entity": "7월",
+          "type": "날짜"
+        },
+        {
+          "entity": "SK",
+          "type": "기관"
+        },
+        {
+          "entity": "정의윤",
+          "type": "인명"
+        },
+        {
+          "entity": "김용희",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 26,
+      "entities": [
+        {
+          "entity": "시베리아",
+          "type": "장소"
+        },
+        {
+          "entity": "알래스카",
+          "type": "장소"
+        },
+        {
+          "entity": "캐나다 북부",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 27,
+      "entities": [
+        {
+          "entity": "새정치연합",
+          "type": "기관"
+        },
+        {
+          "entity": "이상민",
+          "type": "인명"
+        },
+        {
+          "entity": "법사위",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 28,
+      "entities": [
+        {
+          "entity": "배창호 프러덕션",
+          "type": "기관"
+        },
+        {
+          "entity": "신은경",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 29,
+      "entities": [
+        {
+          "entity": "신홍범",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 30,
+      "entities": [
+        {
+          "entity": "걸스데이",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 31,
+      "entities": [
+        {
+          "entity": "박보영",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 32,
+      "entities": [
+        {
+          "entity": "삿포로돔",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 33,
+      "entities": [
+        {
+          "entity": "제3경인고속도로",
+          "type": "장소"
+        },
+        {
+          "entity": "제2경인고속도로",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 34,
+      "entities": [
+        {
+          "entity": "폴란드",
+          "type": "기관"
+        },
+        {
+          "entity": "아르투어 하반트",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 35,
+      "entities": [
+        {
+          "entity": "E",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 36,
+      "entities": [
+        {
+          "entity": "대한항공",
+          "type": "기관"
+        },
+        {
+          "entity": "9일",
+          "type": "날짜"
+        },
+        {
+          "entity": "인천국제공항",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 37,
+      "entities": [
+        {
+          "entity": "11월",
+          "type": "날짜"
+        },
+        {
+          "entity": "경주",
+          "type": "장소"
+        },
+        {
+          "entity": "호소카와",
+          "type": "인명"
+        },
+        {
+          "entity": "세천호희",
+          "type": "인명"
+        },
+        {
+          "entity": "일본",
+          "type": "기관"
+        },
+        {
+          "entity": "24일",
+          "type": "날짜"
+        },
+        {
+          "entity": "김영삼",
+          "type": "인명"
+        },
+        {
+          "entity": "호소카와",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 38,
+      "entities": [
+        {
+          "entity": "농림축산식품부",
+          "type": "기관"
+        },
+        {
+          "entity": "라이스랩",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 39,
+      "entities": [
+        {
+          "entity": "박한별",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 40,
+      "entities": [
+        {
+          "entity": "전현무",
+          "type": "인명"
+        },
+        {
+          "entity": "3일",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 41,
+      "entities": [
+        {
+          "entity": "손흥민",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 42,
+      "entities": [
+        {
+          "entity": "김현수",
+          "type": "인명"
+        },
+        {
+          "entity": "볼티모어 오리올스",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 43,
+      "entities": [
+        {
+          "entity": "OECD",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 44,
+      "entities": [
+        {
+          "entity": "20일",
+          "type": "날짜"
+        },
+        {
+          "entity": "1일",
+          "type": "날짜"
+        },
+        {
+          "entity": "네이버",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 45,
+      "entities": [
+        {
+          "entity": "13일",
+          "type": "날짜"
+        },
+        {
+          "entity": "현대카드·캐피탈",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 46,
+      "entities": [
+        {
+          "entity": "김동준",
+          "type": "인명"
+        },
+        {
+          "entity": "정재은",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 47,
+      "entities": [
+        {
+          "entity": "미국",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 48,
+      "entities": [
+        {
+          "entity": "송미화",
+          "type": "인명"
+        },
+        {
+          "entity": "송미화",
+          "type": "인명"
+        },
+        {
+          "entity": "이현진",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 49,
+      "entities": [
+        {
+          "entity": "양현석",
+          "type": "인명"
+        },
+        {
+          "entity": "유희열",
+          "type": "인명"
+        },
+        {
+          "entity": "유준상",
+          "type": "인명"
+        }
+      ]
+    }
+  ],
+  "system_prompt": [
+    {
+      "idx": 0,
+      "entities": [
+        {
+          "entity": "강",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "entities": [
+        {
+          "entity": "서울",
+          "type": "장소"
+        },
+        {
+          "entity": "일본",
+          "type": "기관"
+        },
+        {
+          "entity": "도쿄",
+          "type": "기관"
+        },
+        {
+          "entity": "가와바타 미술학교",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "entities": [
+        {
+          "entity": "엔소닉",
+          "type": "기관"
+        },
+        {
+          "entity": "7일",
+          "type": "날짜"
+        },
+        {
+          "entity": "8일",
+          "type": "날짜"
+        },
+        {
+          "entity": "일본",
+          "type": "장소"
+        },
+        {
+          "entity": "9일",
+          "type": "날짜"
+        },
+        {
+          "entity": "한국",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "entities": [
+        {
+          "entity": "트럼프",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "entities": [
+        {
+          "entity": "2월 2일",
+          "type": "날짜"
+        },
+        {
+          "entity": "폴 라이언",
+          "type": "인명"
+        },
+        {
+          "entity": "매코널",
+          "type": "인명"
+        },
+        {
+          "entity": "백악관",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 5,
+      "entities": [
+        {
+          "entity": "NC",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 6,
+      "entities": [
+        {
+          "entity": "2011년",
+          "type": "날짜"
+        },
+        {
+          "entity": "2013년",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 7,
+      "entities": [
+        {
+          "entity": "문재인",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 8,
+      "entities": [
+        {
+          "entity": "허창수",
+          "type": "인명"
+        },
+        {
+          "entity": "미르",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 9,
+      "entities": [
+        {
+          "entity": "5일",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 10,
+      "entities": [
+        {
+          "entity": "APEC",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 11,
+      "entities": [
+        {
+          "entity": "조현영",
+          "type": "인명"
+        },
+        {
+          "entity": "박두식",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 12,
+      "entities": [
+        {
+          "entity": "박근혜",
+          "type": "인명"
+        },
+        {
+          "entity": "12일",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 13,
+      "entities": [
+        {
+          "entity": "대한민국",
+          "type": "기관"
+        },
+        {
+          "entity": "남태평양",
+          "type": "장소"
+        },
+        {
+          "entity": "오뚜기",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 14,
+      "entities": [
+        {
+          "entity": "11일",
+          "type": "날짜"
+        },
+        {
+          "entity": "윤다훈",
+          "type": "인명"
+        },
+        {
+          "entity": "사임당",
+          "type": "인명"
+        },
+        {
+          "entity": "이영애",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 15,
+      "entities": [
+        {
+          "entity": "폴크스바겐",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 16,
+      "entities": [
+        {
+          "entity": "오전 10시45분",
+          "type": "시간"
+        },
+        {
+          "entity": "박한철",
+          "type": "인명"
+        },
+        {
+          "entity": "헌재",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 17,
+      "entities": [
+        {
+          "entity": "12일",
+          "type": "날짜"
+        },
+        {
+          "entity": "북한",
+          "type": "기관"
+        },
+        {
+          "entity": "2013년",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 18,
+      "entities": [
+        {
+          "entity": "유럽 왕실",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 19,
+      "entities": [
+        {
+          "entity": "이준",
+          "type": "인명"
+        },
+        {
+          "entity": "고아성",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 20,
+      "entities": [
+        {
+          "entity": "인천항",
+          "type": "기관"
+        },
+        {
+          "entity": "크루즈",
+          "type": "인명"
+        },
+        {
+          "entity": "인천시",
+          "type": "기관"
+        },
+        {
+          "entity": "서울",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 21,
+      "entities": [
+        {
+          "entity": "박유천",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 22,
+      "entities": [
+        {
+          "entity": "제주도",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 23,
+      "entities": [
+        {
+          "entity": "팬스타라인닷컴",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 24,
+      "entities": [
+        {
+          "entity": "미국",
+          "type": "기관"
+        },
+        {
+          "entity": "유럽",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 25,
+      "entities": [
+        {
+          "entity": "7월",
+          "type": "날짜"
+        },
+        {
+          "entity": "SK",
+          "type": "기관"
+        },
+        {
+          "entity": "정의윤",
+          "type": "인명"
+        },
+        {
+          "entity": "김용희",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 26,
+      "entities": [
+        {
+          "entity": "시베리아",
+          "type": "장소"
+        },
+        {
+          "entity": "알래스카",
+          "type": "장소"
+        },
+        {
+          "entity": "캐나다 북부",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 27,
+      "entities": [
+        {
+          "entity": "새정치연합",
+          "type": "기관"
+        },
+        {
+          "entity": "이상민",
+          "type": "인명"
+        },
+        {
+          "entity": "법사위",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 28,
+      "entities": [
+        {
+          "entity": "배창호 프러덕션",
+          "type": "기관"
+        },
+        {
+          "entity": "신은경",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 29,
+      "entities": [
+        {
+          "entity": "신홍범",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 30,
+      "entities": [
+        {
+          "entity": "걸스데이",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 31,
+      "entities": [
+        {
+          "entity": "박보영",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 32,
+      "entities": [
+        {
+          "entity": "삿포로돔",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 33,
+      "entities": [
+        {
+          "entity": "제3경인고속도로",
+          "type": "장소"
+        },
+        {
+          "entity": "제2경인고속도로",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 34,
+      "entities": [
+        {
+          "entity": "폴란드",
+          "type": "기관"
+        },
+        {
+          "entity": "아르투어 하반트",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 35,
+      "entities": [
+        {
+          "entity": "E",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 36,
+      "entities": [
+        {
+          "entity": "대한항공",
+          "type": "기관"
+        },
+        {
+          "entity": "9일",
+          "type": "날짜"
+        },
+        {
+          "entity": "인천국제공항",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 37,
+      "entities": [
+        {
+          "entity": "11월",
+          "type": "날짜"
+        },
+        {
+          "entity": "경주",
+          "type": "장소"
+        },
+        {
+          "entity": "호소카와",
+          "type": "인명"
+        },
+        {
+          "entity": "세천호희",
+          "type": "인명"
+        },
+        {
+          "entity": "일본",
+          "type": "기관"
+        },
+        {
+          "entity": "24일",
+          "type": "날짜"
+        },
+        {
+          "entity": "김영삼",
+          "type": "인명"
+        },
+        {
+          "entity": "호소카와",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 38,
+      "entities": [
+        {
+          "entity": "농림축산식품부",
+          "type": "기관"
+        },
+        {
+          "entity": "라이스랩",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 39,
+      "entities": [
+        {
+          "entity": "박한별",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 40,
+      "entities": [
+        {
+          "entity": "전현무",
+          "type": "인명"
+        },
+        {
+          "entity": "3일",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 41,
+      "entities": [
+        {
+          "entity": "손흥민",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 42,
+      "entities": [
+        {
+          "entity": "김현수",
+          "type": "인명"
+        },
+        {
+          "entity": "볼티모어 오리올스",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 43,
+      "entities": [
+        {
+          "entity": "OECD",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 44,
+      "entities": [
+        {
+          "entity": "20일",
+          "type": "날짜"
+        },
+        {
+          "entity": "1일",
+          "type": "날짜"
+        },
+        {
+          "entity": "네이버",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 45,
+      "entities": [
+        {
+          "entity": "13일",
+          "type": "날짜"
+        },
+        {
+          "entity": "현대카드·캐피탈",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 46,
+      "entities": [
+        {
+          "entity": "김동준",
+          "type": "인명"
+        },
+        {
+          "entity": "정재은",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 47,
+      "entities": [
+        {
+          "entity": "미국",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 48,
+      "entities": [
+        {
+          "entity": "송미화",
+          "type": "인명"
+        },
+        {
+          "entity": "송미화",
+          "type": "인명"
+        },
+        {
+          "entity": "이현진",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 49,
+      "entities": [
+        {
+          "entity": "양현석",
+          "type": "인명"
+        },
+        {
+          "entity": "유희열",
+          "type": "인명"
+        },
+        {
+          "entity": "유준상",
+          "type": "인명"
+        }
+      ]
+    }
+  ],
+  "few_shot": [
+    {
+      "idx": 0,
+      "entities": [
+        {
+          "entity": "강",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "entities": [
+        {
+          "entity": "서울",
+          "type": "장소"
+        },
+        {
+          "entity": "일본",
+          "type": "기관"
+        },
+        {
+          "entity": "도쿄",
+          "type": "기관"
+        },
+        {
+          "entity": "가와바타 미술학교",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "entities": [
+        {
+          "entity": "엔소닉",
+          "type": "기관"
+        },
+        {
+          "entity": "7일",
+          "type": "날짜"
+        },
+        {
+          "entity": "8일",
+          "type": "날짜"
+        },
+        {
+          "entity": "일본",
+          "type": "장소"
+        },
+        {
+          "entity": "9일",
+          "type": "날짜"
+        },
+        {
+          "entity": "한국",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "entities": [
+        {
+          "entity": "트럼프",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "entities": [
+        {
+          "entity": "2월 2일",
+          "type": "날짜"
+        },
+        {
+          "entity": "폴 라이언",
+          "type": "인명"
+        },
+        {
+          "entity": "매코널",
+          "type": "인명"
+        },
+        {
+          "entity": "백악관",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 5,
+      "entities": [
+        {
+          "entity": "NC",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 6,
+      "entities": [
+        {
+          "entity": "2011년",
+          "type": "날짜"
+        },
+        {
+          "entity": "2013년",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 7,
+      "entities": [
+        {
+          "entity": "문재인",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 8,
+      "entities": [
+        {
+          "entity": "허창수",
+          "type": "인명"
+        },
+        {
+          "entity": "미르",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 9,
+      "entities": [
+        {
+          "entity": "5일",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 10,
+      "entities": [
+        {
+          "entity": "APEC",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 11,
+      "entities": [
+        {
+          "entity": "조현영",
+          "type": "인명"
+        },
+        {
+          "entity": "박두식",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 12,
+      "entities": [
+        {
+          "entity": "박근혜",
+          "type": "인명"
+        },
+        {
+          "entity": "12일",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 13,
+      "entities": [
+        {
+          "entity": "대한민국",
+          "type": "기관"
+        },
+        {
+          "entity": "남태평양",
+          "type": "장소"
+        },
+        {
+          "entity": "오뚜기",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 14,
+      "entities": [
+        {
+          "entity": "11일",
+          "type": "날짜"
+        },
+        {
+          "entity": "윤다훈",
+          "type": "인명"
+        },
+        {
+          "entity": "사임당",
+          "type": "인명"
+        },
+        {
+          "entity": "이영애",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 15,
+      "entities": [
+        {
+          "entity": "폴크스바겐",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 16,
+      "entities": [
+        {
+          "entity": "오전 10시45분",
+          "type": "시간"
+        },
+        {
+          "entity": "박한철",
+          "type": "인명"
+        },
+        {
+          "entity": "헌재",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 17,
+      "entities": [
+        {
+          "entity": "12일",
+          "type": "날짜"
+        },
+        {
+          "entity": "북한",
+          "type": "기관"
+        },
+        {
+          "entity": "2013년",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 18,
+      "entities": [
+        {
+          "entity": "유럽 왕실",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 19,
+      "entities": [
+        {
+          "entity": "이준",
+          "type": "인명"
+        },
+        {
+          "entity": "고아성",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 20,
+      "entities": [
+        {
+          "entity": "인천항",
+          "type": "기관"
+        },
+        {
+          "entity": "크루즈",
+          "type": "인명"
+        },
+        {
+          "entity": "인천시",
+          "type": "기관"
+        },
+        {
+          "entity": "서울",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 21,
+      "entities": [
+        {
+          "entity": "박유천",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 22,
+      "entities": [
+        {
+          "entity": "제주도",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 23,
+      "entities": [
+        {
+          "entity": "팬스타라인닷컴",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 24,
+      "entities": [
+        {
+          "entity": "미국",
+          "type": "기관"
+        },
+        {
+          "entity": "유럽",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 25,
+      "entities": [
+        {
+          "entity": "7월",
+          "type": "날짜"
+        },
+        {
+          "entity": "SK",
+          "type": "기관"
+        },
+        {
+          "entity": "정의윤",
+          "type": "인명"
+        },
+        {
+          "entity": "김용희",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 26,
+      "entities": [
+        {
+          "entity": "시베리아",
+          "type": "장소"
+        },
+        {
+          "entity": "알래스카",
+          "type": "장소"
+        },
+        {
+          "entity": "캐나다 북부",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 27,
+      "entities": [
+        {
+          "entity": "새정치연합",
+          "type": "기관"
+        },
+        {
+          "entity": "이상민",
+          "type": "인명"
+        },
+        {
+          "entity": "법사위",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 28,
+      "entities": [
+        {
+          "entity": "배창호 프러덕션",
+          "type": "기관"
+        },
+        {
+          "entity": "신은경",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 29,
+      "entities": [
+        {
+          "entity": "신홍범",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 30,
+      "entities": [
+        {
+          "entity": "걸스데이",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 31,
+      "entities": [
+        {
+          "entity": "박보영",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 32,
+      "entities": [
+        {
+          "entity": "삿포로돔",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 33,
+      "entities": [
+        {
+          "entity": "제3경인고속도로",
+          "type": "장소"
+        },
+        {
+          "entity": "제2경인고속도로",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 34,
+      "entities": [
+        {
+          "entity": "폴란드",
+          "type": "기관"
+        },
+        {
+          "entity": "아르투어 하반트",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 35,
+      "entities": [
+        {
+          "entity": "E",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 36,
+      "entities": [
+        {
+          "entity": "대한항공",
+          "type": "기관"
+        },
+        {
+          "entity": "9일",
+          "type": "날짜"
+        },
+        {
+          "entity": "인천국제공항",
+          "type": "장소"
+        }
+      ]
+    },
+    {
+      "idx": 37,
+      "entities": [
+        {
+          "entity": "11월",
+          "type": "날짜"
+        },
+        {
+          "entity": "경주",
+          "type": "장소"
+        },
+        {
+          "entity": "호소카와",
+          "type": "인명"
+        },
+        {
+          "entity": "세천호희",
+          "type": "인명"
+        },
+        {
+          "entity": "일본",
+          "type": "기관"
+        },
+        {
+          "entity": "24일",
+          "type": "날짜"
+        },
+        {
+          "entity": "김영삼",
+          "type": "인명"
+        },
+        {
+          "entity": "호소카와",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 38,
+      "entities": [
+        {
+          "entity": "농림축산식품부",
+          "type": "기관"
+        },
+        {
+          "entity": "라이스랩",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 39,
+      "entities": [
+        {
+          "entity": "박한별",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 40,
+      "entities": [
+        {
+          "entity": "전현무",
+          "type": "인명"
+        },
+        {
+          "entity": "3일",
+          "type": "날짜"
+        }
+      ]
+    },
+    {
+      "idx": 41,
+      "entities": [
+        {
+          "entity": "손흥민",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 42,
+      "entities": [
+        {
+          "entity": "김현수",
+          "type": "인명"
+        },
+        {
+          "entity": "볼티모어 오리올스",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 43,
+      "entities": [
+        {
+          "entity": "OECD",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 44,
+      "entities": [
+        {
+          "entity": "20일",
+          "type": "날짜"
+        },
+        {
+          "entity": "1일",
+          "type": "날짜"
+        },
+        {
+          "entity": "네이버",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 45,
+      "entities": [
+        {
+          "entity": "13일",
+          "type": "날짜"
+        },
+        {
+          "entity": "현대카드·캐피탈",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 46,
+      "entities": [
+        {
+          "entity": "김동준",
+          "type": "인명"
+        },
+        {
+          "entity": "정재은",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 47,
+      "entities": [
+        {
+          "entity": "미국",
+          "type": "기관"
+        }
+      ]
+    },
+    {
+      "idx": 48,
+      "entities": [
+        {
+          "entity": "송미화",
+          "type": "인명"
+        },
+        {
+          "entity": "송미화",
+          "type": "인명"
+        },
+        {
+          "entity": "이현진",
+          "type": "인명"
+        }
+      ]
+    },
+    {
+      "idx": 49,
+      "entities": [
+        {
+          "entity": "양현석",
+          "type": "인명"
+        },
+        {
+          "entity": "유희열",
+          "type": "인명"
+        },
+        {
+          "entity": "유준상",
+          "type": "인명"
+        }
+      ]
+    }
+  ]
+}

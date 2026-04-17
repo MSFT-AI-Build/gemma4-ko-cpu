@@ -1,0 +1,47 @@
+{
+  "doc_routing_gpt54": {
+    "correct": 96,
+    "total": 96,
+    "accuracy": 100.0
+  },
+  "doc_routing_gpt54mini": {
+    "correct": 96,
+    "total": 96,
+    "accuracy": 100.0
+  },
+  "doc_routing_gpt5mini": {
+    "correct": 96,
+    "total": 96,
+    "accuracy": 100.0
+  },
+  "spam_gpt54": {
+    "correct": 100,
+    "total": 100,
+    "accuracy": 100.0
+  },
+  "spam_gpt54mini": {
+    "correct": 100,
+    "total": 100,
+    "accuracy": 100.0
+  },
+  "spam_gpt5mini": {
+    "correct": 100,
+    "total": 100,
+    "accuracy": 100.0
+  },
+  "ner_gpt54": {
+    "correct": 100,
+    "total": 100,
+    "accuracy": 100.0
+  },
+  "ner_gpt54mini": {
+    "correct": 100,
+    "total": 100,
+    "accuracy": 100.0
+  },
+  "ner_gpt5mini": {
+    "correct": 100,
+    "total": 100,
+    "accuracy": 100.0
+  }
+}

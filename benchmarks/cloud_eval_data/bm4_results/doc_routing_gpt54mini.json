@@ -1,0 +1,584 @@
+{
+  "baseline": [
+    {
+      "idx": 0,
+      "predicted": "IT"
+    },
+    {
+      "idx": 1,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 2,
+      "predicted": "인사"
+    },
+    {
+      "idx": 3,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 4,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 5,
+      "predicted": "IT"
+    },
+    {
+      "idx": 6,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 7,
+      "predicted": "IT"
+    },
+    {
+      "idx": 8,
+      "predicted": "IT"
+    },
+    {
+      "idx": 9,
+      "predicted": "인사"
+    },
+    {
+      "idx": 10,
+      "predicted": "법무"
+    },
+    {
+      "idx": 11,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 12,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 13,
+      "predicted": "인사"
+    },
+    {
+      "idx": 14,
+      "predicted": "법무"
+    },
+    {
+      "idx": 15,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 16,
+      "predicted": "법무"
+    },
+    {
+      "idx": 17,
+      "predicted": "재무"
+    },
+    {
+      "idx": 18,
+      "predicted": "법무"
+    },
+    {
+      "idx": 19,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 20,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 21,
+      "predicted": "인사"
+    },
+    {
+      "idx": 22,
+      "predicted": "법무"
+    },
+    {
+      "idx": 23,
+      "predicted": "인사"
+    },
+    {
+      "idx": 24,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 25,
+      "predicted": "재무"
+    },
+    {
+      "idx": 26,
+      "predicted": "IT"
+    },
+    {
+      "idx": 27,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 28,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 29,
+      "predicted": "재무"
+    },
+    {
+      "idx": 30,
+      "predicted": "재무"
+    },
+    {
+      "idx": 31,
+      "predicted": "IT"
+    },
+    {
+      "idx": 32,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 33,
+      "predicted": "법무"
+    },
+    {
+      "idx": 34,
+      "predicted": "IT"
+    },
+    {
+      "idx": 35,
+      "predicted": "IT"
+    },
+    {
+      "idx": 36,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 37,
+      "predicted": "인사"
+    },
+    {
+      "idx": 38,
+      "predicted": "재무"
+    },
+    {
+      "idx": 39,
+      "predicted": "재무"
+    },
+    {
+      "idx": 40,
+      "predicted": "재무"
+    },
+    {
+      "idx": 41,
+      "predicted": "법무"
+    },
+    {
+      "idx": 42,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 43,
+      "predicted": "재무"
+    },
+    {
+      "idx": 44,
+      "predicted": "법무"
+    },
+    {
+      "idx": 45,
+      "predicted": "인사"
+    },
+    {
+      "idx": 46,
+      "predicted": "인사"
+    },
+    {
+      "idx": 47,
+      "predicted": "마케팅"
+    }
+  ],
+  "system_prompt": [
+    {
+      "idx": 0,
+      "predicted": "IT"
+    },
+    {
+      "idx": 1,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 2,
+      "predicted": "인사"
+    },
+    {
+      "idx": 3,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 4,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 5,
+      "predicted": "IT"
+    },
+    {
+      "idx": 6,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 7,
+      "predicted": "IT"
+    },
+    {
+      "idx": 8,
+      "predicted": "IT"
+    },
+    {
+      "idx": 9,
+      "predicted": "인사"
+    },
+    {
+      "idx": 10,
+      "predicted": "법무"
+    },
+    {
+      "idx": 11,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 12,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 13,
+      "predicted": "인사"
+    },
+    {
+      "idx": 14,
+      "predicted": "법무"
+    },
+    {
+      "idx": 15,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 16,
+      "predicted": "법무"
+    },
+    {
+      "idx": 17,
+      "predicted": "재무"
+    },
+    {
+      "idx": 18,
+      "predicted": "법무"
+    },
+    {
+      "idx": 19,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 20,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 21,
+      "predicted": "인사"
+    },
+    {
+      "idx": 22,
+      "predicted": "법무"
+    },
+    {
+      "idx": 23,
+      "predicted": "인사"
+    },
+    {
+      "idx": 24,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 25,
+      "predicted": "재무"
+    },
+    {
+      "idx": 26,
+      "predicted": "IT"
+    },
+    {
+      "idx": 27,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 28,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 29,
+      "predicted": "재무"
+    },
+    {
+      "idx": 30,
+      "predicted": "재무"
+    },
+    {
+      "idx": 31,
+      "predicted": "IT"
+    },
+    {
+      "idx": 32,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 33,
+      "predicted": "법무"
+    },
+    {
+      "idx": 34,
+      "predicted": "IT"
+    },
+    {
+      "idx": 35,
+      "predicted": "IT"
+    },
+    {
+      "idx": 36,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 37,
+      "predicted": "인사"
+    },
+    {
+      "idx": 38,
+      "predicted": "재무"
+    },
+    {
+      "idx": 39,
+      "predicted": "재무"
+    },
+    {
+      "idx": 40,
+      "predicted": "재무"
+    },
+    {
+      "idx": 41,
+      "predicted": "법무"
+    },
+    {
+      "idx": 42,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 43,
+      "predicted": "재무"
+    },
+    {
+      "idx": 44,
+      "predicted": "법무"
+    },
+    {
+      "idx": 45,
+      "predicted": "인사"
+    },
+    {
+      "idx": 46,
+      "predicted": "인사"
+    },
+    {
+      "idx": 47,
+      "predicted": "마케팅"
+    }
+  ],
+  "few_shot": [
+    {
+      "idx": 0,
+      "predicted": "IT"
+    },
+    {
+      "idx": 1,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 2,
+      "predicted": "인사"
+    },
+    {
+      "idx": 3,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 4,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 5,
+      "predicted": "IT"
+    },
+    {
+      "idx": 6,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 7,
+      "predicted": "IT"
+    },
+    {
+      "idx": 8,
+      "predicted": "IT"
+    },
+    {
+      "idx": 9,
+      "predicted": "인사"
+    },
+    {
+      "idx": 10,
+      "predicted": "법무"
+    },
+    {
+      "idx": 11,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 12,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 13,
+      "predicted": "인사"
+    },
+    {
+      "idx": 14,
+      "predicted": "법무"
+    },
+    {
+      "idx": 15,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 16,
+      "predicted": "법무"
+    },
+    {
+      "idx": 17,
+      "predicted": "재무"
+    },
+    {
+      "idx": 18,
+      "predicted": "법무"
+    },
+    {
+      "idx": 19,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 20,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 21,
+      "predicted": "인사"
+    },
+    {
+      "idx": 22,
+      "predicted": "법무"
+    },
+    {
+      "idx": 23,
+      "predicted": "인사"
+    },
+    {
+      "idx": 24,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 25,
+      "predicted": "재무"
+    },
+    {
+      "idx": 26,
+      "predicted": "IT"
+    },
+    {
+      "idx": 27,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 28,
+      "predicted": "마케팅"
+    },
+    {
+      "idx": 29,
+      "predicted": "재무"
+    },
+    {
+      "idx": 30,
+      "predicted": "재무"
+    },
+    {
+      "idx": 31,
+      "predicted": "IT"
+    },
+    {
+      "idx": 32,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 33,
+      "predicted": "법무"
+    },
+    {
+      "idx": 34,
+      "predicted": "IT"
+    },
+    {
+      "idx": 35,
+      "predicted": "IT"
+    },
+    {
+      "idx": 36,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 37,
+      "predicted": "인사"
+    },
+    {
+      "idx": 38,
+      "predicted": "재무"
+    },
+    {
+      "idx": 39,
+      "predicted": "재무"
+    },
+    {
+      "idx": 40,
+      "predicted": "재무"
+    },
+    {
+      "idx": 41,
+      "predicted": "법무"
+    },
+    {
+      "idx": 42,
+      "predicted": "고객지원"
+    },
+    {
+      "idx": 43,
+      "predicted": "재무"
+    },
+    {
+      "idx": 44,
+      "predicted": "법무"
+    },
+    {
+      "idx": 45,
+      "predicted": "인사"
+    },
+    {
+      "idx": 46,
+      "predicted": "인사"
+    },
+    {
+      "idx": 47,
+      "predicted": "마케팅"
+    }
+  ]
+}
