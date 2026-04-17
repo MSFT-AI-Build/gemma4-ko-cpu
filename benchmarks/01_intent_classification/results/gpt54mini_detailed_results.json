@@ -1,0 +1,241 @@
+{
+  "model": "GPT-5.4-mini (OpenAI)",
+  "total_cases": 3000,
+  "correct": 2984,
+  "accuracy": 99.5,
+  "per_intent": {
+    "주문조회": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 100.0
+    },
+    "배송조회": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 100.0
+    },
+    "환불요청": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 100.0
+    },
+    "교환요청": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 100.0
+    },
+    "상품문의": {
+      "correct": 284,
+      "total": 300,
+      "accuracy": 94.7
+    },
+    "결제문의": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 100.0
+    },
+    "불만접수": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 100.0
+    },
+    "회원정보": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 100.0
+    },
+    "쿠폰/적립금": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 100.0
+    },
+    "기타": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 100.0
+    }
+  },
+  "confusion_errors": {
+    "상품문의->쿠폰/적립금": 16
+  },
+  "error_samples": [
+    {
+      "idx": 1406,
+      "msg": "텀블러 세일 언제 하나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1407,
+      "msg": "향수 세일 언제 하나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1408,
+      "msg": "패딩 세일 언제 하나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1409,
+      "msg": "지갑랑 케이스 같이 사면 할인 있나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1414,
+      "msg": "원피스 세일 언제 하나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1424,
+      "msg": "운동화랑 책 같이 사면 할인 있나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1428,
+      "msg": "키보드랑 모자 같이 사면 할인 있나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1440,
+      "msg": "시계랑 지갑 같이 사면 할인 있나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1458,
+      "msg": "스피커랑 텀블러 같이 사면 할인 있나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1460,
+      "msg": "화장품 세일 언제 하나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1466,
+      "msg": "노트북랑 청바지 같이 사면 할인 있나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1474,
+      "msg": "운동화랑 케이스 같이 사면 할인 있나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1477,
+      "msg": "노트북랑 패딩 같이 사면 할인 있나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1483,
+      "msg": "스카프 세일 언제 하나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1492,
+      "msg": "청바지랑 코트 같이 사면 할인 있나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1499,
+      "msg": "가방 세일 언제 하나요?",
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    }
+  ],
+  "errors": [
+    {
+      "idx": 1406,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1407,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1408,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1409,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1414,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1424,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1428,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1440,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1458,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1460,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1466,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1474,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1477,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1483,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1492,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    },
+    {
+      "idx": 1499,
+      "expected": "상품문의",
+      "predicted": "쿠폰/적립금"
+    }
+  ]
+}
