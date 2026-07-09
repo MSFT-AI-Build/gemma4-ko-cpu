@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
 awesomekorean_data/
+benchmarks/awesomekorean_data
 backup_*/
 benchmark_intermediate/

@@ -20,12 +20,18 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import requests
 from tabulate import tabulate
+
+# 데이터셋 모듈(test_cases_3000.py)은 저장소의 data/ 디렉터리에 있음
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
+sys.path.insert(0, os.path.join(REPO_ROOT, "data"))
 from test_cases_3000 import TEST_CASES as TEST_CASES_3000
 
 OLLAMA_CHAT_API = "http://localhost:11434/api/chat"
 PARALLEL_WORKERS = 4
-PROGRESS_FILE = os.path.join("/home/azureuser/workspace/h01", "benchmark_live_progress.md")
-INTERMEDIATE_DIR = os.path.join("/home/azureuser/workspace/h01", "benchmark_intermediate")
+LOG_DIR = os.path.join(SCRIPT_DIR, "logs")
+PROGRESS_FILE = os.path.join(LOG_DIR, "benchmark_live_progress.md")
+INTERMEDIATE_DIR = os.path.join(SCRIPT_DIR, "results", "benchmark_intermediate")
 _print_lock = threading.Lock()
 
 MODELS = [
@@ -97,7 +103,7 @@ VALID_INTENTS = [
     "결제문의", "불만접수", "회원정보", "쿠폰/적립금", "기타",
 ]
 
-BASE_DIR = "/home/azureuser/workspace/h01"
+BASE_DIR = os.path.join(SCRIPT_DIR, "results")
 
 
 # ─────────────────────────────────────────────
@@ -440,6 +446,7 @@ def main():
     run_max = "--fair-only" not in args
 
     os.makedirs(INTERMEDIATE_DIR, exist_ok=True)
+    os.makedirs(LOG_DIR, exist_ok=True)
 
     size_label = f"{len(test_cases)}개"
     log("=" * 70)

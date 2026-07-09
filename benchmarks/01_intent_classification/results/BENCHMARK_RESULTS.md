@@ -1,1 +1,1 @@
-/home/azureuser/workspace/h01/BENCHMARK_RESULTS_20260410_004806.md
+/Users/hacbook/ms/workspace/gemma4-ko-cpu/benchmarks/01_intent_classification/results/BENCHMARK_RESULTS_20260707_120702.md

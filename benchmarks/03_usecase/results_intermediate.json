@@ -1,0 +1,112 @@
+{
+  "results": [
+    {
+      "task": "PII/NER 탐지",
+      "model": "e2b (2.3B)",
+      "score": 96.0,
+      "correct": 96,
+      "total": 100,
+      "avg_time": 1.64,
+      "wall_time": 163.8
+    },
+    {
+      "task": "PII/NER 탐지",
+      "model": "e4b (4.5B)",
+      "score": 93.0,
+      "correct": 93,
+      "total": 100,
+      "avg_time": 2.18,
+      "wall_time": 217.9
+    },
+    {
+      "task": "PII/NER 탐지",
+      "model": "26b MoE",
+      "score": 100.0,
+      "correct": 100,
+      "total": 100,
+      "avg_time": 2.11,
+      "wall_time": 211.2
+    },
+    {
+      "task": "PII/NER 탐지",
+      "model": "31b Dense",
+      "score": 99.0,
+      "correct": 99,
+      "total": 100,
+      "avg_time": 11.09,
+      "wall_time": 1108.7
+    },
+    {
+      "task": "문서 라우팅",
+      "model": "e2b (2.3B)",
+      "score": 91.7,
+      "correct": 88,
+      "total": 96,
+      "avg_time": 0.27,
+      "wall_time": 25.8
+    },
+    {
+      "task": "문서 라우팅",
+      "model": "e4b (4.5B)",
+      "score": 91.7,
+      "correct": 88,
+      "total": 96,
+      "avg_time": 0.37,
+      "wall_time": 35.5
+    },
+    {
+      "task": "문서 라우팅",
+      "model": "26b MoE",
+      "score": 95.8,
+      "correct": 92,
+      "total": 96,
+      "avg_time": 0.46,
+      "wall_time": 44.0
+    },
+    {
+      "task": "문서 라우팅",
+      "model": "31b Dense",
+      "score": 97.9,
+      "correct": 94,
+      "total": 96,
+      "avg_time": 1.7,
+      "wall_time": 162.8
+    },
+    {
+      "task": "스팸 탐지",
+      "model": "e2b (2.3B)",
+      "score": 100.0,
+      "correct": 100,
+      "total": 100,
+      "avg_time": 0.27,
+      "wall_time": 26.7
+    },
+    {
+      "task": "스팸 탐지",
+      "model": "e4b (4.5B)",
+      "score": 100.0,
+      "correct": 100,
+      "total": 100,
+      "avg_time": 0.36,
+      "wall_time": 36.4
+    },
+    {
+      "task": "스팸 탐지",
+      "model": "26b MoE",
+      "score": 98.0,
+      "correct": 98,
+      "total": 100,
+      "avg_time": 0.46,
+      "wall_time": 46.1
+    },
+    {
+      "task": "스팸 탐지",
+      "model": "31b Dense",
+      "score": 100.0,
+      "correct": 100,
+      "total": 100,
+      "avg_time": 1.62,
+      "wall_time": 162.4
+    }
+  ]
+}

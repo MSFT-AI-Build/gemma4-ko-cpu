@@ -1,0 +1,170 @@
+[
+  {
+    "task_id": "py_001",
+    "difficulty": "easy",
+    "entry_point": "sum_even",
+    "prompt": "def sum_even(numbers):\n    \"\"\"정수 리스트에서 짝수의 합을 반환합니다.\n    >>> sum_even([1, 2, 3, 4])\n    6\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate([1, 2, 3, 4]) == 6\n    assert candidate([]) == 0\n    assert candidate([2, 4, 6]) == 12\n    assert candidate([1, 3, 5]) == 0\n    assert candidate([-2, -4, 1]) == -6\n"
+  },
+  {
+    "task_id": "py_002",
+    "difficulty": "easy",
+    "entry_point": "reverse_words",
+    "prompt": "def reverse_words(sentence):\n    \"\"\"문장을 받아 단어의 순서를 뒤집은 문자열을 반환합니다. 단어는 공백으로 구분됩니다.\n    >>> reverse_words('hello world foo')\n    'foo world hello'\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate('hello world foo') == 'foo world hello'\n    assert candidate('a') == 'a'\n    assert candidate('one two') == 'two one'\n    assert candidate('') == ''\n"
+  },
+  {
+    "task_id": "py_003",
+    "difficulty": "easy",
+    "entry_point": "is_palindrome",
+    "prompt": "def is_palindrome(s):\n    \"\"\"문자열이 회문(palindrome)인지 여부를 bool로 반환합니다. 대소문자는 무시하고 알파벳/숫자만 고려합니다.\n    >>> is_palindrome('A man a plan a canal Panama')\n    True\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate('A man a plan a canal Panama') == True\n    assert candidate('hello') == False\n    assert candidate('') == True\n    assert candidate('Was it a car or a cat I saw?') == True\n    assert candidate('12321') == True\n"
+  },
+  {
+    "task_id": "py_004",
+    "difficulty": "easy",
+    "entry_point": "count_vowels",
+    "prompt": "def count_vowels(text):\n    \"\"\"문자열에서 영어 모음(a, e, i, o, u)의 개수를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> count_vowels('Hello World')\n    3\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate('Hello World') == 3\n    assert candidate('xyz') == 0\n    assert candidate('AEIOU') == 5\n    assert candidate('') == 0\n"
+  },
+  {
+    "task_id": "py_005",
+    "difficulty": "easy",
+    "entry_point": "fizzbuzz",
+    "prompt": "def fizzbuzz(n):\n    \"\"\"1부터 n까지의 문자열 리스트를 반환합니다. 3의 배수는 'Fizz', 5의 배수는 'Buzz', 15의 배수는 'FizzBuzz', 그 외에는 숫자를 문자열로 반환합니다.\n    >>> fizzbuzz(5)\n    ['1', '2', 'Fizz', '4', 'Buzz']\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate(5) == ['1', '2', 'Fizz', '4', 'Buzz']\n    assert candidate(15)[-1] == 'FizzBuzz'\n    assert candidate(3) == ['1', '2', 'Fizz']\n    assert candidate(1) == ['1']\n"
+  },
+  {
+    "task_id": "py_006",
+    "difficulty": "easy",
+    "entry_point": "second_largest",
+    "prompt": "def second_largest(numbers):\n    \"\"\"정수 리스트에서 두 번째로 큰 서로 다른 값을 반환합니다. 서로 다른 값이 2개 미만이면 None을 반환합니다.\n    >>> second_largest([3, 1, 4, 4, 5])\n    4\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate([3, 1, 4, 4, 5]) == 4\n    assert candidate([1]) is None\n    assert candidate([2, 2, 2]) is None\n    assert candidate([10, 20]) == 10\n    assert candidate([5, 5, 3, 1]) == 3\n"
+  },
+  {
+    "task_id": "py_007",
+    "difficulty": "easy",
+    "entry_point": "flatten",
+    "prompt": "def flatten(nested):\n    \"\"\"한 단계 중첩된 리스트를 평탄화하여 단일 리스트로 반환합니다.\n    >>> flatten([[1, 2], [3], [4, 5]])\n    [1, 2, 3, 4, 5]\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate([[1, 2], [3], [4, 5]]) == [1, 2, 3, 4, 5]\n    assert candidate([]) == []\n    assert candidate([[], [1]]) == [1]\n    assert candidate([['a'], ['b', 'c']]) == ['a', 'b', 'c']\n"
+  },
+  {
+    "task_id": "py_008",
+    "difficulty": "medium",
+    "entry_point": "word_frequency",
+    "prompt": "def word_frequency(text):\n    \"\"\"공백으로 구분된 단어들의 빈도를 담은 딕셔너리를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> word_frequency('a b a C c c')\n    {'a': 2, 'b': 1, 'c': 3}\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate('a b a C c c') == {'a': 2, 'b': 1, 'c': 3}\n    assert candidate('') == {}\n    assert candidate('Hello hello') == {'hello': 2}\n"
+  },
+  {
+    "task_id": "py_009",
+    "difficulty": "medium",
+    "entry_point": "two_sum",
+    "prompt": "def two_sum(nums, target):\n    \"\"\"리스트에서 합이 target이 되는 두 원소의 인덱스 (i, j) 튜플을 i < j 형태로 반환합니다. 없으면 None을 반환합니다.\n    >>> two_sum([2, 7, 11, 15], 9)\n    (0, 1)\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate([2, 7, 11, 15], 9) == (0, 1)\n    assert candidate([3, 2, 4], 6) == (1, 2)\n    assert candidate([1, 2, 3], 100) is None\n    assert candidate([0, 4, 3, 0], 0) == (0, 3)\n"
+  },
+  {
+    "task_id": "py_010",
+    "difficulty": "medium",
+    "entry_point": "roman_to_int",
+    "prompt": "def roman_to_int(s):\n    \"\"\"로마 숫자 문자열을 정수로 변환하여 반환합니다. (I=1, V=5, X=10, L=50, C=100, D=500, M=1000)\n    >>> roman_to_int('XIV')\n    14\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate('XIV') == 14\n    assert candidate('III') == 3\n    assert candidate('IX') == 9\n    assert candidate('MCMXciv'.upper()) == 1994\n    assert candidate('LVIII') == 58\n"
+  },
+  {
+    "task_id": "py_011",
+    "difficulty": "medium",
+    "entry_point": "is_valid_parentheses",
+    "prompt": "def is_valid_parentheses(s):\n    \"\"\"괄호 문자열 '()[]{}'이 올바르게 짝지어져 있는지 bool로 반환합니다.\n    >>> is_valid_parentheses('([]){}')\n    True\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate('([]){}') == True\n    assert candidate('(]') == False\n    assert candidate('') == True\n    assert candidate('(((') == False\n    assert candidate('{[()]}') == True\n"
+  },
+  {
+    "task_id": "py_012",
+    "difficulty": "medium",
+    "entry_point": "merge_intervals",
+    "prompt": "def merge_intervals(intervals):\n    \"\"\"[start, end] 구간 리스트에서 겹치는 구간을 병합하여 시작점 기준 오름차순 정렬된 리스트로 반환합니다.\n    >>> merge_intervals([[1, 3], [2, 6], [8, 10]])\n    [[1, 6], [8, 10]]\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate([[1, 3], [2, 6], [8, 10]]) == [[1, 6], [8, 10]]\n    assert candidate([[1, 4], [4, 5]]) == [[1, 5]]\n    assert candidate([]) == []\n    assert candidate([[1, 2]]) == [[1, 2]]\n"
+  },
+  {
+    "task_id": "py_013",
+    "difficulty": "medium",
+    "entry_point": "gcd",
+    "prompt": "def gcd(a, b):\n    \"\"\"두 양의 정수의 최대공약수(GCD)를 반환합니다.\n    >>> gcd(12, 18)\n    6\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate(12, 18) == 6\n    assert candidate(17, 5) == 1\n    assert candidate(100, 10) == 10\n    assert candidate(7, 7) == 7\n"
+  },
+  {
+    "task_id": "py_014",
+    "difficulty": "medium",
+    "entry_point": "chunk_list",
+    "prompt": "def chunk_list(items, size):\n    \"\"\"리스트를 size 크기의 하위 리스트들로 나누어 반환합니다. 마지막 청크는 더 작을 수 있습니다.\n    >>> chunk_list([1, 2, 3, 4, 5], 2)\n    [[1, 2], [3, 4], [5]]\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate([1, 2, 3, 4, 5], 2) == [[1, 2], [3, 4], [5]]\n    assert candidate([], 3) == []\n    assert candidate([1, 2, 3], 5) == [[1, 2, 3]]\n    assert candidate([1, 2, 3, 4], 2) == [[1, 2], [3, 4]]\n"
+  },
+  {
+    "task_id": "py_015",
+    "difficulty": "medium",
+    "entry_point": "caesar_cipher",
+    "prompt": "def caesar_cipher(text, shift):\n    \"\"\"영문 소문자/대문자를 shift만큼 이동시키는 시저 암호를 적용한 문자열을 반환합니다. 알파벳이 아닌 문자는 그대로 둡니다.\n    >>> caesar_cipher('abc XYZ', 3)\n    'def ABC'\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate('abc XYZ', 3) == 'def ABC'\n    assert candidate('hello', 0) == 'hello'\n    assert candidate('Zz', 1) == 'Aa'\n    assert candidate('a.b', 1) == 'b.c'\n"
+  },
+  {
+    "task_id": "py_016",
+    "difficulty": "medium",
+    "entry_point": "most_common_char",
+    "prompt": "def most_common_char(s):\n    \"\"\"문자열에서 가장 많이 등장하는 문자를 반환합니다. 공백은 제외합니다. 빈도가 같으면 먼저 등장한 문자를 반환합니다.\n    >>> most_common_char('aabbbc')\n    'b'\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate('aabbbc') == 'b'\n    assert candidate('a b b') == 'b'\n    assert candidate('xyz') == 'x'\n    assert candidate('zzxxxy') == 'x'\n"
+  },
+  {
+    "task_id": "py_017",
+    "difficulty": "hard",
+    "entry_point": "longest_common_prefix",
+    "prompt": "def longest_common_prefix(strs):\n    \"\"\"문자열 리스트의 가장 긴 공통 접두사를 반환합니다. 공통 접두사가 없으면 빈 문자열을 반환합니다.\n    >>> longest_common_prefix(['flower', 'flow', 'flight'])\n    'fl'\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate(['flower', 'flow', 'flight']) == 'fl'\n    assert candidate(['dog', 'racecar', 'car']) == ''\n    assert candidate(['abc']) == 'abc'\n    assert candidate([]) == ''\n    assert candidate(['same', 'same']) == 'same'\n"
+  },
+  {
+    "task_id": "py_018",
+    "difficulty": "hard",
+    "entry_point": "spiral_order",
+    "prompt": "def spiral_order(matrix):\n    \"\"\"2차원 정수 행렬을 시계 방향 나선형 순서로 읽은 1차원 리스트를 반환합니다.\n    >>> spiral_order([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\n    [1, 2, 3, 6, 9, 8, 7, 4, 5]\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) == [1, 2, 3, 6, 9, 8, 7, 4, 5]\n    assert candidate([[1, 2], [3, 4]]) == [1, 2, 4, 3]\n    assert candidate([[1]]) == [1]\n    assert candidate([[1, 2, 3, 4]]) == [1, 2, 3, 4]\n"
+  },
+  {
+    "task_id": "py_019",
+    "difficulty": "hard",
+    "entry_point": "coin_change",
+    "prompt": "def coin_change(coins, amount):\n    \"\"\"주어진 동전 종류(coins)로 amount를 만들기 위한 최소 동전 개수를 반환합니다. 만들 수 없으면 -1을 반환합니다.\n    >>> coin_change([1, 2, 5], 11)\n    3\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate([1, 2, 5], 11) == 3\n    assert candidate([2], 3) == -1\n    assert candidate([1], 0) == 0\n    assert candidate([1, 5, 10, 25], 30) == 2\n"
+  },
+  {
+    "task_id": "py_020",
+    "difficulty": "hard",
+    "entry_point": "group_anagrams",
+    "prompt": "def group_anagrams(words):\n    \"\"\"애너그램(구성 문자가 같은 단어)끼리 묶은 그룹들의 리스트를 반환합니다. 각 그룹 내부와 전체 그룹은 정렬된 순서로 반환합니다.\n    >>> group_anagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])\n    [['ate', 'eat', 'tea'], ['bat'], ['nat', 'tan']]\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate(['eat', 'tea', 'tan', 'ate', 'nat', 'bat']) == [['ate', 'eat', 'tea'], ['bat'], ['nat', 'tan']]\n    assert candidate([]) == []\n    assert candidate(['a']) == [['a']]\n"
+  },
+  {
+    "task_id": "py_021",
+    "difficulty": "hard",
+    "entry_point": "evaluate_rpn",
+    "prompt": "def evaluate_rpn(tokens):\n    \"\"\"후위 표기법(RPN) 토큰 리스트를 계산한 정수 결과를 반환합니다. 연산자는 '+', '-', '*', '/'이며 나눗셈은 0을 향해 버림(정수 나눗셈)합니다.\n    >>> evaluate_rpn(['2', '1', '+', '3', '*'])\n    9\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate(['2', '1', '+', '3', '*']) == 9\n    assert candidate(['4', '13', '5', '/', '+']) == 6\n    assert candidate(['5']) == 5\n    assert candidate(['10', '6', '-']) == 4\n"
+  },
+  {
+    "task_id": "py_022",
+    "difficulty": "hard",
+    "entry_point": "longest_unique_substring",
+    "prompt": "def longest_unique_substring(s):\n    \"\"\"중복 문자가 없는 가장 긴 부분 문자열의 길이를 반환합니다.\n    >>> longest_unique_substring('abcabcbb')\n    3\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate('abcabcbb') == 3\n    assert candidate('bbbbb') == 1\n    assert candidate('pwwkew') == 3\n    assert candidate('') == 0\n    assert candidate('abcdef') == 6\n"
+  },
+  {
+    "task_id": "py_023",
+    "difficulty": "medium",
+    "entry_point": "matrix_transpose",
+    "prompt": "def matrix_transpose(matrix):\n    \"\"\"2차원 행렬의 전치(transpose)를 반환합니다.\n    >>> matrix_transpose([[1, 2, 3], [4, 5, 6]])\n    [[1, 4], [2, 5], [3, 6]]\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate([[1, 2, 3], [4, 5, 6]]) == [[1, 4], [2, 5], [3, 6]]\n    assert candidate([[1]]) == [[1]]\n    assert candidate([[1, 2], [3, 4]]) == [[1, 3], [2, 4]]\n"
+  },
+  {
+    "task_id": "py_024",
+    "difficulty": "easy",
+    "entry_point": "to_snake_case",
+    "prompt": "def to_snake_case(camel):\n    \"\"\"camelCase 문자열을 snake_case로 변환하여 반환합니다.\n    >>> to_snake_case('helloWorldFoo')\n    'hello_world_foo'\n    \"\"\"\n",
+    "test": "def check(candidate):\n    assert candidate('helloWorldFoo') == 'hello_world_foo'\n    assert candidate('hello') == 'hello'\n    assert candidate('aB') == 'a_b'\n    assert candidate('') == ''\n"
+  }
+]

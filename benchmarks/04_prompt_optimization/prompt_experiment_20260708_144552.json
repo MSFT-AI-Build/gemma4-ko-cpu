@@ -1,0 +1,185 @@
+{
+  "results": [
+    {
+      "task": "PII/NER 탐지",
+      "model": "e4b (4.5B)",
+      "strategy": "baseline",
+      "strategy_kr": "기본 프롬프트",
+      "accuracy": 88.0,
+      "correct": 44,
+      "total": 50,
+      "avg_time": 1.65
+    },
+    {
+      "task": "PII/NER 탐지",
+      "model": "e4b (4.5B)",
+      "strategy": "system_prompt",
+      "strategy_kr": "시스템 프롬프트 추가",
+      "accuracy": 80.0,
+      "correct": 40,
+      "total": 50,
+      "avg_time": 2.02
+    },
+    {
+      "task": "PII/NER 탐지",
+      "model": "e4b (4.5B)",
+      "strategy": "few_shot",
+      "strategy_kr": "시스템 프롬프트 + Few-shot 예시",
+      "accuracy": 64.0,
+      "correct": 32,
+      "total": 50,
+      "avg_time": 1.11
+    },
+    {
+      "task": "PII/NER 탐지",
+      "model": "31b Dense",
+      "strategy": "baseline",
+      "strategy_kr": "기본 프롬프트",
+      "accuracy": 98.0,
+      "correct": 49,
+      "total": 50,
+      "avg_time": 10.82
+    },
+    {
+      "task": "PII/NER 탐지",
+      "model": "31b Dense",
+      "strategy": "system_prompt",
+      "strategy_kr": "시스템 프롬프트 추가",
+      "accuracy": 98.0,
+      "correct": 49,
+      "total": 50,
+      "avg_time": 14.86
+    },
+    {
+      "task": "PII/NER 탐지",
+      "model": "31b Dense",
+      "strategy": "few_shot",
+      "strategy_kr": "시스템 프롬프트 + Few-shot 예시",
+      "accuracy": 98.0,
+      "correct": 49,
+      "total": 50,
+      "avg_time": 8.69
+    },
+    {
+      "task": "문서 라우팅",
+      "model": "e4b (4.5B)",
+      "strategy": "baseline",
+      "strategy_kr": "기본 프롬프트",
+      "accuracy": 93.8,
+      "correct": 45,
+      "total": 48,
+      "avg_time": 0.37
+    },
+    {
+      "task": "문서 라우팅",
+      "model": "e4b (4.5B)",
+      "strategy": "system_prompt",
+      "strategy_kr": "시스템 프롬프트 추가",
+      "accuracy": 93.8,
+      "correct": 45,
+      "total": 48,
+      "avg_time": 0.33
+    },
+    {
+      "task": "문서 라우팅",
+      "model": "e4b (4.5B)",
+      "strategy": "few_shot",
+      "strategy_kr": "시스템 프롬프트 + Few-shot 예시",
+      "accuracy": 93.8,
+      "correct": 45,
+      "total": 48,
+      "avg_time": 0.34
+    },
+    {
+      "task": "문서 라우팅",
+      "model": "31b Dense",
+      "strategy": "baseline",
+      "strategy_kr": "기본 프롬프트",
+      "accuracy": 93.8,
+      "correct": 45,
+      "total": 48,
+      "avg_time": 1.76
+    },
+    {
+      "task": "문서 라우팅",
+      "model": "31b Dense",
+      "strategy": "system_prompt",
+      "strategy_kr": "시스템 프롬프트 추가",
+      "accuracy": 93.8,
+      "correct": 45,
+      "total": 48,
+      "avg_time": 1.62
+    },
+    {
+      "task": "문서 라우팅",
+      "model": "31b Dense",
+      "strategy": "few_shot",
+      "strategy_kr": "시스템 프롬프트 + Few-shot 예시",
+      "accuracy": 93.8,
+      "correct": 45,
+      "total": 48,
+      "avg_time": 1.71
+    },
+    {
+      "task": "스팸 탐지",
+      "model": "e4b (4.5B)",
+      "strategy": "baseline",
+      "strategy_kr": "기본 프롬프트",
+      "accuracy": 100.0,
+      "correct": 50,
+      "total": 50,
+      "avg_time": 0.36
+    },
+    {
+      "task": "스팸 탐지",
+      "model": "e4b (4.5B)",
+      "strategy": "system_prompt",
+      "strategy_kr": "시스템 프롬프트 추가",
+      "accuracy": 100.0,
+      "correct": 50,
+      "total": 50,
+      "avg_time": 0.33
+    },
+    {
+      "task": "스팸 탐지",
+      "model": "e4b (4.5B)",
+      "strategy": "few_shot",
+      "strategy_kr": "시스템 프롬프트 + Few-shot 예시",
+      "accuracy": 96.0,
+      "correct": 48,
+      "total": 50,
+      "avg_time": 0.34
+    },
+    {
+      "task": "스팸 탐지",
+      "model": "31b Dense",
+      "strategy": "baseline",
+      "strategy_kr": "기본 프롬프트",
+      "accuracy": 100.0,
+      "correct": 50,
+      "total": 50,
+      "avg_time": 1.76
+    },
+    {
+      "task": "스팸 탐지",
+      "model": "31b Dense",
+      "strategy": "system_prompt",
+      "strategy_kr": "시스템 프롬프트 추가",
+      "accuracy": 100.0,
+      "correct": 50,
+      "total": 50,
+      "avg_time": 1.54
+    },
+    {
+      "task": "스팸 탐지",
+      "model": "31b Dense",
+      "strategy": "few_shot",
+      "strategy_kr": "시스템 프롬프트 + Few-shot 예시",
+      "accuracy": 100.0,
+      "correct": 50,
+      "total": 50,
+      "avg_time": 1.53
+    }
+  ],
+  "timestamp": "20260708_144552"
+}

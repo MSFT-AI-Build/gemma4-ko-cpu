@@ -1,0 +1,962 @@
+[
+  {
+    "model": "e2b (2.3B)",
+    "tag": "gemma4:e2b",
+    "pass_at_1": 91.66666666666666,
+    "passed": 22,
+    "total": 24,
+    "avg_time": 3.140699873367945,
+    "by_difficulty": {
+      "easy": {
+        "passed": 8,
+        "total": 8
+      },
+      "medium": {
+        "passed": 9,
+        "total": 10
+      },
+      "hard": {
+        "passed": 5,
+        "total": 6
+      }
+    },
+    "details": [
+      {
+        "task_id": "py_001",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 1.93,
+        "response": "```python\ndef sum_even(numbers):\n    \"\"\"정수 리스트에서 짝수의 합을 반환합니다.\n    >>> sum_even([1, 2, 3, 4])\n    6\n    \"\"\"\n    total = 0\n    for number in numbers:\n        if number % 2 == 0:\n            total += number\n    return total\n```",
+        "extracted_code": "def sum_even(numbers):\n    \"\"\"정수 리스트에서 짝수의 합을 반환합니다.\n    >>> sum_even([1, 2, 3, 4])\n    6\n    \"\"\"\n    total = 0\n    for number in numbers:\n        if number % 2 == 0:\n            total += number\n    return total"
+      },
+      {
+        "task_id": "py_002",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 1.88,
+        "response": "```python\ndef reverse_words(sentence):\n    \"\"\"문장을 받아 단어의 순서를 뒤집은 문자열을 반환합니다. 단어는 공백으로 구분됩니다.\n    >>> reverse_words('hello world foo')\n    'foo world hello'\n    \"\"\"\n    words = sentence.split()\n    words.reverse()\n    return \" \".join(words)\n```",
+        "extracted_code": "def reverse_words(sentence):\n    \"\"\"문장을 받아 단어의 순서를 뒤집은 문자열을 반환합니다. 단어는 공백으로 구분됩니다.\n    >>> reverse_words('hello world foo')\n    'foo world hello'\n    \"\"\"\n    words = sentence.split()\n    words.reverse()\n    return \" \".join(words)"
+      },
+      {
+        "task_id": "py_003",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.26,
+        "response": "```python\ndef is_palindrome(s):\n    \"\"\"문자열이 회문(palindrome)인지 여부를 bool로 반환합니다. 대소문자는 무시하고 알파벳/숫자만 고려합니다.\n    >>> is_palindrome('A man a plan a canal Panama')\n    True\n    \"\"\"\n    processed_s = \"\".join(char for char in s if char.isalnum()).lower()\n    return processed_s == processed_s[::-1]\n```",
+        "extracted_code": "def is_palindrome(s):\n    \"\"\"문자열이 회문(palindrome)인지 여부를 bool로 반환합니다. 대소문자는 무시하고 알파벳/숫자만 고려합니다.\n    >>> is_palindrome('A man a plan a canal Panama')\n    True\n    \"\"\"\n    processed_s = \"\".join(char for char in s if char.isalnum()).lower()\n    return processed_s == processed_s[::-1]"
+      },
+      {
+        "task_id": "py_004",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.26,
+        "response": "```python\ndef count_vowels(text):\n    \"\"\"문자열에서 영어 모음(a, e, i, o, u)의 개수를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> count_vowels('Hello World')\n    3\n    \"\"\"\n    vowels = \"aeiou\"\n    count = 0\n    for char in text:\n        if char.lower() in vowels:\n            count += 1\n    return count\n```",
+        "extracted_code": "def count_vowels(text):\n    \"\"\"문자열에서 영어 모음(a, e, i, o, u)의 개수를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> count_vowels('Hello World')\n    3\n    \"\"\"\n    vowels = \"aeiou\"\n    count = 0\n    for char in text:\n        if char.lower() in vowels:\n            count += 1\n    return count"
+      },
+      {
+        "task_id": "py_005",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 4.08,
+        "response": "```python\ndef fizzbuzz(n):\n    \"\"\"1부터 n까지의 문자열 리스트를 반환합니다. 3의 배수는 'Fizz', 5의 배수는 'Buzz', 15의 배수는 'FizzBuzz', 그 외에는 숫자를 문자열로 반환합니다.\n    >>> fizzbuzz(5)\n    ['1', '2', 'Fizz', '4', 'Buzz']\n    \"\"\"\n    result = []\n    for i in range(1, n + 1):\n        if i % 3 == 0 and i % 5 == 0:\n            result.append('FizzBuzz')\n        elif i % 3 == 0:\n            result.append('Fizz')\n        elif i % 5 == 0:\n            result.append('Buzz')\n        else:\n            result.append(str(i))\n    return result\n```",
+        "extracted_code": "def fizzbuzz(n):\n    \"\"\"1부터 n까지의 문자열 리스트를 반환합니다. 3의 배수는 'Fizz', 5의 배수는 'Buzz', 15의 배수는 'FizzBuzz', 그 외에는 숫자를 문자열로 반환합니다.\n    >>> fizzbuzz(5)\n    ['1', '2', 'Fizz', '4', 'Buzz']\n    \"\"\"\n    result = []\n    for i in range(1, n + 1):\n        if i % 3 == 0 and i % 5 == 0:\n            result.append('FizzBuzz')\n        elif i % 3 == 0:\n            result.append('Fizz')\n        elif i % 5 == 0:\n            result.append('Buzz')\n        else:\n            result.append(str(i))\n    return result"
+      },
+      {
+        "task_id": "py_006",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.54,
+        "response": "```python\ndef second_largest(numbers):\n    \"\"\"정수 리스트에서 두 번째로 큰 서로 다른 값을 반환합니다. 서로 다른 값이 2개 미만이면 None을 반환합니다.\n    >>> second_largest([3, 1, 4, 4, 5])\n    4\n    \"\"\"\n    unique_numbers = sorted(list(set(numbers)), reverse=True)\n    if len(unique_numbers) < 2:\n        return None\n    return unique_numbers[1]\n```",
+        "extracted_code": "def second_largest(numbers):\n    \"\"\"정수 리스트에서 두 번째로 큰 서로 다른 값을 반환합니다. 서로 다른 값이 2개 미만이면 None을 반환합니다.\n    >>> second_largest([3, 1, 4, 4, 5])\n    4\n    \"\"\"\n    unique_numbers = sorted(list(set(numbers)), reverse=True)\n    if len(unique_numbers) < 2:\n        return None\n    return unique_numbers[1]"
+      },
+      {
+        "task_id": "py_007",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.11,
+        "response": "```python\ndef flatten(nested):\n    \"\"\"한 단계 중첩된 리스트를 평탄화하여 단일 리스트로 반환합니다.\n    >>> flatten([[1, 2], [3], [4, 5]])\n    [1, 2, 3, 4, 5]\n    \"\"\"\n    result = []\n    for sublist in nested:\n        result.extend(sublist)\n    return result\n```",
+        "extracted_code": "def flatten(nested):\n    \"\"\"한 단계 중첩된 리스트를 평탄화하여 단일 리스트로 반환합니다.\n    >>> flatten([[1, 2], [3], [4, 5]])\n    [1, 2, 3, 4, 5]\n    \"\"\"\n    result = []\n    for sublist in nested:\n        result.extend(sublist)\n    return result"
+      },
+      {
+        "task_id": "py_008",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.1,
+        "response": "```python\ndef word_frequency(text):\n    \"\"\"공백으로 구분된 단어들의 빈도를 담은 딕셔너리를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> word_frequency('a b a C c c')\n    {'a': 2, 'b': 1, 'c': 3}\n    \"\"\"\n    word_counts = {}\n    words = text.lower().split()\n    for word in words:\n        if word in word_counts:\n            word_counts[word] += 1\n        else:\n            word_counts[word] = 1\n    return word_counts\n```",
+        "extracted_code": "def word_frequency(text):\n    \"\"\"공백으로 구분된 단어들의 빈도를 담은 딕셔너리를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> word_frequency('a b a C c c')\n    {'a': 2, 'b': 1, 'c': 3}\n    \"\"\"\n    word_counts = {}\n    words = text.lower().split()\n    for word in words:\n        if word in word_counts:\n            word_counts[word] += 1\n        else:\n            word_counts[word] = 1\n    return word_counts"
+      },
+      {
+        "task_id": "py_009",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.74,
+        "response": "```python\ndef two_sum(nums, target):\n    \"\"\"리스트에서 합이 target이 되는 두 원소의 인덱스 (i, j) 튜플을 i < j 형태로 반환합니다. 없으면 None을 반환합니다.\n    >>> two_sum([2, 7, 11, 15], 9)\n    (0, 1)\n    \"\"\"\n    num_map = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in num_map:\n            if num_map[complement] < i:\n                return (num_map[complement], i)\n        num_map[num] = i\n    return None\n```",
+        "extracted_code": "def two_sum(nums, target):\n    \"\"\"리스트에서 합이 target이 되는 두 원소의 인덱스 (i, j) 튜플을 i < j 형태로 반환합니다. 없으면 None을 반환합니다.\n    >>> two_sum([2, 7, 11, 15], 9)\n    (0, 1)\n    \"\"\"\n    num_map = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in num_map:\n            if num_map[complement] < i:\n                return (num_map[complement], i)\n        num_map[num] = i\n    return None"
+      },
+      {
+        "task_id": "py_010",
+        "difficulty": "medium",
+        "passed": false,
+        "detail": "AssertionError",
+        "time": 5.2,
+        "response": "```python\ndef roman_to_int(s):\n    \"\"\"로마 숫자 문자열을 정수로 변환하여 반환합니다. (I=1, V=5, X=10, L=50, C=100, D=500, M=1000)\n    >>> roman_to_int('XIV')\n    14\n    \"\"\"\n    roman_map = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}\n    result = 0\n    n = len(s)\n    for i in range(n):\n        if i + 1 < n:\n            if roman_map[s[i]] < roman_map[s[i+1]]:\n                result += roman_map[s[i+1]] - roman_map[s[i]]\n                i += 1\n            else:\n                result += roman_map[s[i]]\n        else:\n            result += roman_map[s[i]]\n    return result\n```",
+        "extracted_code": "def roman_to_int(s):\n    \"\"\"로마 숫자 문자열을 정수로 변환하여 반환합니다. (I=1, V=5, X=10, L=50, C=100, D=500, M=1000)\n    >>> roman_to_int('XIV')\n    14\n    \"\"\"\n    roman_map = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}\n    result = 0\n    n = len(s)\n    for i in range(n):\n        if i + 1 < n:\n            if roman_map[s[i]] < roman_map[s[i+1]]:\n                result += roman_map[s[i+1]] - roman_map[s[i]]\n                i += 1\n            else:\n                result += roman_map[s[i]]\n        else:\n            result += roman_map[s[i]]\n    return result"
+      },
+      {
+        "task_id": "py_011",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.99,
+        "response": "```python\ndef is_valid_parentheses(s):\n    stack = []\n    mapping = {\")\": \"(\", \"]\": \"[\", \"}\": \"{\"}\n    for char in s:\n        if char in \"([{\":\n            stack.append(char)\n        elif char in \")]}\":\n            if not stack or stack[-1] != mapping[char]:\n                return False\n            stack.pop()\n        else:\n            # 만약 문자열에 괄호가 아닌 다른 문자가 있다면 무시하거나 오류 처리할 수 있지만,\n            # 이 문제에서는 괄호만 고려한다고 가정합니다.\n            pass\n    return not stack\n```",
+        "extracted_code": "def is_valid_parentheses(s):\n    stack = []\n    mapping = {\")\": \"(\", \"]\": \"[\", \"}\": \"{\"}\n    for char in s:\n        if char in \"([{\":\n            stack.append(char)\n        elif char in \")]}\":\n            if not stack or stack[-1] != mapping[char]:\n                return False\n            stack.pop()\n        else:\n            # 만약 문자열에 괄호가 아닌 다른 문자가 있다면 무시하거나 오류 처리할 수 있지만,\n            # 이 문제에서는 괄호만 고려한다고 가정합니다.\n            pass\n    return not stack"
+      },
+      {
+        "task_id": "py_012",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.34,
+        "response": "```python\ndef merge_intervals(intervals):\n    if not intervals:\n        return []\n\n    # 시작점 기준으로 오름차순 정렬\n    intervals.sort(key=lambda x: x[0])\n\n    merged = []\n    current_start, current_end = intervals[0]\n\n    for next_start, next_end in intervals[1:]:\n        if next_start <= current_end:\n            current_end = max(current_end, next_end)\n        else:\n            merged.append([current_start, current_end])\n            current_start, current_end = next_start, next_end\n\n    merged.append([current_start, current_end])\n    return merged\n```",
+        "extracted_code": "def merge_intervals(intervals):\n    if not intervals:\n        return []\n\n    # 시작점 기준으로 오름차순 정렬\n    intervals.sort(key=lambda x: x[0])\n\n    merged = []\n    current_start, current_end = intervals[0]\n\n    for next_start, next_end in intervals[1:]:\n        if next_start <= current_end:\n            current_end = max(current_end, next_end)\n        else:\n            merged.append([current_start, current_end])\n            current_start, current_end = next_start, next_end\n\n    merged.append([current_start, current_end])\n    return merged"
+      },
+      {
+        "task_id": "py_013",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 1.5,
+        "response": "```python\ndef gcd(a, b):\n    \"\"\"두 양의 정수의 최대공약수(GCD)를 반환합니다.\n    >>> gcd(12, 18)\n    6\n    \"\"\"\n    while b:\n        a, b = b, a % b\n    return a\n```",
+        "extracted_code": "def gcd(a, b):\n    \"\"\"두 양의 정수의 최대공약수(GCD)를 반환합니다.\n    >>> gcd(12, 18)\n    6\n    \"\"\"\n    while b:\n        a, b = b, a % b\n    return a"
+      },
+      {
+        "task_id": "py_014",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.58,
+        "response": "```python\ndef chunk_list(items, size):\n    \"\"\"리스트를 size 크기의 하위 리스트들로 나누어 반환합니다. 마지막 청크는 더 작을 수 있습니다.\n    >>> chunk_list([1, 2, 3, 4, 5], 2)\n    [[1, 2], [3, 4], [5]]\n    \"\"\"\n    result = []\n    for i in range(0, len(items), size):\n        result.append(items[i:i + size])\n    return result\n```",
+        "extracted_code": "def chunk_list(items, size):\n    \"\"\"리스트를 size 크기의 하위 리스트들로 나누어 반환합니다. 마지막 청크는 더 작을 수 있습니다.\n    >>> chunk_list([1, 2, 3, 4, 5], 2)\n    [[1, 2], [3, 4], [5]]\n    \"\"\"\n    result = []\n    for i in range(0, len(items), size):\n        result.append(items[i:i + size])\n    return result"
+      },
+      {
+        "task_id": "py_015",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.77,
+        "response": "```python\ndef caesar_cipher(text, shift):\n    result = \"\"\n    for char in text:\n        if 'a' <= char <= 'z':\n            shifted_char = chr(((ord(char) - ord('a') + shift) % 26) + ord('a'))\n            result += shifted_char\n        elif 'A' <= char <= 'Z':\n            shifted_char = chr(((ord(char) - ord('A') + shift) % 26) + ord('A'))\n            result += shifted_char\n        else:\n            result += char\n    return result\n```",
+        "extracted_code": "def caesar_cipher(text, shift):\n    result = \"\"\n    for char in text:\n        if 'a' <= char <= 'z':\n            shifted_char = chr(((ord(char) - ord('a') + shift) % 26) + ord('a'))\n            result += shifted_char\n        elif 'A' <= char <= 'Z':\n            shifted_char = chr(((ord(char) - ord('A') + shift) % 26) + ord('A'))\n            result += shifted_char\n        else:\n            result += char\n    return result"
+      },
+      {
+        "task_id": "py_016",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.71,
+        "response": "```python\ndef most_common_char(s):\n    \"\"\"문자열에서 가장 많이 등장하는 문자를 반환합니다. 공백은 제외합니다. 빈도가 같으면 먼저 등장한 문자를 반환합니다.\n    >>> most_common_char('aabbbc')\n    'b'\n    \"\"\"\n    if not s:\n        return ''\n\n    char_counts = {}\n    for char in s:\n        if char != ' ':\n            char_counts[char] = char_counts.get(char, 0) + 1\n\n    max_count = -1\n    most_common = ''\n\n    for char, count in char_counts.items():\n        if count > max_count:\n            max_count = count\n            most_common = char\n\n    return most_common\n```",
+        "extracted_code": "def most_common_char(s):\n    \"\"\"문자열에서 가장 많이 등장하는 문자를 반환합니다. 공백은 제외합니다. 빈도가 같으면 먼저 등장한 문자를 반환합니다.\n    >>> most_common_char('aabbbc')\n    'b'\n    \"\"\"\n    if not s:\n        return ''\n\n    char_counts = {}\n    for char in s:\n        if char != ' ':\n            char_counts[char] = char_counts.get(char, 0) + 1\n\n    max_count = -1\n    most_common = ''\n\n    for char, count in char_counts.items():\n        if count > max_count:\n            max_count = count\n            most_common = char\n\n    return most_common"
+      },
+      {
+        "task_id": "py_017",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.02,
+        "response": "```python\ndef longest_common_prefix(strs):\n    if not strs:\n        return \"\"\n    \n    prefix = strs[0]\n    \n    for i in range(1, len(strs)):\n        other_str = strs[i]\n        while not other_str.startswith(prefix):\n            prefix = prefix[:-1]\n            if not prefix:\n                return \"\"\n            \n    return prefix\n```",
+        "extracted_code": "def longest_common_prefix(strs):\n    if not strs:\n        return \"\"\n    \n    prefix = strs[0]\n    \n    for i in range(1, len(strs)):\n        other_str = strs[i]\n        while not other_str.startswith(prefix):\n            prefix = prefix[:-1]\n            if not prefix:\n                return \"\"\n            \n    return prefix"
+      },
+      {
+        "task_id": "py_018",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 7.72,
+        "response": "```python\ndef spiral_order(matrix):\n    \"\"\"2차원 정수 행렬을 시계 방향 나선형 순서로 읽은 1차원 리스트를 반환합니다.\n    >>> spiral_order([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\n    [1, 2, 3, 6, 9, 8, 7, 4, 5]\n    \"\"\"\n    if not matrix or not matrix[0]:\n        return []\n\n    rows = len(matrix)\n    cols = len(matrix[0])\n    result = []\n\n    top, bottom = 0, rows - 1\n    left, right = 0, cols - 1\n\n    while top <= bottom and left <= right:\n        # 오른쪽으로 이동 (위쪽 행)\n        for c in range(left, right + 1):\n            result.append(matrix[top][c])\n        top += 1\n\n        if top > bottom:\n            break\n\n        # 아래쪽으로 이동 (오른쪽 열)\n        for r in range(top, bottom + 1):\n            result.append(matrix[r][right])\n        right -= 1\n\n        if left > right:\n            break\n\n        # 왼쪽으로 이동 (아래쪽 행)\n        for c in range(right, left - 1, -1):\n            result.append(matrix[bottom][c])\n        bottom -= 1\n\n        if top > bottom:\n            break\n\n        # 위쪽으로 이동 (왼쪽 열)\n        for r in range(bottom, top - 1, -1):\n            result.append(matrix[r][left])\n        left += 1\n\n    return result\n```",
+        "extracted_code": "def spiral_order(matrix):\n    \"\"\"2차원 정수 행렬을 시계 방향 나선형 순서로 읽은 1차원 리스트를 반환합니다.\n    >>> spiral_order([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\n    [1, 2, 3, 6, 9, 8, 7, 4, 5]\n    \"\"\"\n    if not matrix or not matrix[0]:\n        return []\n\n    rows = len(matrix)\n    cols = len(matrix[0])\n    result = []\n\n    top, bottom = 0, rows - 1\n    left, right = 0, cols - 1\n\n    while top <= bottom and left <= right:\n        # 오른쪽으로 이동 (위쪽 행)\n        for c in range(left, right + 1):\n            result.append(matrix[top][c])\n        top += 1\n\n        if top > bottom:\n            break\n\n        # 아래쪽으로 이동 (오른쪽 열)\n        for r in range(top, bottom + 1):\n            result.append(matrix[r][right])\n        right -= 1\n\n        if left > right:\n            break\n\n        # 왼쪽으로 이동 (아래쪽 행)\n        for c in range(right, left - 1, -1):\n            result.append(matrix[bottom][c])\n        bottom -= 1\n\n        if top > bottom:\n            break\n\n        # 위쪽으로 이동 (왼쪽 열)\n        for r in range(bottom, top - 1, -1):\n            result.append(matrix[r][left])\n        left += 1\n\n    return result"
+      },
+      {
+        "task_id": "py_019",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.54,
+        "response": "```python\ndef coin_change(coins, amount):\n    \"\"\"주어진 동전 종류(coins)로 amount를 만들기 위한 최소 동전 개수를 반환합니다. 만들 수 없으면 -1을 반환합니다.\n    >>> coin_change([1, 2, 5], 11)\n    3\n    \"\"\"\n    dp = [float('inf')] * (amount + 1)\n    dp[0] = 0\n    for i in range(1, amount + 1):\n        for coin in coins:\n            if i >= coin:\n                dp[i] = min(dp[i], dp[i - coin] + 1)\n    \n    if dp[amount] == float('inf'):\n        return -1\n    else:\n        return dp[amount]\n```",
+        "extracted_code": "def coin_change(coins, amount):\n    \"\"\"주어진 동전 종류(coins)로 amount를 만들기 위한 최소 동전 개수를 반환합니다. 만들 수 없으면 -1을 반환합니다.\n    >>> coin_change([1, 2, 5], 11)\n    3\n    \"\"\"\n    dp = [float('inf')] * (amount + 1)\n    dp[0] = 0\n    for i in range(1, amount + 1):\n        for coin in coins:\n            if i >= coin:\n                dp[i] = min(dp[i], dp[i - coin] + 1)\n    \n    if dp[amount] == float('inf'):\n        return -1\n    else:\n        return dp[amount]"
+      },
+      {
+        "task_id": "py_020",
+        "difficulty": "hard",
+        "passed": false,
+        "detail": "AssertionError",
+        "time": 3.78,
+        "response": "```python\nfrom collections import defaultdict\n\ndef group_anagrams(words):\n    \"\"\"애너그램(구성 문자가 같은 단어)끼리 묶은 그룹들의 리스트를 반환합니다. 각 그룹 내부와 전체 그룹은 정렬된 순서로 반환합니다.\n    >>> group_anagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])\n    [['ate', 'eat', 'tea'], ['bat'], ['nat', 'tan']]\n    \"\"\"\n    anagram_groups = defaultdict(list)\n    for word in words:\n        sorted_word = \"\".join(sorted(word))\n        anagram_groups[sorted_word].append(word)\n    \n    result = []\n    for key in anagram_groups:\n        result.append(sorted(anagram_groups[key]))\n        \n    return result\n```",
+        "extracted_code": "from collections import defaultdict\n\ndef group_anagrams(words):\n    \"\"\"애너그램(구성 문자가 같은 단어)끼리 묶은 그룹들의 리스트를 반환합니다. 각 그룹 내부와 전체 그룹은 정렬된 순서로 반환합니다.\n    >>> group_anagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])\n    [['ate', 'eat', 'tea'], ['bat'], ['nat', 'tan']]\n    \"\"\"\n    anagram_groups = defaultdict(list)\n    for word in words:\n        sorted_word = \"\".join(sorted(word))\n        anagram_groups[sorted_word].append(word)\n    \n    result = []\n    for key in anagram_groups:\n        result.append(sorted(anagram_groups[key]))\n        \n    return result"
+      },
+      {
+        "task_id": "py_021",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 4.04,
+        "response": "```python\ndef evaluate_rpn(tokens):\n    stack = []\n    for token in tokens:\n        if token == '+':\n            operand2 = stack.pop()\n            operand1 = stack.pop()\n            stack.append(operand1 + operand2)\n        elif token == '-':\n            operand2 = stack.pop()\n            operand1 = stack.pop()\n            stack.append(operand1 - operand2)\n        elif token == '*':\n            operand2 = stack.pop()\n            operand1 = stack.pop()\n            stack.append(operand1 * operand2)\n        elif token == '/':\n            operand2 = stack.pop()\n            operand1 = stack.pop()\n            # 정수 나눗셈 (0을 향해 버림)\n            stack.append(int(operand1 / operand2))\n        else:\n            stack.append(int(token))\n    return stack[0]\n```",
+        "extracted_code": "def evaluate_rpn(tokens):\n    stack = []\n    for token in tokens:\n        if token == '+':\n            operand2 = stack.pop()\n            operand1 = stack.pop()\n            stack.append(operand1 + operand2)\n        elif token == '-':\n            operand2 = stack.pop()\n            operand1 = stack.pop()\n            stack.append(operand1 - operand2)\n        elif token == '*':\n            operand2 = stack.pop()\n            operand1 = stack.pop()\n            stack.append(operand1 * operand2)\n        elif token == '/':\n            operand2 = stack.pop()\n            operand1 = stack.pop()\n            # 정수 나눗셈 (0을 향해 버림)\n            stack.append(int(operand1 / operand2))\n        else:\n            stack.append(int(token))\n    return stack[0]"
+      },
+      {
+        "task_id": "py_022",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.64,
+        "response": "```python\ndef longest_unique_substring(s):\n    n = len(s)\n    if n == 0:\n        return 0\n    \n    max_length = 0\n    start = 0\n    seen = set()\n    \n    for end in range(n):\n        while s[end] in seen:\n            seen.remove(s[start])\n            start += 1\n        \n        seen.add(s[end])\n        max_length = max(max_length, end - start + 1)\n        \n    return max_length\n```",
+        "extracted_code": "def longest_unique_substring(s):\n    n = len(s)\n    if n == 0:\n        return 0\n    \n    max_length = 0\n    start = 0\n    seen = set()\n    \n    for end in range(n):\n        while s[end] in seen:\n            seen.remove(s[start])\n            start += 1\n        \n        seen.add(s[end])\n        max_length = max(max_length, end - start + 1)\n        \n    return max_length"
+      },
+      {
+        "task_id": "py_023",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.44,
+        "response": "```python\ndef matrix_transpose(matrix):\n    \"\"\"2차원 행렬의 전치(transpose)를 반환합니다.\n    >>> matrix_transpose([[1, 2, 3], [4, 5, 6]])\n    [[1, 4], [2, 5], [3, 6]]\n    \"\"\"\n    if not matrix:\n        return []\n    rows = len(matrix)\n    cols = len(matrix[0])\n    transposed_matrix = [[0] * rows for _ in range(cols)]\n    for i in range(rows):\n        for j in range(cols):\n            transposed_matrix[j][i] = matrix[i][j]\n    return transposed_matrix\n```",
+        "extracted_code": "def matrix_transpose(matrix):\n    \"\"\"2차원 행렬의 전치(transpose)를 반환합니다.\n    >>> matrix_transpose([[1, 2, 3], [4, 5, 6]])\n    [[1, 4], [2, 5], [3, 6]]\n    \"\"\"\n    if not matrix:\n        return []\n    rows = len(matrix)\n    cols = len(matrix[0])\n    transposed_matrix = [[0] * rows for _ in range(cols)]\n    for i in range(rows):\n        for j in range(cols):\n            transposed_matrix[j][i] = matrix[i][j]\n    return transposed_matrix"
+      },
+      {
+        "task_id": "py_024",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.18,
+        "response": "```python\ndef to_snake_case(camel):\n    \"\"\"camelCase 문자열을 snake_case로 변환하여 반환합니다.\n    >>> to_snake_case('helloWorldFoo')\n    'hello_world_foo'\n    \"\"\"\n    import re\n    snake = re.sub(r'(?<!^)(?=[A-Z])', '_', camel).lower()\n    return snake\n```",
+        "extracted_code": "def to_snake_case(camel):\n    \"\"\"camelCase 문자열을 snake_case로 변환하여 반환합니다.\n    >>> to_snake_case('helloWorldFoo')\n    'hello_world_foo'\n    \"\"\"\n    import re\n    snake = re.sub(r'(?<!^)(?=[A-Z])', '_', camel).lower()\n    return snake"
+      }
+    ]
+  },
+  {
+    "model": "e4b (4.5B)",
+    "tag": "gemma4:latest",
+    "pass_at_1": 100.0,
+    "passed": 24,
+    "total": 24,
+    "avg_time": 6.3769977192084,
+    "by_difficulty": {
+      "easy": {
+        "passed": 8,
+        "total": 8
+      },
+      "medium": {
+        "passed": 10,
+        "total": 10
+      },
+      "hard": {
+        "passed": 6,
+        "total": 6
+      }
+    },
+    "details": [
+      {
+        "task_id": "py_001",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.95,
+        "response": "```python\ndef sum_even(numbers):\n    \"\"\"정수 리스트에서 짝수의 합을 반환합니다.\n    >>> sum_even([1, 2, 3, 4])\n    6\n    \"\"\"\n    return sum(num for num in numbers if num % 2 == 0)\n```",
+        "extracted_code": "def sum_even(numbers):\n    \"\"\"정수 리스트에서 짝수의 합을 반환합니다.\n    >>> sum_even([1, 2, 3, 4])\n    6\n    \"\"\"\n    return sum(num for num in numbers if num % 2 == 0)"
+      },
+      {
+        "task_id": "py_002",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.35,
+        "response": "```python\ndef reverse_words(sentence):\n    \"\"\"문장을 받아 단어의 순서를 뒤집은 문자열을 반환합니다. 단어는 공백으로 구분됩니다.\n    >>> reverse_words('hello world foo')\n    'foo world hello'\n    \"\"\"\n    words = sentence.split()\n    words.reverse()\n    return ' '.join(words)\n```",
+        "extracted_code": "def reverse_words(sentence):\n    \"\"\"문장을 받아 단어의 순서를 뒤집은 문자열을 반환합니다. 단어는 공백으로 구분됩니다.\n    >>> reverse_words('hello world foo')\n    'foo world hello'\n    \"\"\"\n    words = sentence.split()\n    words.reverse()\n    return ' '.join(words)"
+      },
+      {
+        "task_id": "py_003",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 4.18,
+        "response": "```python\ndef is_palindrome(s):\n    \"\"\"문자열이 회문(palindrome)인지 여부를 bool로 반환합니다. 대소문자는 무시하고 알파벳/숫자만 고려합니다.\n    >>> is_palindrome('A man a plan a canal Panama')\n    True\n    \"\"\"\n    filtered_chars = [char.lower() for char in s if char.isalnum()]\n    return \"\".join(filtered_chars) == \"\".join(filtered_chars)[::-1]\n```",
+        "extracted_code": "def is_palindrome(s):\n    \"\"\"문자열이 회문(palindrome)인지 여부를 bool로 반환합니다. 대소문자는 무시하고 알파벳/숫자만 고려합니다.\n    >>> is_palindrome('A man a plan a canal Panama')\n    True\n    \"\"\"\n    filtered_chars = [char.lower() for char in s if char.isalnum()]\n    return \"\".join(filtered_chars) == \"\".join(filtered_chars)[::-1]"
+      },
+      {
+        "task_id": "py_004",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 4.12,
+        "response": "```python\ndef count_vowels(text):\n    \"\"\"문자열에서 영어 모음(a, e, i, o, u)의 개수를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> count_vowels('Hello World')\n    3\n    \"\"\"\n    vowels = \"aeiou\"\n    count = 0\n    for char in text:\n        if char.lower() in vowels:\n            count += 1\n    return count\n```",
+        "extracted_code": "def count_vowels(text):\n    \"\"\"문자열에서 영어 모음(a, e, i, o, u)의 개수를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> count_vowels('Hello World')\n    3\n    \"\"\"\n    vowels = \"aeiou\"\n    count = 0\n    for char in text:\n        if char.lower() in vowels:\n            count += 1\n    return count"
+      },
+      {
+        "task_id": "py_005",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 6.84,
+        "response": "```python\ndef fizzbuzz(n):\n    \"\"\"1부터 n까지의 문자열 리스트를 반환합니다. 3의 배수는 'Fizz', 5의 배수는 'Buzz', 15의 배수는 'FizzBuzz', 그 외에는 숫자를 문자열로 반환합니다.\n    >>> fizzbuzz(5)\n    ['1', '2', 'Fizz', '4', 'Buzz']\n    \"\"\"\n    result = []\n    for i in range(1, n + 1):\n        s = \"\"\n        if i % 3 == 0:\n            s += \"Fizz\"\n        if i % 5 == 0:\n            s += \"Buzz\"\n        if s:\n            result.append(s)\n        else:\n            result.append(str(i))\n    return result\n```",
+        "extracted_code": "def fizzbuzz(n):\n    \"\"\"1부터 n까지의 문자열 리스트를 반환합니다. 3의 배수는 'Fizz', 5의 배수는 'Buzz', 15의 배수는 'FizzBuzz', 그 외에는 숫자를 문자열로 반환합니다.\n    >>> fizzbuzz(5)\n    ['1', '2', 'Fizz', '4', 'Buzz']\n    \"\"\"\n    result = []\n    for i in range(1, n + 1):\n        s = \"\"\n        if i % 3 == 0:\n            s += \"Fizz\"\n        if i % 5 == 0:\n            s += \"Buzz\"\n        if s:\n            result.append(s)\n        else:\n            result.append(str(i))\n    return result"
+      },
+      {
+        "task_id": "py_006",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 4.49,
+        "response": "```python\ndef second_largest(numbers):\n    \"\"\"정수 리스트에서 두 번째로 큰 서로 다른 값을 반환합니다. 서로 다른 값이 2개 미만이면 None을 반환합니다.\n    >>> second_largest([3, 1, 4, 4, 5])\n    4\n    \"\"\"\n    unique_numbers = sorted(list(set(numbers)), reverse=True)\n    if len(unique_numbers) < 2:\n        return None\n    else:\n        return unique_numbers[1]\n```",
+        "extracted_code": "def second_largest(numbers):\n    \"\"\"정수 리스트에서 두 번째로 큰 서로 다른 값을 반환합니다. 서로 다른 값이 2개 미만이면 None을 반환합니다.\n    >>> second_largest([3, 1, 4, 4, 5])\n    4\n    \"\"\"\n    unique_numbers = sorted(list(set(numbers)), reverse=True)\n    if len(unique_numbers) < 2:\n        return None\n    else:\n        return unique_numbers[1]"
+      },
+      {
+        "task_id": "py_007",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.84,
+        "response": "```python\ndef flatten(nested):\n    \"\"\"한 단계 중첩된 리스트를 평탄화하여 단일 리스트로 반환합니다.\n    >>> flatten([[1, 2], [3], [4, 5]])\n    [1, 2, 3, 4, 5]\n    \"\"\"\n    result = []\n    for sublist in nested:\n        result.extend(sublist)\n    return result\n```",
+        "extracted_code": "def flatten(nested):\n    \"\"\"한 단계 중첩된 리스트를 평탄화하여 단일 리스트로 반환합니다.\n    >>> flatten([[1, 2], [3], [4, 5]])\n    [1, 2, 3, 4, 5]\n    \"\"\"\n    result = []\n    for sublist in nested:\n        result.extend(sublist)\n    return result"
+      },
+      {
+        "task_id": "py_008",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 4.75,
+        "response": "```python\ndef word_frequency(text):\n    \"\"\"공백으로 구분된 단어들의 빈도를 담은 딕셔너리를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> word_frequency('a b a C c c')\n    {'a': 2, 'b': 1, 'c': 3}\n    \"\"\"\n    words = text.lower().split()\n    frequency = {}\n    for word in words:\n        frequency[word] = frequency.get(word, 0) + 1\n    return frequency\n```",
+        "extracted_code": "def word_frequency(text):\n    \"\"\"공백으로 구분된 단어들의 빈도를 담은 딕셔너리를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> word_frequency('a b a C c c')\n    {'a': 2, 'b': 1, 'c': 3}\n    \"\"\"\n    words = text.lower().split()\n    frequency = {}\n    for word in words:\n        frequency[word] = frequency.get(word, 0) + 1\n    return frequency"
+      },
+      {
+        "task_id": "py_009",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 5.69,
+        "response": "```python\ndef two_sum(nums, target):\n    \"\"\"리스트에서 합이 target이 되는 두 원소의 인덱스 (i, j) 튜플을 i < j 형태로 반환합니다. 없으면 None을 반환합니다.\n    >>> two_sum([2, 7, 11, 15], 9)\n    (0, 1)\n    \"\"\"\n    num_map = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in num_map:\n            j = num_map[complement]\n            return (j, i)\n        num_map[num] = i\n    return None\n```",
+        "extracted_code": "def two_sum(nums, target):\n    \"\"\"리스트에서 합이 target이 되는 두 원소의 인덱스 (i, j) 튜플을 i < j 형태로 반환합니다. 없으면 None을 반환합니다.\n    >>> two_sum([2, 7, 11, 15], 9)\n    (0, 1)\n    \"\"\"\n    num_map = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in num_map:\n            j = num_map[complement]\n            return (j, i)\n        num_map[num] = i\n    return None"
+      },
+      {
+        "task_id": "py_010",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 8.76,
+        "response": "```python\ndef roman_to_int(s):\n    \"\"\"로마 숫자 문자열을 정수로 변환하여 반환합니다. (I=1, V=5, X=10, L=50, C=100, D=500, M=1000)\n    >>> roman_to_int('XIV')\n    14\n    \"\"\"\n    roman_map = {\n        'I': 1,\n        'V': 5,\n        'X': 10,\n        'L': 50,\n        'C': 100,\n        'D': 500,\n        'M': 1000\n    }\n    total = 0\n    n = len(s)\n    for i in range(n):\n        current_value = roman_map[s[i]]\n        if i < n - 1 and current_value < roman_map[s[i+1]]:\n            total -= current_value\n        else:\n            total += current_value\n    return total\n```",
+        "extracted_code": "def roman_to_int(s):\n    \"\"\"로마 숫자 문자열을 정수로 변환하여 반환합니다. (I=1, V=5, X=10, L=50, C=100, D=500, M=1000)\n    >>> roman_to_int('XIV')\n    14\n    \"\"\"\n    roman_map = {\n        'I': 1,\n        'V': 5,\n        'X': 10,\n        'L': 50,\n        'C': 100,\n        'D': 500,\n        'M': 1000\n    }\n    total = 0\n    n = len(s)\n    for i in range(n):\n        current_value = roman_map[s[i]]\n        if i < n - 1 and current_value < roman_map[s[i+1]]:\n            total -= current_value\n        else:\n            total += current_value\n    return total"
+      },
+      {
+        "task_id": "py_011",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 6.09,
+        "response": "```python\ndef is_valid_parentheses(s):\n    \"\"\"괄호 문자열 '()[]{}'이 올바르게 짝지어져 있는지 bool로 반환합니다.\n    >>> is_valid_parentheses('([]){}')\n    True\n    \"\"\"\n    stack = []\n    mapping = {\")\": \"(\", \"]\": \"[\", \"}\": \"{\"}\n    for char in s:\n        if char in mapping.values():\n            stack.append(char)\n        elif char in mapping:\n            if not stack or stack.pop() != mapping[char]:\n                return False\n        else:\n            # 문제의 제약 조건상 괄호 문자만 들어온다고 가정하지만, 안전을 위해 추가\n            pass\n    return not stack\n```",
+        "extracted_code": "def is_valid_parentheses(s):\n    \"\"\"괄호 문자열 '()[]{}'이 올바르게 짝지어져 있는지 bool로 반환합니다.\n    >>> is_valid_parentheses('([]){}')\n    True\n    \"\"\"\n    stack = []\n    mapping = {\")\": \"(\", \"]\": \"[\", \"}\": \"{\"}\n    for char in s:\n        if char in mapping.values():\n            stack.append(char)\n        elif char in mapping:\n            if not stack or stack.pop() != mapping[char]:\n                return False\n        else:\n            # 문제의 제약 조건상 괄호 문자만 들어온다고 가정하지만, 안전을 위해 추가\n            pass\n    return not stack"
+      },
+      {
+        "task_id": "py_012",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 8.66,
+        "response": "```python\ndef merge_intervals(intervals):\n    \"\"\"[start, end] 구간 리스트에서 겹치는 구간을 병합하여 시작점 기준 오름차순 정렬된 리스트로 반환합니다.\n    >>> merge_intervals([[1, 3], [2, 6], [8, 10]])\n    [[1, 6], [8, 10]]\n    \"\"\"\n    if not intervals:\n        return []\n\n    intervals.sort(key=lambda x: x[0])\n    merged = []\n    current_start, current_end = intervals[0]\n\n    for i in range(1, len(intervals)):\n        next_start, next_end = intervals[i]\n        if next_start <= current_end:\n            current_end = max(current_end, next_end)\n        else:\n            merged.append([current_start, current_end])\n            current_start, current_end = next_start, next_end\n\n    merged.append([current_start, current_end])\n    return merged\n```",
+        "extracted_code": "def merge_intervals(intervals):\n    \"\"\"[start, end] 구간 리스트에서 겹치는 구간을 병합하여 시작점 기준 오름차순 정렬된 리스트로 반환합니다.\n    >>> merge_intervals([[1, 3], [2, 6], [8, 10]])\n    [[1, 6], [8, 10]]\n    \"\"\"\n    if not intervals:\n        return []\n\n    intervals.sort(key=lambda x: x[0])\n    merged = []\n    current_start, current_end = intervals[0]\n\n    for i in range(1, len(intervals)):\n        next_start, next_end = intervals[i]\n        if next_start <= current_end:\n            current_end = max(current_end, next_end)\n        else:\n            merged.append([current_start, current_end])\n            current_start, current_end = next_start, next_end\n\n    merged.append([current_start, current_end])\n    return merged"
+      },
+      {
+        "task_id": "py_013",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.69,
+        "response": "```python\ndef gcd(a, b):\n    \"\"\"두 양의 정수의 최대공약수(GCD)를 반환합니다.\n    >>> gcd(12, 18)\n    6\n    \"\"\"\n    while b:\n        a, b = b, a % b\n    return a\n```",
+        "extracted_code": "def gcd(a, b):\n    \"\"\"두 양의 정수의 최대공약수(GCD)를 반환합니다.\n    >>> gcd(12, 18)\n    6\n    \"\"\"\n    while b:\n        a, b = b, a % b\n    return a"
+      },
+      {
+        "task_id": "py_014",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 4.37,
+        "response": "```python\ndef chunk_list(items, size):\n    \"\"\"리스트를 size 크기의 하위 리스트들로 나누어 반환합니다. 마지막 청크는 더 작을 수 있습니다.\n    >>> chunk_list([1, 2, 3, 4, 5], 2)\n    [[1, 2], [3, 4], [5]]\n    \"\"\"\n    return [items[i:i + size] for i in range(0, len(items), size)]\n```",
+        "extracted_code": "def chunk_list(items, size):\n    \"\"\"리스트를 size 크기의 하위 리스트들로 나누어 반환합니다. 마지막 청크는 더 작을 수 있습니다.\n    >>> chunk_list([1, 2, 3, 4, 5], 2)\n    [[1, 2], [3, 4], [5]]\n    \"\"\"\n    return [items[i:i + size] for i in range(0, len(items), size)]"
+      },
+      {
+        "task_id": "py_015",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 7.42,
+        "response": "```python\ndef caesar_cipher(text, shift):\n    \"\"\"영문 소문자/대문자를 shift만큼 이동시키는 시저 암호를 적용한 문자열을 반환합니다. 알파벳이 아닌 문자는 그대로 둡니다.\n    >>> caesar_cipher('abc XYZ', 3)\n    'def ABC'\n    \"\"\"\n    result = \"\"\n    for char in text:\n        if 'a' <= char <= 'z':\n            start = ord('a')\n            shifted_ord = (ord(char) - start + shift) % 26 + start\n            result += chr(shifted_ord)\n        elif 'A' <= char <= 'Z':\n            start = ord('A')\n            shifted_ord = (ord(char) - start + shift) % 26 + start\n            result += chr(shifted_ord)\n        else:\n            result += char\n    return result\n```",
+        "extracted_code": "def caesar_cipher(text, shift):\n    \"\"\"영문 소문자/대문자를 shift만큼 이동시키는 시저 암호를 적용한 문자열을 반환합니다. 알파벳이 아닌 문자는 그대로 둡니다.\n    >>> caesar_cipher('abc XYZ', 3)\n    'def ABC'\n    \"\"\"\n    result = \"\"\n    for char in text:\n        if 'a' <= char <= 'z':\n            start = ord('a')\n            shifted_ord = (ord(char) - start + shift) % 26 + start\n            result += chr(shifted_ord)\n        elif 'A' <= char <= 'Z':\n            start = ord('A')\n            shifted_ord = (ord(char) - start + shift) % 26 + start\n            result += chr(shifted_ord)\n        else:\n            result += char\n    return result"
+      },
+      {
+        "task_id": "py_016",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 9.94,
+        "response": "```python\ndef most_common_char(s):\n    \"\"\"문자열에서 가장 많이 등장하는 문자를 반환합니다. 공백은 제외합니다. 빈도가 같으면 먼저 등장한 문자를 반환합니다.\n    >>> most_common_char('aabbbc')\n    'b'\n    \"\"\"\n    from collections import Counter\n    \n    filtered_s = \"\".join(char for char in s if char != ' ')\n    if not filtered_s:\n        return \"\"\n    \n    counts = Counter(filtered_s)\n    \n    max_count = -1\n    result = ''\n    \n    # 순서 유지를 위해 원본 문자열을 순회하며 카운트를 확인\n    seen_chars = set()\n    for char in filtered_s:\n        if char not in seen_chars:\n            count = counts[char]\n            if count > max_count:\n                max_count = count\n                result = char\n            # 빈도가 같을 경우, 먼저 등장한 문자가 이미 result에 저장되어 있으므로 갱신하지 않음\n            seen_chars.add(char)\n            \n    return result\n```",
+        "extracted_code": "def most_common_char(s):\n    \"\"\"문자열에서 가장 많이 등장하는 문자를 반환합니다. 공백은 제외합니다. 빈도가 같으면 먼저 등장한 문자를 반환합니다.\n    >>> most_common_char('aabbbc')\n    'b'\n    \"\"\"\n    from collections import Counter\n    \n    filtered_s = \"\".join(char for char in s if char != ' ')\n    if not filtered_s:\n        return \"\"\n    \n    counts = Counter(filtered_s)\n    \n    max_count = -1\n    result = ''\n    \n    # 순서 유지를 위해 원본 문자열을 순회하며 카운트를 확인\n    seen_chars = set()\n    for char in filtered_s:\n        if char not in seen_chars:\n            count = counts[char]\n            if count > max_count:\n                max_count = count\n                result = char\n            # 빈도가 같을 경우, 먼저 등장한 문자가 이미 result에 저장되어 있으므로 갱신하지 않음\n            seen_chars.add(char)\n            \n    return result"
+      },
+      {
+        "task_id": "py_017",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 6.47,
+        "response": "```python\ndef longest_common_prefix(strs):\n    \"\"\"문자열 리스트의 가장 긴 공통 접두사를 반환합니다. 공통 접두사가 없으면 빈 문자열을 반환합니다.\n    >>> longest_common_prefix(['flower', 'flow', 'flight'])\n    'fl'\n    \"\"\"\n    if not strs:\n        return \"\"\n    \n    short_str = strs[0]\n    for i in range(len(short_str)):\n        char = short_str[i]\n        for j in range(1, len(strs)):\n            if i >= len(strs[j]) or strs[j][i] != char:\n                return short_str[:i]\n    \n    return short_str\n```",
+        "extracted_code": "def longest_common_prefix(strs):\n    \"\"\"문자열 리스트의 가장 긴 공통 접두사를 반환합니다. 공통 접두사가 없으면 빈 문자열을 반환합니다.\n    >>> longest_common_prefix(['flower', 'flow', 'flight'])\n    'fl'\n    \"\"\"\n    if not strs:\n        return \"\"\n    \n    short_str = strs[0]\n    for i in range(len(short_str)):\n        char = short_str[i]\n        for j in range(1, len(strs)):\n            if i >= len(strs[j]) or strs[j][i] != char:\n                return short_str[:i]\n    \n    return short_str"
+      },
+      {
+        "task_id": "py_018",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 14.09,
+        "response": "```python\ndef spiral_order(matrix):\n    \"\"\"2차원 정수 행렬을 시계 방향 나선형 순서로 읽은 1차원 리스트를 반환합니다.\n    >>> spiral_order([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\n    [1, 2, 3, 6, 9, 8, 7, 4, 5]\n    \"\"\"\n    if not matrix or not matrix[0]:\n        return []\n\n    rows = len(matrix)\n    cols = len(matrix[0])\n    result = []\n    top, bottom, left, right = 0, rows - 1, 0, cols - 1\n\n    while top <= bottom and left <= right:\n        # 1. 오른쪽으로 이동 (Top Row)\n        for c in range(left, right + 1):\n            result.append(matrix[top][c])\n        top += 1\n\n        if top > bottom:\n            break\n\n        # 2. 아래로 이동 (Right Column)\n        for r in range(top, bottom + 1):\n            result.append(matrix[r][right])\n        right -= 1\n\n        if left > right:\n            break\n\n        # 3. 왼쪽으로 이동 (Bottom Row)\n        for c in range(right, left - 1, -1):\n            result.append(matrix[bottom][c])\n        bottom -= 1\n\n        if top > bottom:\n            break\n\n        # 4. 위로 이동 (Left Column)\n        for r in range(bottom, top - 1, -1):\n            result.append(matrix[r][left])\n        left += 1\n\n    return result\n```",
+        "extracted_code": "def spiral_order(matrix):\n    \"\"\"2차원 정수 행렬을 시계 방향 나선형 순서로 읽은 1차원 리스트를 반환합니다.\n    >>> spiral_order([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\n    [1, 2, 3, 6, 9, 8, 7, 4, 5]\n    \"\"\"\n    if not matrix or not matrix[0]:\n        return []\n\n    rows = len(matrix)\n    cols = len(matrix[0])\n    result = []\n    top, bottom, left, right = 0, rows - 1, 0, cols - 1\n\n    while top <= bottom and left <= right:\n        # 1. 오른쪽으로 이동 (Top Row)\n        for c in range(left, right + 1):\n            result.append(matrix[top][c])\n        top += 1\n\n        if top > bottom:\n            break\n\n        # 2. 아래로 이동 (Right Column)\n        for r in range(top, bottom + 1):\n            result.append(matrix[r][right])\n        right -= 1\n\n        if left > right:\n            break\n\n        # 3. 왼쪽으로 이동 (Bottom Row)\n        for c in range(right, left - 1, -1):\n            result.append(matrix[bottom][c])\n        bottom -= 1\n\n        if top > bottom:\n            break\n\n        # 4. 위로 이동 (Left Column)\n        for r in range(bottom, top - 1, -1):\n            result.append(matrix[r][left])\n        left += 1\n\n    return result"
+      },
+      {
+        "task_id": "py_019",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 6.31,
+        "response": "```python\ndef coin_change(coins, amount):\n    \"\"\"주어진 동전 종류(coins)로 amount를 만들기 위한 최소 동전 개수를 반환합니다. 만들 수 없으면 -1을 반환합니다.\n    >>> coin_change([1, 2, 5], 11)\n    3\n    \"\"\"\n    dp = [float('inf')] * (amount + 1)\n    dp[0] = 0\n\n    for i in range(1, amount + 1):\n        for coin in coins:\n            if i - coin >= 0:\n                dp[i] = min(dp[i], dp[i - coin] + 1)\n\n    return dp[amount] if dp[amount] != float('inf') else -1\n```",
+        "extracted_code": "def coin_change(coins, amount):\n    \"\"\"주어진 동전 종류(coins)로 amount를 만들기 위한 최소 동전 개수를 반환합니다. 만들 수 없으면 -1을 반환합니다.\n    >>> coin_change([1, 2, 5], 11)\n    3\n    \"\"\"\n    dp = [float('inf')] * (amount + 1)\n    dp[0] = 0\n\n    for i in range(1, amount + 1):\n        for coin in coins:\n            if i - coin >= 0:\n                dp[i] = min(dp[i], dp[i - coin] + 1)\n\n    return dp[amount] if dp[amount] != float('inf') else -1"
+      },
+      {
+        "task_id": "py_020",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 7.81,
+        "response": "```python\ndef group_anagrams(words):\n    \"\"\"애너그램(구성 문자가 같은 단어)끼리 묶은 그룹들의 리스트를 반환합니다. 각 그룹 내부와 전체 그룹은 정렬된 순서로 반환합니다.\n    >>> group_anagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])\n    [['ate', 'eat', 'tea'], ['bat'], ['nat', 'tan']]\n    \"\"\"\n    from collections import defaultdict\n    anagram_map = defaultdict(list)\n    for word in words:\n        sorted_word = \"\".join(sorted(word))\n        anagram_map[sorted_word].append(word)\n\n    result = []\n    for key in anagram_map:\n        group = anagram_map[key]\n        group.sort()\n        result.append(group)\n\n    result.sort(key=lambda x: x[0])\n    return result\n```",
+        "extracted_code": "def group_anagrams(words):\n    \"\"\"애너그램(구성 문자가 같은 단어)끼리 묶은 그룹들의 리스트를 반환합니다. 각 그룹 내부와 전체 그룹은 정렬된 순서로 반환합니다.\n    >>> group_anagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])\n    [['ate', 'eat', 'tea'], ['bat'], ['nat', 'tan']]\n    \"\"\"\n    from collections import defaultdict\n    anagram_map = defaultdict(list)\n    for word in words:\n        sorted_word = \"\".join(sorted(word))\n        anagram_map[sorted_word].append(word)\n\n    result = []\n    for key in anagram_map:\n        group = anagram_map[key]\n        group.sort()\n        result.append(group)\n\n    result.sort(key=lambda x: x[0])\n    return result"
+      },
+      {
+        "task_id": "py_021",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 12.49,
+        "response": "```python\ndef evaluate_rpn(tokens):\n    \"\"\"후위 표기법(RPN) 토큰 리스트를 계산한 정수 결과를 반환합니다. 연산자는 '+', '-', '*', '/'이며 나눗셈은 0을 향해 버림(정수 나눗셈)합니다.\n    >>> evaluate_rpn(['2', '1', '+', '3', '*'])\n    9\n    \"\"\"\n    stack = []\n    for token in tokens:\n        if token.isdigit() or (token.startswith('-') and token[1:].isdigit()):\n            stack.append(int(token))\n        elif token in ('+', '-', '*', '/'):\n            if len(stack) < 2:\n                raise ValueError(\"Invalid RPN expression: not enough operands for operator \" + token)\n            operand2 = stack.pop()\n            operand1 = stack.pop()\n            if token == '+':\n                result = operand1 + operand2\n            elif token == '-':\n                result = operand1 - operand2\n            elif token == '*':\n                result = operand1 * operand2\n            elif token == '/':\n                if operand2 == 0:\n                    raise ZeroDivisionError(\"Division by zero\")\n                # 0을 향해 버림 (truncation towards zero)\n                result = int(operand1 / operand2)\n            stack.append(result)\n        else:\n            raise ValueError(f\"Unknown token: {token}\")\n    \n    if len(stack) != 1:\n        raise ValueError(\"Invalid RPN expression: too many operands left\")\n        \n    return stack[0]\n```",
+        "extracted_code": "def evaluate_rpn(tokens):\n    \"\"\"후위 표기법(RPN) 토큰 리스트를 계산한 정수 결과를 반환합니다. 연산자는 '+', '-', '*', '/'이며 나눗셈은 0을 향해 버림(정수 나눗셈)합니다.\n    >>> evaluate_rpn(['2', '1', '+', '3', '*'])\n    9\n    \"\"\"\n    stack = []\n    for token in tokens:\n        if token.isdigit() or (token.startswith('-') and token[1:].isdigit()):\n            stack.append(int(token))\n        elif token in ('+', '-', '*', '/'):\n            if len(stack) < 2:\n                raise ValueError(\"Invalid RPN expression: not enough operands for operator \" + token)\n            operand2 = stack.pop()\n            operand1 = stack.pop()\n            if token == '+':\n                result = operand1 + operand2\n            elif token == '-':\n                result = operand1 - operand2\n            elif token == '*':\n                result = operand1 * operand2\n            elif token == '/':\n                if operand2 == 0:\n                    raise ZeroDivisionError(\"Division by zero\")\n                # 0을 향해 버림 (truncation towards zero)\n                result = int(operand1 / operand2)\n            stack.append(result)\n        else:\n            raise ValueError(f\"Unknown token: {token}\")\n    \n    if len(stack) != 1:\n        raise ValueError(\"Invalid RPN expression: too many operands left\")\n        \n    return stack[0]"
+      },
+      {
+        "task_id": "py_022",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 6.79,
+        "response": "```python\ndef longest_unique_substring(s):\n    \"\"\"중복 문자가 없는 가장 긴 부분 문자열의 길이를 반환합니다.\n    >>> longest_unique_substring('abcabcbb')\n    3\n    \"\"\"\n    n = len(s)\n    if n == 0:\n        return 0\n\n    max_length = 0\n    start = 0\n    char_index = {}\n\n    for end in range(n):\n        char = s[end]\n        if char in char_index and char_index[char] >= start:\n            start = char_index[char] + 1\n        \n        char_index[char] = end\n        max_length = max(max_length, end - start + 1)\n\n    return max_length\n```",
+        "extracted_code": "def longest_unique_substring(s):\n    \"\"\"중복 문자가 없는 가장 긴 부분 문자열의 길이를 반환합니다.\n    >>> longest_unique_substring('abcabcbb')\n    3\n    \"\"\"\n    n = len(s)\n    if n == 0:\n        return 0\n\n    max_length = 0\n    start = 0\n    char_index = {}\n\n    for end in range(n):\n        char = s[end]\n        if char in char_index and char_index[char] >= start:\n            start = char_index[char] + 1\n        \n        char_index[char] = end\n        max_length = max(max_length, end - start + 1)\n\n    return max_length"
+      },
+      {
+        "task_id": "py_023",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 7.59,
+        "response": "```python\ndef matrix_transpose(matrix):\n    \"\"\"2차원 행렬의 전치(transpose)를 반환합니다.\n    >>> matrix_transpose([[1, 2, 3], [4, 5, 6]])\n    [[1, 4], [2, 5], [3, 6]]\n    \"\"\"\n    if not matrix:\n        return []\n    rows = len(matrix)\n    cols = len(matrix[0])\n    \n    # 전치된 행렬은 원래 행렬의 열 개수만큼 행을 갖고,\n    # 원래 행렬의 행 개수만큼 열을 갖습니다.\n    transposed = [[0] * rows for _ in range(cols)]\n    \n    for i in range(rows):\n        for j in range(cols):\n            transposed[j][i] = matrix[i][j]\n            \n    return transposed\n```",
+        "extracted_code": "def matrix_transpose(matrix):\n    \"\"\"2차원 행렬의 전치(transpose)를 반환합니다.\n    >>> matrix_transpose([[1, 2, 3], [4, 5, 6]])\n    [[1, 4], [2, 5], [3, 6]]\n    \"\"\"\n    if not matrix:\n        return []\n    rows = len(matrix)\n    cols = len(matrix[0])\n    \n    # 전치된 행렬은 원래 행렬의 열 개수만큼 행을 갖고,\n    # 원래 행렬의 행 개수만큼 열을 갖습니다.\n    transposed = [[0] * rows for _ in range(cols)]\n    \n    for i in range(rows):\n        for j in range(cols):\n            transposed[j][i] = matrix[i][j]\n            \n    return transposed"
+      },
+      {
+        "task_id": "py_024",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.36,
+        "response": "```python\ndef to_snake_case(camel):\n    \"\"\"camelCase 문자열을 snake_case로 변환하여 반환합니다.\n    >>> to_snake_case('helloWorldFoo')\n    'hello_world_foo'\n    \"\"\"\n    import re\n    return re.sub(r'(?<!^)(?=[A-Z])', '_', camel).lower()\n```",
+        "extracted_code": "def to_snake_case(camel):\n    \"\"\"camelCase 문자열을 snake_case로 변환하여 반환합니다.\n    >>> to_snake_case('helloWorldFoo')\n    'hello_world_foo'\n    \"\"\"\n    import re\n    return re.sub(r'(?<!^)(?=[A-Z])', '_', camel).lower()"
+      }
+    ]
+  },
+  {
+    "model": "26b MoE",
+    "tag": "gemma4:26b",
+    "pass_at_1": 100.0,
+    "passed": 24,
+    "total": 24,
+    "avg_time": 4.917749057213466,
+    "by_difficulty": {
+      "easy": {
+        "passed": 8,
+        "total": 8
+      },
+      "medium": {
+        "passed": 10,
+        "total": 10
+      },
+      "hard": {
+        "passed": 6,
+        "total": 6
+      }
+    },
+    "details": [
+      {
+        "task_id": "py_001",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.73,
+        "response": "```python\ndef sum_even(numbers):\n    \"\"\"정수 리스트에서 짝수의 합을 반환합니다.\n    >>> sum_even([1, 2, 3, 4])\n    6\n    \"\"\"\n    return sum(num for num in numbers if num % 2 == 0)\n```",
+        "extracted_code": "def sum_even(numbers):\n    \"\"\"정수 리스트에서 짝수의 합을 반환합니다.\n    >>> sum_even([1, 2, 3, 4])\n    6\n    \"\"\"\n    return sum(num for num in numbers if num % 2 == 0)"
+      },
+      {
+        "task_id": "py_002",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.15,
+        "response": "```python\ndef reverse_words(sentence):\n    \"\"\"문장을 받아 단어의 순서를 뒤집은 문자열을 반환합니다. 단어는 공백으로 구분됩니다.\n    >>> reverse_words('hello world foo')\n    'foo world hello'\n    \"\"\"\n    return ' '.join(sentence.split()[::-1])\n```",
+        "extracted_code": "def reverse_words(sentence):\n    \"\"\"문장을 받아 단어의 순서를 뒤집은 문자열을 반환합니다. 단어는 공백으로 구분됩니다.\n    >>> reverse_words('hello world foo')\n    'foo world hello'\n    \"\"\"\n    return ' '.join(sentence.split()[::-1])"
+      },
+      {
+        "task_id": "py_003",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.74,
+        "response": "```python\ndef is_palindrome(s):\n    \"\"\"문자열이 회문(palindrome)인지 여부를 bool로 반환합니다. 대소문자는 무시하고 알파벳/숫자만 고려합니다.\n    >>> is_palindrome('A man a plan a canal Panama')\n    True\n    \"\"\"\n    filtered_chars = [char.lower() for char in s if char.isalnum()]\n    return filtered_chars == filtered_chars[::-1]\n```",
+        "extracted_code": "def is_palindrome(s):\n    \"\"\"문자열이 회문(palindrome)인지 여부를 bool로 반환합니다. 대소문자는 무시하고 알파벳/숫자만 고려합니다.\n    >>> is_palindrome('A man a plan a canal Panama')\n    True\n    \"\"\"\n    filtered_chars = [char.lower() for char in s if char.isalnum()]\n    return filtered_chars == filtered_chars[::-1]"
+      },
+      {
+        "task_id": "py_004",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.21,
+        "response": "```python\ndef count_vowels(text):\n    \"\"\"문자열에서 영어 모음(a, e, i, o, u)의 개수를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> count_vowels('Hello World')\n    3\n    \"\"\"\n    vowels = \"aeiouAEIOU\"\n    return sum(1 for char in text if char in vowels)\n```",
+        "extracted_code": "def count_vowels(text):\n    \"\"\"문자열에서 영어 모음(a, e, i, o, u)의 개수를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> count_vowels('Hello World')\n    3\n    \"\"\"\n    vowels = \"aeiouAEIOU\"\n    return sum(1 for char in text if char in vowels)"
+      },
+      {
+        "task_id": "py_005",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 6.06,
+        "response": "```python\ndef fizzbuzz(n):\n    \"\"\"1부터 n까지의 문자열 리스트를 반환합니다. 3의 배수는 'Fizz', 5의 배수는 'Buzz', 15의 배수는 'FizzBuzz', 그 외에는 숫자를 문자열로 반환합니다.\n    >>> fizzbuzz(5)\n    ['1', '2', 'Fizz', '4', 'Buzz']\n    \"\"\"\n    result = []\n    for i in range(1, n + 1):\n        if i % 15 == 0:\n            result.append(\"FizzBuzz\")\n        elif i % 3 == 0:\n            result.append(\"Fizz\")\n        elif i % 5 == 0:\n            result.append(\"Buzz\")\n        else:\n            result.append(str(i))\n    return result\n```",
+        "extracted_code": "def fizzbuzz(n):\n    \"\"\"1부터 n까지의 문자열 리스트를 반환합니다. 3의 배수는 'Fizz', 5의 배수는 'Buzz', 15의 배수는 'FizzBuzz', 그 외에는 숫자를 문자열로 반환합니다.\n    >>> fizzbuzz(5)\n    ['1', '2', 'Fizz', '4', 'Buzz']\n    \"\"\"\n    result = []\n    for i in range(1, n + 1):\n        if i % 15 == 0:\n            result.append(\"FizzBuzz\")\n        elif i % 3 == 0:\n            result.append(\"Fizz\")\n        elif i % 5 == 0:\n            result.append(\"Buzz\")\n        else:\n            result.append(str(i))\n    return result"
+      },
+      {
+        "task_id": "py_006",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 4.08,
+        "response": "```python\ndef second_largest(numbers):\n    \"\"\"정수 리스트에서 두 번째로 큰 서로 다른 값을 반환합니다. 서로 다른 값이 2개 미만이면 None을 반환합니다.\n    >>> second_largest([3, 1, 4, 4, 5])\n    4\n    \"\"\"\n    unique_numbers = list(set(numbers))\n    if len(unique_numbers) < 2:\n        return None\n    unique_numbers.sort(reverse=True)\n    return unique_numbers[1]\n```",
+        "extracted_code": "def second_largest(numbers):\n    \"\"\"정수 리스트에서 두 번째로 큰 서로 다른 값을 반환합니다. 서로 다른 값이 2개 미만이면 None을 반환합니다.\n    >>> second_largest([3, 1, 4, 4, 5])\n    4\n    \"\"\"\n    unique_numbers = list(set(numbers))\n    if len(unique_numbers) < 2:\n        return None\n    unique_numbers.sort(reverse=True)\n    return unique_numbers[1]"
+      },
+      {
+        "task_id": "py_007",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.07,
+        "response": "```python\ndef flatten(nested):\n    \"\"\"한 단계 중첩된 리스트를 평탄화하여 단일 리스트로 반환합니다.\n    >>> flatten([[1, 2], [3], [4, 5]])\n    [1, 2, 3, 4, 5]\n    \"\"\"\n    return [item for sublist in nested for item in sublist]\n```",
+        "extracted_code": "def flatten(nested):\n    \"\"\"한 단계 중첩된 리스트를 평탄화하여 단일 리스트로 반환합니다.\n    >>> flatten([[1, 2], [3], [4, 5]])\n    [1, 2, 3, 4, 5]\n    \"\"\"\n    return [item for sublist in nested for item in sublist]"
+      },
+      {
+        "task_id": "py_008",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 4.2,
+        "response": "```python\ndef word_frequency(text):\n    \"\"\"공백으로 구분된 단어들의 빈도를 담은 딕셔너리를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> word_frequency('a b a C c c')\n    {'a': 2, 'b': 1, 'c': 3}\n    \"\"\"\n    words = text.lower().split()\n    frequency = {}\n    for word in words:\n        frequency[word] = frequency.get(word, 0) + 1\n    return frequency\n```",
+        "extracted_code": "def word_frequency(text):\n    \"\"\"공백으로 구분된 단어들의 빈도를 담은 딕셔너리를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> word_frequency('a b a C c c')\n    {'a': 2, 'b': 1, 'c': 3}\n    \"\"\"\n    words = text.lower().split()\n    frequency = {}\n    for word in words:\n        frequency[word] = frequency.get(word, 0) + 1\n    return frequency"
+      },
+      {
+        "task_id": "py_009",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 4.92,
+        "response": "```python\ndef two_sum(nums, target):\n    \"\"\"리스트에서 합이 target이 되는 두 원소의 인덱스 (i, j) 튜플을 i < j 형태로 반환합니다. 없으면 None을 반환합니다.\n    >>> two_sum([2, 7, 11, 15], 9)\n    (0, 1)\n    \"\"\"\n    prev_map = {}\n    for i, n in enumerate(nums):\n        diff = target - n\n        if diff in prev_map:\n            return (prev_map[diff], i)\n        prev_map[n] = i\n    return None\n```",
+        "extracted_code": "def two_sum(nums, target):\n    \"\"\"리스트에서 합이 target이 되는 두 원소의 인덱스 (i, j) 튜플을 i < j 형태로 반환합니다. 없으면 None을 반환합니다.\n    >>> two_sum([2, 7, 11, 15], 9)\n    (0, 1)\n    \"\"\"\n    prev_map = {}\n    for i, n in enumerate(nums):\n        diff = target - n\n        if diff in prev_map:\n            return (prev_map[diff], i)\n        prev_map[n] = i\n    return None"
+      },
+      {
+        "task_id": "py_010",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 7.46,
+        "response": "```python\ndef roman_to_int(s):\n    \"\"\"로마 숫자 문자열을 정수로 변환하여 반환합니다. (I=1, V=5, X=10, L=50, C=100, D=500, M=1000)\n    >>> roman_to_int('XIV')\n    14\n    \"\"\"\n    roman_map = {\n        'I': 1,\n        'V': 5,\n        'X': 10,\n        'L': 50,\n        'C': 100,\n        'D': 500,\n        'M': 1000\n    }\n    total = 0\n    prev_value = 0\n    for char in reversed(s):\n        current_value = roman_map[char]\n        if current_value < prev_value:\n            total -= current_value\n        else:\n            total += current_value\n        prev_value = current_value\n    return total\n```",
+        "extracted_code": "def roman_to_int(s):\n    \"\"\"로마 숫자 문자열을 정수로 변환하여 반환합니다. (I=1, V=5, X=10, L=50, C=100, D=500, M=1000)\n    >>> roman_to_int('XIV')\n    14\n    \"\"\"\n    roman_map = {\n        'I': 1,\n        'V': 5,\n        'X': 10,\n        'L': 50,\n        'C': 100,\n        'D': 500,\n        'M': 1000\n    }\n    total = 0\n    prev_value = 0\n    for char in reversed(s):\n        current_value = roman_map[char]\n        if current_value < prev_value:\n            total -= current_value\n        else:\n            total += current_value\n        prev_value = current_value\n    return total"
+      },
+      {
+        "task_id": "py_011",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 4.7,
+        "response": "```python\ndef is_valid_parentheses(s):\n    \"\"\"괄호 문자열 '()[]{}'이 올바르게 짝지어져 있는지 bool로 반환합니다.\n    >>> is_valid_parentheses('([]){}')\n    True\n    \"\"\"\n    stack = []\n    mapping = {')': '(', ']': '[', '}': '{'}\n    for char in s:\n        if char in mapping:\n            top_element = stack.pop() if stack else '#'\n            if mapping[char] != top_element:\n                return False\n        else:\n            stack.append(char)\n    return not stack\n```",
+        "extracted_code": "def is_valid_parentheses(s):\n    \"\"\"괄호 문자열 '()[]{}'이 올바르게 짝지어져 있는지 bool로 반환합니다.\n    >>> is_valid_parentheses('([]){}')\n    True\n    \"\"\"\n    stack = []\n    mapping = {')': '(', ']': '[', '}': '{'}\n    for char in s:\n        if char in mapping:\n            top_element = stack.pop() if stack else '#'\n            if mapping[char] != top_element:\n                return False\n        else:\n            stack.append(char)\n    return not stack"
+      },
+      {
+        "task_id": "py_012",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 6.29,
+        "response": "```python\ndef merge_intervals(intervals):\n    \"\"\"[start, end] 구간 리스트에서 겹치는 구간을 병합하여 시작점 기준 오름차순 정렬된 리스트로 반환합니다.\n    >>> merge_intervals([[1, 3], [2, 6], [8, 10]])\n    [[1, 6], [8, 10]]\n    \"\"\"\n    if not intervals:\n        return []\n\n    intervals.sort(key=lambda x: x[0])\n    merged = []\n    \n    for interval in intervals:\n        if not merged or merged[-1][1] < interval[0]:\n            merged.append(interval)\n        else:\n            merged[-1][1] = max(merged[-1][1], interval[1])\n            \n    return merged\n```",
+        "extracted_code": "def merge_intervals(intervals):\n    \"\"\"[start, end] 구간 리스트에서 겹치는 구간을 병합하여 시작점 기준 오름차순 정렬된 리스트로 반환합니다.\n    >>> merge_intervals([[1, 3], [2, 6], [8, 10]])\n    [[1, 6], [8, 10]]\n    \"\"\"\n    if not intervals:\n        return []\n\n    intervals.sort(key=lambda x: x[0])\n    merged = []\n    \n    for interval in intervals:\n        if not merged or merged[-1][1] < interval[0]:\n            merged.append(interval)\n        else:\n            merged[-1][1] = max(merged[-1][1], interval[1])\n            \n    return merged"
+      },
+      {
+        "task_id": "py_013",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.55,
+        "response": "```python\ndef gcd(a, b):\n    \"\"\"두 양의 정수의 최대공약수(GCD)를 반환합니다.\n    >>> gcd(12, 18)\n    6\n    \"\"\"\n    while b:\n        a, b = b, a % b\n    return a\n```",
+        "extracted_code": "def gcd(a, b):\n    \"\"\"두 양의 정수의 최대공약수(GCD)를 반환합니다.\n    >>> gcd(12, 18)\n    6\n    \"\"\"\n    while b:\n        a, b = b, a % b\n    return a"
+      },
+      {
+        "task_id": "py_014",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 4.01,
+        "response": "```python\ndef chunk_list(items, size):\n    \"\"\"리스트를 size 크기의 하위 리스트들로 나누어 반환합니다. 마지막 청크는 더 작을 수 있습니다.\n    >>> chunk_list([1, 2, 3, 4, 5], 2)\n    [[1, 2], [3, 4], [5]]\n    \"\"\"\n    return [items[i:i + size] for i in range(0, len(items), size)]\n```",
+        "extracted_code": "def chunk_list(items, size):\n    \"\"\"리스트를 size 크기의 하위 리스트들로 나누어 반환합니다. 마지막 청크는 더 작을 수 있습니다.\n    >>> chunk_list([1, 2, 3, 4, 5], 2)\n    [[1, 2], [3, 4], [5]]\n    \"\"\"\n    return [items[i:i + size] for i in range(0, len(items), size)]"
+      },
+      {
+        "task_id": "py_015",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 5.58,
+        "response": "```python\ndef caesar_cipher(text, shift):\n    \"\"\"영문 소문자/대문자를 shift만큼 이동시키는 시저 암호를 적용한 문자열을 반반합니다. 알파벳이 아닌 문자는 그대로 둡니다.\n    >>> caesar_cipher('abc XYZ', 3)\n    'def ABC'\n    \"\"\"\n    result = \"\"\n    for char in text:\n        if char.isupper():\n            result += chr((ord(char) - ord('A') + shift) % 26 + ord('A'))\n        elif char.islower():\n            result += chr((ord(char) - ord('a') + shift) % 26 + ord('a'))\n        else:\n            result += char\n    return result\n```",
+        "extracted_code": "def caesar_cipher(text, shift):\n    \"\"\"영문 소문자/대문자를 shift만큼 이동시키는 시저 암호를 적용한 문자열을 반반합니다. 알파벳이 아닌 문자는 그대로 둡니다.\n    >>> caesar_cipher('abc XYZ', 3)\n    'def ABC'\n    \"\"\"\n    result = \"\"\n    for char in text:\n        if char.isupper():\n            result += chr((ord(char) - ord('A') + shift) % 26 + ord('A'))\n        elif char.islower():\n            result += chr((ord(char) - ord('a') + shift) % 26 + ord('a'))\n        else:\n            result += char\n    return result"
+      },
+      {
+        "task_id": "py_016",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 6.65,
+        "response": "```python\ndef most_common_char(s):\n    \"\"\"문자열에서 가장 많이 등장하는 문자를 반환합니다. 공백은 제외합니다. 빈도가 같으면 먼저 등장한 문자를 반환합니다.\n    >>> most_common_char('aabbbc')\n    'b'\n    \"\"\"\n    counts = {}\n    order = []\n    for char in s:\n        if char == ' ':\n            continue\n        if char not in counts:\n            counts[char] = 0\n            order.append(char)\n        counts[char] += 1\n    \n    if not order:\n        return None\n        \n    max_char = order[0]\n    max_count = counts[order[0]]\n    \n    for char in order:\n        if counts[char] > max_count:\n            max_count = counts[char]\n            max_char = char\n            \n    return max_char\n```",
+        "extracted_code": "def most_common_char(s):\n    \"\"\"문자열에서 가장 많이 등장하는 문자를 반환합니다. 공백은 제외합니다. 빈도가 같으면 먼저 등장한 문자를 반환합니다.\n    >>> most_common_char('aabbbc')\n    'b'\n    \"\"\"\n    counts = {}\n    order = []\n    for char in s:\n        if char == ' ':\n            continue\n        if char not in counts:\n            counts[char] = 0\n            order.append(char)\n        counts[char] += 1\n    \n    if not order:\n        return None\n        \n    max_char = order[0]\n    max_count = counts[order[0]]\n    \n    for char in order:\n        if counts[char] > max_count:\n            max_count = counts[char]\n            max_char = char\n            \n    return max_char"
+      },
+      {
+        "task_id": "py_017",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 4.43,
+        "response": "```python\ndef longest_common_prefix(strs):\n    \"\"\"문자열 리스트의 가장 긴 공통 접두사를 반환합니다. 공통 접두사가 없으면 빈 문자열을 반환합니다.\n    >>> longest_common_prefix(['flower', 'flow', 'flight'])\n    'fl'\n    \"\"\"\n    if not strs:\n        return \"\"\n    \n    prefix = strs[0]\n    for s in strs[1:]:\n        while not s.startswith(prefix):\n            prefix = prefix[:-1]\n            if not prefix:\n                return \"\"\n    return prefix\n```",
+        "extracted_code": "def longest_common_prefix(strs):\n    \"\"\"문자열 리스트의 가장 긴 공통 접두사를 반환합니다. 공통 접두사가 없으면 빈 문자열을 반환합니다.\n    >>> longest_common_prefix(['flower', 'flow', 'flight'])\n    'fl'\n    \"\"\"\n    if not strs:\n        return \"\"\n    \n    prefix = strs[0]\n    for s in strs[1:]:\n        while not s.startswith(prefix):\n            prefix = prefix[:-1]\n            if not prefix:\n                return \"\"\n    return prefix"
+      },
+      {
+        "task_id": "py_018",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 9.99,
+        "response": "```python\ndef spiral_order(matrix):\n    \"\"\"2차원 정수 행렬을 시계 방향 나선형 순서로 읽은 1차원 리스트를 반환합니다.\n    >>> spiral_order([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\n    [1, 2, 3, 6, 9, 8, 7, 4, 5]\n    \"\"\"\n    if not matrix:\n        return []\n\n    result = []\n    top, bottom = 0, len(matrix) - 1\n    left, right = 0, len(matrix[0]) - 1\n\n    while top <= bottom and left <= right:\n        for i in range(left, right + 1):\n            result.append(matrix[top][i])\n        top += 1\n\n        for i in range(top, bottom + 1):\n            result.append(matrix[i][right])\n        right -= 1\n\n        if top <= bottom:\n            for i in range(right, left - 1, -1):\n                result.append(matrix[bottom][i])\n            bottom -= 1\n\n        if left <= right:\n            for i in range(bottom, top - 1, -1):\n                result.append(matrix[i][left])\n            left += 1\n\n    return result\n```",
+        "extracted_code": "def spiral_order(matrix):\n    \"\"\"2차원 정수 행렬을 시계 방향 나선형 순서로 읽은 1차원 리스트를 반환합니다.\n    >>> spiral_order([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\n    [1, 2, 3, 6, 9, 8, 7, 4, 5]\n    \"\"\"\n    if not matrix:\n        return []\n\n    result = []\n    top, bottom = 0, len(matrix) - 1\n    left, right = 0, len(matrix[0]) - 1\n\n    while top <= bottom and left <= right:\n        for i in range(left, right + 1):\n            result.append(matrix[top][i])\n        top += 1\n\n        for i in range(top, bottom + 1):\n            result.append(matrix[i][right])\n        right -= 1\n\n        if top <= bottom:\n            for i in range(right, left - 1, -1):\n                result.append(matrix[bottom][i])\n            bottom -= 1\n\n        if left <= right:\n            for i in range(bottom, top - 1, -1):\n                result.append(matrix[i][left])\n            left += 1\n\n    return result"
+      },
+      {
+        "task_id": "py_019",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 5.47,
+        "response": "```python\ndef coin_change(coins, amount):\n    \"\"\"주어진 동전 종류(coins)로 amount를 만들기 위한 최소 동전 개수를 반환합니다. 만들 수 없으면 -1을 반환합니다.\n    >>> coin_change([1, 2, 5], 11)\n    3\n    \"\"\"\n    dp = [float('inf')] * (amount + 1)\n    dp[0] = 0\n    \n    for coin in coins:\n        for x in range(coin, amount + 1):\n            dp[x] = min(dp[x], dp[x - coin] + 1)\n            \n    return dp[amount] if dp[amount] != float('inf') else -1\n```",
+        "extracted_code": "def coin_change(coins, amount):\n    \"\"\"주어진 동전 종류(coins)로 amount를 만들기 위한 최소 동전 개수를 반환합니다. 만들 수 없으면 -1을 반환합니다.\n    >>> coin_change([1, 2, 5], 11)\n    3\n    \"\"\"\n    dp = [float('inf')] * (amount + 1)\n    dp[0] = 0\n    \n    for coin in coins:\n        for x in range(coin, amount + 1):\n            dp[x] = min(dp[x], dp[x - coin] + 1)\n            \n    return dp[amount] if dp[amount] != float('inf') else -1"
+      },
+      {
+        "task_id": "py_020",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 6.62,
+        "response": "```python\ndef group_anagrams(words):\n    \"\"\"애너그램(구성 문자가 같은 단어)끼리 묶은 그룹들의 리스트를 반환합니다. 각 그룹 내부와 전체 그룹은 정렬된 순서로 반환합니다.\n    >>> group_anagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])\n    [['ate', 'eat', 'tea'], ['bat'], ['nat', 'tan']]\n    \"\"\"\n    anagram_map = {}\n    for word in words:\n        sorted_word = \"\".join(sorted(word))\n        if sorted_word not in anagram_map:\n            anagram_map[sorted_word] = []\n        anagram_map[sorted_word].append(word)\n    \n    result = []\n    for group in anagram_map.values():\n        result.append(sorted(group))\n    \n    return sorted(result)\n```",
+        "extracted_code": "def group_anagrams(words):\n    \"\"\"애너그램(구성 문자가 같은 단어)끼리 묶은 그룹들의 리스트를 반환합니다. 각 그룹 내부와 전체 그룹은 정렬된 순서로 반환합니다.\n    >>> group_anagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])\n    [['ate', 'eat', 'tea'], ['bat'], ['nat', 'tan']]\n    \"\"\"\n    anagram_map = {}\n    for word in words:\n        sorted_word = \"\".join(sorted(word))\n        if sorted_word not in anagram_map:\n            anagram_map[sorted_word] = []\n        anagram_map[sorted_word].append(word)\n    \n    result = []\n    for group in anagram_map.values():\n        result.append(sorted(group))\n    \n    return sorted(result)"
+      },
+      {
+        "task_id": "py_021",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 7.53,
+        "response": "```python\ndef evaluate_rpn(tokens):\n    \"\"\"후위 표기법(RPN) 토큰 리스트를 계산한 정수 결과를 반환합니다. 연산자는 '+', '-', '*', '/'이며 나눗셈은 0을 향해 버림(정수 나눗셈)합니다.\n    >>> evaluate_rpn(['2', '1', '+', '3', '*'])\n    9\n    \"\"\"\n    stack = []\n    for token in tokens:\n        if token in ('+', '-', '*', '/'):\n            b = stack.pop()\n            a = stack.pop()\n            if token == '+':\n                stack.append(a + b)\n            elif token == '-':\n                stack.append(a - b)\n            elif token == '*':\n                stack.append(a * b)\n            elif token == '/':\n                # 0을 향해 버림을 위해 int(a / b) 사용\n                stack.append(int(a / b))\n        else:\n            stack.append(int(token))\n    return stack[0]\n```",
+        "extracted_code": "def evaluate_rpn(tokens):\n    \"\"\"후위 표기법(RPN) 토큰 리스트를 계산한 정수 결과를 반환합니다. 연산자는 '+', '-', '*', '/'이며 나눗셈은 0을 향해 버림(정수 나눗셈)합니다.\n    >>> evaluate_rpn(['2', '1', '+', '3', '*'])\n    9\n    \"\"\"\n    stack = []\n    for token in tokens:\n        if token in ('+', '-', '*', '/'):\n            b = stack.pop()\n            a = stack.pop()\n            if token == '+':\n                stack.append(a + b)\n            elif token == '-':\n                stack.append(a - b)\n            elif token == '*':\n                stack.append(a * b)\n            elif token == '/':\n                # 0을 향해 버림을 위해 int(a / b) 사용\n                stack.append(int(a / b))\n        else:\n            stack.append(int(token))\n    return stack[0]"
+      },
+      {
+        "task_id": "py_022",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 5.4,
+        "response": "```python\ndef longest_unique_substring(s):\n    \"\"\"중복 문자가 없는 가장 긴 부분 문자열의 길이를 반반합니다.\n    >>> longest_unique_substring('abcabcbb')\n    3\n    \"\"\"\n    char_map = {}\n    max_length = 0\n    start = 0\n    \n    for end in range(len(s)):\n        if s[end] in char_map and char_map[s[end]] >= start:\n            start = char_map[s[end]] + 1\n        \n        char_map[s[end]] = end\n        max_length = max(max_length, end - start + 1)\n        \n    return max_length\n```",
+        "extracted_code": "def longest_unique_substring(s):\n    \"\"\"중복 문자가 없는 가장 긴 부분 문자열의 길이를 반반합니다.\n    >>> longest_unique_substring('abcabcbb')\n    3\n    \"\"\"\n    char_map = {}\n    max_length = 0\n    start = 0\n    \n    for end in range(len(s)):\n        if s[end] in char_map and char_map[s[end]] >= start:\n            start = char_map[s[end]] + 1\n        \n        char_map[s[end]] = end\n        max_length = max(max_length, end - start + 1)\n        \n    return max_length"
+      },
+      {
+        "task_id": "py_023",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 3.24,
+        "response": "```python\ndef matrix_transpose(matrix):\n    \"\"\"2차원 행렬의 전치(transpose)를 반환합니다.\n    >>> matrix_transpose([[1, 2, 3], [4, 5, 6]])\n    [[1, 4], [2, 5], [3, 6]]\n    \"\"\"\n    return [list(row) for row in zip(*matrix)]\n```",
+        "extracted_code": "def matrix_transpose(matrix):\n    \"\"\"2차원 행렬의 전치(transpose)를 반환합니다.\n    >>> matrix_transpose([[1, 2, 3], [4, 5, 6]])\n    [[1, 4], [2, 5], [3, 6]]\n    \"\"\"\n    return [list(row) for row in zip(*matrix)]"
+      },
+      {
+        "task_id": "py_024",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 2.97,
+        "response": "```python\nimport re\n\ndef to_snake_case(camel):\n    \"\"\"camelCase 문자열을 snake_case로 변환하여 반환합니다.\n    >>> to_snake_case('helloWorldFoo')\n    'hello_world_foo'\n    \"\"\"\n    return re.sub(r'(?<!^)(?=[A-Z])', '_', camel).lower()\n```",
+        "extracted_code": "import re\n\ndef to_snake_case(camel):\n    \"\"\"camelCase 문자열을 snake_case로 변환하여 반환합니다.\n    >>> to_snake_case('helloWorldFoo')\n    'hello_world_foo'\n    \"\"\"\n    return re.sub(r'(?<!^)(?=[A-Z])', '_', camel).lower()"
+      }
+    ]
+  },
+  {
+    "model": "31b Dense",
+    "tag": "gemma4:31b",
+    "pass_at_1": 100.0,
+    "passed": 24,
+    "total": 24,
+    "avg_time": 32.280864169200264,
+    "by_difficulty": {
+      "easy": {
+        "passed": 8,
+        "total": 8
+      },
+      "medium": {
+        "passed": 10,
+        "total": 10
+      },
+      "hard": {
+        "passed": 6,
+        "total": 6
+      }
+    },
+    "details": [
+      {
+        "task_id": "py_001",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 18.06,
+        "response": "```python\ndef sum_even(numbers):\n    \"\"\"정수 리스트에서 짝수의 합을 반환합니다.\n    >>> sum_even([1, 2, 3, 4])\n    6\n    \"\"\"\n    return sum(num for num in numbers if num % 2 == 0)\n```",
+        "extracted_code": "def sum_even(numbers):\n    \"\"\"정수 리스트에서 짝수의 합을 반환합니다.\n    >>> sum_even([1, 2, 3, 4])\n    6\n    \"\"\"\n    return sum(num for num in numbers if num % 2 == 0)"
+      },
+      {
+        "task_id": "py_002",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 17.76,
+        "response": "```python\ndef reverse_words(sentence):\n    \"\"\"문장을 받아 단어의 순서를 뒤집은 문자열을 반환합니다. 단어는 공백으로 구분됩니다.\n    >>> reverse_words('hello world foo')\n    'foo world hello'\n    \"\"\"\n    return ' '.join(sentence.split()[::-1])\n```",
+        "extracted_code": "def reverse_words(sentence):\n    \"\"\"문장을 받아 단어의 순서를 뒤집은 문자열을 반환합니다. 단어는 공백으로 구분됩니다.\n    >>> reverse_words('hello world foo')\n    'foo world hello'\n    \"\"\"\n    return ' '.join(sentence.split()[::-1])"
+      },
+      {
+        "task_id": "py_003",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 32.87,
+        "response": "```python\ndef is_palindrome(s):\n    \"\"\"문자열이 회문(palindrome)인지 여부를 bool로 반환합니다. 대소문자는 무시하고 알파벳/숫자만 고려합니다.\n    >>> is_palindrome('A man a plan a canal Panama')\n    True\n    \"\"\"\n    filtered_chars = [char.lower() for char in s if char.isalnum()]\n    return filtered_chars == filtered_chars[::-1]\n```",
+        "extracted_code": "def is_palindrome(s):\n    \"\"\"문자열이 회문(palindrome)인지 여부를 bool로 반환합니다. 대소문자는 무시하고 알파벳/숫자만 고려합니다.\n    >>> is_palindrome('A man a plan a canal Panama')\n    True\n    \"\"\"\n    filtered_chars = [char.lower() for char in s if char.isalnum()]\n    return filtered_chars == filtered_chars[::-1]"
+      },
+      {
+        "task_id": "py_004",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 37.53,
+        "response": "```python\ndef count_vowels(text):\n    \"\"\"문자열에서 영어 모음(a, e, i, o, u)의 개수를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> count_vowels('Hello World')\n    3\n    \"\"\"\n    vowels = 'aeiouAEIOU'\n    return sum(1 for char in text if char in vowels)\n```",
+        "extracted_code": "def count_vowels(text):\n    \"\"\"문자열에서 영어 모음(a, e, i, o, u)의 개수를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> count_vowels('Hello World')\n    3\n    \"\"\"\n    vowels = 'aeiouAEIOU'\n    return sum(1 for char in text if char in vowels)"
+      },
+      {
+        "task_id": "py_005",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 48.98,
+        "response": "```python\ndef fizzbuzz(n):\n    \"\"\"1부터 n까지의 문자열 리스트를 반환합니다. 3의 배수는 'Fizz', 5의 배수는 'Buzz', 15의 배수는 'FizzBuzz', 그 외에는 숫자를 문자열로 반환합니다.\n    >>> fizzbuzz(5)\n    ['1', '2', 'Fizz', '4', 'Buzz']\n    \"\"\"\n    result = []\n    for i in range(1, n + 1):\n        if i % 15 == 0:\n            result.append('FizzBuzz')\n        elif i % 3 == 0:\n            result.append('Fizz')\n        elif i % 5 == 0:\n            result.append('Buzz')\n        else:\n            result.append(str(i))\n    return result\n```",
+        "extracted_code": "def fizzbuzz(n):\n    \"\"\"1부터 n까지의 문자열 리스트를 반환합니다. 3의 배수는 'Fizz', 5의 배수는 'Buzz', 15의 배수는 'FizzBuzz', 그 외에는 숫자를 문자열로 반환합니다.\n    >>> fizzbuzz(5)\n    ['1', '2', 'Fizz', '4', 'Buzz']\n    \"\"\"\n    result = []\n    for i in range(1, n + 1):\n        if i % 15 == 0:\n            result.append('FizzBuzz')\n        elif i % 3 == 0:\n            result.append('Fizz')\n        elif i % 5 == 0:\n            result.append('Buzz')\n        else:\n            result.append(str(i))\n    return result"
+      },
+      {
+        "task_id": "py_006",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 26.29,
+        "response": "```python\ndef second_largest(numbers):\n    \"\"\"정수 리스트에서 두 번째로 큰 서로 다른 값을 반환합니다. 서로 다른 값이 2개 미만이면 None을 반환합니다.\n    >>> second_largest([3, 1, 4, 4, 5])\n    4\n    \"\"\"\n    unique_numbers = list(set(numbers))\n    if len(unique_numbers) < 2:\n        return None\n    unique_numbers.sort(reverse=True)\n    return unique_numbers[1]\n```",
+        "extracted_code": "def second_largest(numbers):\n    \"\"\"정수 리스트에서 두 번째로 큰 서로 다른 값을 반환합니다. 서로 다른 값이 2개 미만이면 None을 반환합니다.\n    >>> second_largest([3, 1, 4, 4, 5])\n    4\n    \"\"\"\n    unique_numbers = list(set(numbers))\n    if len(unique_numbers) < 2:\n        return None\n    unique_numbers.sort(reverse=True)\n    return unique_numbers[1]"
+      },
+      {
+        "task_id": "py_007",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 19.07,
+        "response": "```python\ndef flatten(nested):\n    \"\"\"한 단계 중첩된 리스트를 평탄화하여 단일 리스트로 반환합니다.\n    >>> flatten([[1, 2], [3], [4, 5]])\n    [1, 2, 3, 4, 5]\n    \"\"\"\n    return [item for sublist in nested for item in sublist]\n```",
+        "extracted_code": "def flatten(nested):\n    \"\"\"한 단계 중첩된 리스트를 평탄화하여 단일 리스트로 반환합니다.\n    >>> flatten([[1, 2], [3], [4, 5]])\n    [1, 2, 3, 4, 5]\n    \"\"\"\n    return [item for sublist in nested for item in sublist]"
+      },
+      {
+        "task_id": "py_008",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 26.15,
+        "response": "```python\ndef word_frequency(text):\n    \"\"\"공백으로 구분된 단어들의 빈도를 담은 딕셔너리를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> word_frequency('a b a C c c')\n    {'a': 2, 'b': 1, 'c': 3}\n    \"\"\"\n    words = text.lower().split()\n    frequency = {}\n    for word in words:\n        frequency[word] = frequency.get(word, 0) + 1\n    return frequency\n```",
+        "extracted_code": "def word_frequency(text):\n    \"\"\"공백으로 구분된 단어들의 빈도를 담은 딕셔너리를 반환합니다. 대소문자를 구분하지 않습니다.\n    >>> word_frequency('a b a C c c')\n    {'a': 2, 'b': 1, 'c': 3}\n    \"\"\"\n    words = text.lower().split()\n    frequency = {}\n    for word in words:\n        frequency[word] = frequency.get(word, 0) + 1\n    return frequency"
+      },
+      {
+        "task_id": "py_009",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 30.82,
+        "response": "```python\ndef two_sum(nums, target):\n    \"\"\"리스트에서 합이 target이 되는 두 원소의 인덱스 (i, j) 튜플을 i < j 형태로 반환합니다. 없으면 None을 반환합니다.\n    >>> two_sum([2, 7, 11, 15], 9)\n    (0, 1)\n    \"\"\"\n    prev_map = {}\n    for i, n in enumerate(nums):\n        diff = target - n\n        if diff in prev_map:\n            return (prev_map[diff], i)\n        prev_map[n] = i\n    return None\n```",
+        "extracted_code": "def two_sum(nums, target):\n    \"\"\"리스트에서 합이 target이 되는 두 원소의 인덱스 (i, j) 튜플을 i < j 형태로 반환합니다. 없으면 None을 반환합니다.\n    >>> two_sum([2, 7, 11, 15], 9)\n    (0, 1)\n    \"\"\"\n    prev_map = {}\n    for i, n in enumerate(nums):\n        diff = target - n\n        if diff in prev_map:\n            return (prev_map[diff], i)\n        prev_map[n] = i\n    return None"
+      },
+      {
+        "task_id": "py_010",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 44.06,
+        "response": "```python\ndef roman_to_int(s):\n    \"\"\"로마 숫자 문자열을 정수로 변환하여 반환합니다. (I=1, V=5, X=10, L=50, C=100, D=500, M=1000)\n    >>> roman_to_int('XIV')\n    14\n    \"\"\"\n    roman_map = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}\n    total = 0\n    prev_value = 0\n    for char in reversed(s):\n        current_value = roman_map[char]\n        if current_value < prev_value:\n            total -= current_value\n        else:\n            total += current_value\n        prev_value = current_value\n    return total\n```",
+        "extracted_code": "def roman_to_int(s):\n    \"\"\"로마 숫자 문자열을 정수로 변환하여 반환합니다. (I=1, V=5, X=10, L=50, C=100, D=500, M=1000)\n    >>> roman_to_int('XIV')\n    14\n    \"\"\"\n    roman_map = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}\n    total = 0\n    prev_value = 0\n    for char in reversed(s):\n        current_value = roman_map[char]\n        if current_value < prev_value:\n            total -= current_value\n        else:\n            total += current_value\n        prev_value = current_value\n    return total"
+      },
+      {
+        "task_id": "py_011",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 28.47,
+        "response": "```python\ndef is_valid_parentheses(s):\n    \"\"\"괄호 문자열 '()[]{}'이 올바르게 짝지어져 있는지 bool로 반환합니다.\n    >>> is_valid_parentheses('([]){}')\n    True\n    \"\"\"\n    stack = []\n    mapping = {')': '(', '}': '{', ']': '['}\n    for char in s:\n        if char in mapping.values():\n            stack.append(char)\n        elif char in mapping.keys():\n            if not stack or stack.pop() != mapping[char]:\n                return False\n    return not stack\n```",
+        "extracted_code": "def is_valid_parentheses(s):\n    \"\"\"괄호 문자열 '()[]{}'이 올바르게 짝지어져 있는지 bool로 반환합니다.\n    >>> is_valid_parentheses('([]){}')\n    True\n    \"\"\"\n    stack = []\n    mapping = {')': '(', '}': '{', ']': '['}\n    for char in s:\n        if char in mapping.values():\n            stack.append(char)\n        elif char in mapping.keys():\n            if not stack or stack.pop() != mapping[char]:\n                return False\n    return not stack"
+      },
+      {
+        "task_id": "py_012",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 41.64,
+        "response": "```python\ndef merge_intervals(intervals):\n    \"\"\"[start, end] 구간 리스트에서 겹치는 구간을 병합하여 시작점 기준 오름차순 정렬된 리스트로 반환합니다.\n    >>> merge_intervals([[1, 3], [2, 6], [8, 10]])\n    [[1, 6], [8, 10]]\n    \"\"\"\n    if not intervals:\n        return []\n\n    intervals.sort(key=lambda x: x[0])\n    merged = [intervals[0]]\n\n    for current in intervals[1:]:\n        prev_start, prev_end = merged[-1]\n        curr_start, curr_end = current\n\n        if curr_start <= prev_end:\n            merged[-1][1] = max(prev_end, curr_end)\n        else:\n            merged.append(current)\n\n    return merged\n```",
+        "extracted_code": "def merge_intervals(intervals):\n    \"\"\"[start, end] 구간 리스트에서 겹치는 구간을 병합하여 시작점 기준 오름차순 정렬된 리스트로 반환합니다.\n    >>> merge_intervals([[1, 3], [2, 6], [8, 10]])\n    [[1, 6], [8, 10]]\n    \"\"\"\n    if not intervals:\n        return []\n\n    intervals.sort(key=lambda x: x[0])\n    merged = [intervals[0]]\n\n    for current in intervals[1:]:\n        prev_start, prev_end = merged[-1]\n        curr_start, curr_end = current\n\n        if curr_start <= prev_end:\n            merged[-1][1] = max(prev_end, curr_end)\n        else:\n            merged.append(current)\n\n    return merged"
+      },
+      {
+        "task_id": "py_013",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 14.71,
+        "response": "```python\ndef gcd(a, b):\n    \"\"\"두 양의 정수의 최대공약수(GCD)를 반환합니다.\n    >>> gcd(12, 18)\n    6\n    \"\"\"\n    while b:\n        a, b = b, a % b\n    return a\n```",
+        "extracted_code": "def gcd(a, b):\n    \"\"\"두 양의 정수의 최대공약수(GCD)를 반환합니다.\n    >>> gcd(12, 18)\n    6\n    \"\"\"\n    while b:\n        a, b = b, a % b\n    return a"
+      },
+      {
+        "task_id": "py_014",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 23.63,
+        "response": "```python\ndef chunk_list(items, size):\n    \"\"\"리스트를 size 크기의 하위 리스트들로 나누어 반환합니다. 마지막 청크는 더 작을 수 있습니다.\n    >>> chunk_list([1, 2, 3, 4, 5], 2)\n    [[1, 2], [3, 4], [5]]\n    \"\"\"\n    return [items[i:i + size] for i in range(0, len(items), size)]\n```",
+        "extracted_code": "def chunk_list(items, size):\n    \"\"\"리스트를 size 크기의 하위 리스트들로 나누어 반환합니다. 마지막 청크는 더 작을 수 있습니다.\n    >>> chunk_list([1, 2, 3, 4, 5], 2)\n    [[1, 2], [3, 4], [5]]\n    \"\"\"\n    return [items[i:i + size] for i in range(0, len(items), size)]"
+      },
+      {
+        "task_id": "py_015",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 35.09,
+        "response": "```python\ndef caesar_cipher(text, shift):\n    \"\"\"영문 소문자/대문자를 shift만큼 이동시키는 시저 암호를 적용한 문자열을 반환합니다. 알파벳이 아닌 문자는 그대로 둡니다.\n    >>> caesar_cipher('abc XYZ', 3)\n    'def ABC'\n    \"\"\"\n    result = \"\"\n    for char in text:\n        if char.isupper():\n            result += chr((ord(char) - ord('A') + shift) % 26 + ord('A'))\n        elif char.islower():\n            result += chr((ord(char) - ord('a') + shift) % 26 + ord('a'))\n        else:\n            result += char\n    return result\n```",
+        "extracted_code": "def caesar_cipher(text, shift):\n    \"\"\"영문 소문자/대문자를 shift만큼 이동시키는 시저 암호를 적용한 문자열을 반환합니다. 알파벳이 아닌 문자는 그대로 둡니다.\n    >>> caesar_cipher('abc XYZ', 3)\n    'def ABC'\n    \"\"\"\n    result = \"\"\n    for char in text:\n        if char.isupper():\n            result += chr((ord(char) - ord('A') + shift) % 26 + ord('A'))\n        elif char.islower():\n            result += chr((ord(char) - ord('a') + shift) % 26 + ord('a'))\n        else:\n            result += char\n    return result"
+      },
+      {
+        "task_id": "py_016",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 38.63,
+        "response": "```python\ndef most_common_char(s):\n    \"\"\"문자열에서 가장 많이 등장하는 문자를 반환합니다. 공백은 제외합니다. 빈도가 같으면 먼저 등장한 문자를 반환합니다.\n    >>> most_common_char('aabbbc')\n    'b'\n    \"\"\"\n    s = s.replace(\" \", \"\")\n    if not s:\n        return None\n    \n    counts = {}\n    for char in s:\n        counts[char] = counts.get(char, 0) + 1\n        \n    max_char = s[0]\n    max_count = 0\n    \n    for char in s:\n        if counts[char] > max_count:\n            max_count = counts[char]\n            max_char = char\n            \n    return max_char\n```",
+        "extracted_code": "def most_common_char(s):\n    \"\"\"문자열에서 가장 많이 등장하는 문자를 반환합니다. 공백은 제외합니다. 빈도가 같으면 먼저 등장한 문자를 반환합니다.\n    >>> most_common_char('aabbbc')\n    'b'\n    \"\"\"\n    s = s.replace(\" \", \"\")\n    if not s:\n        return None\n    \n    counts = {}\n    for char in s:\n        counts[char] = counts.get(char, 0) + 1\n        \n    max_char = s[0]\n    max_count = 0\n    \n    for char in s:\n        if counts[char] > max_count:\n            max_count = counts[char]\n            max_char = char\n            \n    return max_char"
+      },
+      {
+        "task_id": "py_017",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 28.26,
+        "response": "```python\ndef longest_common_prefix(strs):\n    \"\"\"문자열 리스트의 가장 긴 공통 접두사를 반환합니다. 공통 접두사가 없으면 빈 문자열을 반환합니다.\n    >>> longest_common_prefix(['flower', 'flow', 'flight'])\n    'fl'\n    \"\"\"\n    if not strs:\n        return \"\"\n    \n    shortest = min(strs, key=len)\n    for i, char in enumerate(shortest):\n        for other in strs:\n            if other[i] != char:\n                return shortest[:i]\n    \n    return shortest\n```",
+        "extracted_code": "def longest_common_prefix(strs):\n    \"\"\"문자열 리스트의 가장 긴 공통 접두사를 반환합니다. 공통 접두사가 없으면 빈 문자열을 반환합니다.\n    >>> longest_common_prefix(['flower', 'flow', 'flight'])\n    'fl'\n    \"\"\"\n    if not strs:\n        return \"\"\n    \n    shortest = min(strs, key=len)\n    for i, char in enumerate(shortest):\n        for other in strs:\n            if other[i] != char:\n                return shortest[:i]\n    \n    return shortest"
+      },
+      {
+        "task_id": "py_018",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 64.63,
+        "response": "```python\ndef spiral_order(matrix):\n    \"\"\"2차원 정수 행렬을 시계 방향 나선형 순서로 읽은 1차원 리스트를 반환합니다.\n    >>> spiral_order([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\n    [1, 2, 3, 6, 9, 8, 7, 4, 5]\n    \"\"\"\n    if not matrix or not matrix[0]:\n        return []\n\n    result = []\n    top, bottom = 0, len(matrix) - 1\n    left, right = 0, len(matrix[0]) - 1\n\n    while top <= bottom and left <= right:\n        for i in range(left, right + 1):\n            result.append(matrix[top][i])\n        top += 1\n\n        for i in range(top, bottom + 1):\n            result.append(matrix[i][right])\n        right -= 1\n\n        if top <= bottom:\n            for i in range(right, left - 1, -1):\n                result.append(matrix[bottom][i])\n            bottom -= 1\n\n        if left <= right:\n            for i in range(bottom, top - 1, -1):\n                result.append(matrix[i][left])\n            left += 1\n\n    return result\n```",
+        "extracted_code": "def spiral_order(matrix):\n    \"\"\"2차원 정수 행렬을 시계 방향 나선형 순서로 읽은 1차원 리스트를 반환합니다.\n    >>> spiral_order([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\n    [1, 2, 3, 6, 9, 8, 7, 4, 5]\n    \"\"\"\n    if not matrix or not matrix[0]:\n        return []\n\n    result = []\n    top, bottom = 0, len(matrix) - 1\n    left, right = 0, len(matrix[0]) - 1\n\n    while top <= bottom and left <= right:\n        for i in range(left, right + 1):\n            result.append(matrix[top][i])\n        top += 1\n\n        for i in range(top, bottom + 1):\n            result.append(matrix[i][right])\n        right -= 1\n\n        if top <= bottom:\n            for i in range(right, left - 1, -1):\n                result.append(matrix[bottom][i])\n            bottom -= 1\n\n        if left <= right:\n            for i in range(bottom, top - 1, -1):\n                result.append(matrix[i][left])\n            left += 1\n\n    return result"
+      },
+      {
+        "task_id": "py_019",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 36.42,
+        "response": "```python\ndef coin_change(coins, amount):\n    \"\"\"주어진 동전 종류(coins)로 amount를 만들기 위한 최소 동전 개수를 반환합니다. 만들 수 없으면 -1을 반환합니다.\n    >>> coin_change([1, 2, 5], 11)\n    3\n    \"\"\"\n    dp = [float('inf')] * (amount + 1)\n    dp[0] = 0\n    \n    for coin in coins:\n        for i in range(coin, amount + 1):\n            if dp[i - coin] != float('inf'):\n                dp[i] = min(dp[i], dp[i - coin] + 1)\n                \n    return dp[amount] if dp[amount] != float('inf') else -1\n```",
+        "extracted_code": "def coin_change(coins, amount):\n    \"\"\"주어진 동전 종류(coins)로 amount를 만들기 위한 최소 동전 개수를 반환합니다. 만들 수 없으면 -1을 반환합니다.\n    >>> coin_change([1, 2, 5], 11)\n    3\n    \"\"\"\n    dp = [float('inf')] * (amount + 1)\n    dp[0] = 0\n    \n    for coin in coins:\n        for i in range(coin, amount + 1):\n            if dp[i - coin] != float('inf'):\n                dp[i] = min(dp[i], dp[i - coin] + 1)\n                \n    return dp[amount] if dp[amount] != float('inf') else -1"
+      },
+      {
+        "task_id": "py_020",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 40.25,
+        "response": "```python\ndef group_anagrams(words):\n    \"\"\"애너그램(구성 문자가 같은 단어)끼리 묶은 그룹들의 리스트를 반환합니다. 각 그룹 내부와 전체 그룹은 정렬된 순서로 반환합니다.\n    >>> group_anagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])\n    [['ate', 'eat', 'tea'], ['bat'], ['nat', 'tan']]\n    \"\"\"\n    groups = {}\n    for word in words:\n        sorted_word = \"\".join(sorted(word))\n        if sorted_word not in groups:\n            groups[sorted_word] = []\n        groups[sorted_word].append(word)\n    \n    result = []\n    for key in groups:\n        result.append(sorted(groups[key]))\n    \n    return sorted(result)\n```",
+        "extracted_code": "def group_anagrams(words):\n    \"\"\"애너그램(구성 문자가 같은 단어)끼리 묶은 그룹들의 리스트를 반환합니다. 각 그룹 내부와 전체 그룹은 정렬된 순서로 반환합니다.\n    >>> group_anagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])\n    [['ate', 'eat', 'tea'], ['bat'], ['nat', 'tan']]\n    \"\"\"\n    groups = {}\n    for word in words:\n        sorted_word = \"\".join(sorted(word))\n        if sorted_word not in groups:\n            groups[sorted_word] = []\n        groups[sorted_word].append(word)\n    \n    result = []\n    for key in groups:\n        result.append(sorted(groups[key]))\n    \n    return sorted(result)"
+      },
+      {
+        "task_id": "py_021",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 45.4,
+        "response": "```python\ndef evaluate_rpn(tokens):\n    \"\"\"후위 표기법(RPN) 토큰 리스트를 계산한 정수 결과를 반환합니다. 연산자는 '+', '-', '*', '/'이며 나눗셈은 0을 향해 버림(정수 나눗셈)합니다.\n    >>> evaluate_rpn(['2', '1', '+', '3', '*'])\n    9\n    \"\"\"\n    stack = []\n    for token in tokens:\n        if token in {'+', '-', '*', '/'}:\n            b = stack.pop()\n            a = stack.pop()\n            if token == '+':\n                stack.append(a + b)\n            elif token == '-':\n                stack.append(a - b)\n            elif token == '*':\n                stack.append(a * b)\n            elif token == '/':\n                stack.append(int(a / b))\n        else:\n            stack.append(int(token))\n    return stack[0]\n```",
+        "extracted_code": "def evaluate_rpn(tokens):\n    \"\"\"후위 표기법(RPN) 토큰 리스트를 계산한 정수 결과를 반환합니다. 연산자는 '+', '-', '*', '/'이며 나눗셈은 0을 향해 버림(정수 나눗셈)합니다.\n    >>> evaluate_rpn(['2', '1', '+', '3', '*'])\n    9\n    \"\"\"\n    stack = []\n    for token in tokens:\n        if token in {'+', '-', '*', '/'}:\n            b = stack.pop()\n            a = stack.pop()\n            if token == '+':\n                stack.append(a + b)\n            elif token == '-':\n                stack.append(a - b)\n            elif token == '*':\n                stack.append(a * b)\n            elif token == '/':\n                stack.append(int(a / b))\n        else:\n            stack.append(int(token))\n    return stack[0]"
+      },
+      {
+        "task_id": "py_022",
+        "difficulty": "hard",
+        "passed": true,
+        "detail": "ok",
+        "time": 32.76,
+        "response": "```python\ndef longest_unique_substring(s):\n    \"\"\"중복 문자가 없는 가장 긴 부분 문자열의 길이를 반환합니다.\n    >>> longest_unique_substring('abcabcbb')\n    3\n    \"\"\"\n    char_map = {}\n    max_length = 0\n    start = 0\n    \n    for end in range(len(s)):\n        if s[end] in char_map and char_map[s[end]] >= start:\n            start = char_map[s[end]] + 1\n        \n        char_map[s[end]] = end\n        max_length = max(max_length, end - start + 1)\n        \n    return max_length\n```",
+        "extracted_code": "def longest_unique_substring(s):\n    \"\"\"중복 문자가 없는 가장 긴 부분 문자열의 길이를 반환합니다.\n    >>> longest_unique_substring('abcabcbb')\n    3\n    \"\"\"\n    char_map = {}\n    max_length = 0\n    start = 0\n    \n    for end in range(len(s)):\n        if s[end] in char_map and char_map[s[end]] >= start:\n            start = char_map[s[end]] + 1\n        \n        char_map[s[end]] = end\n        max_length = max(max_length, end - start + 1)\n        \n    return max_length"
+      },
+      {
+        "task_id": "py_023",
+        "difficulty": "medium",
+        "passed": true,
+        "detail": "ok",
+        "time": 20.25,
+        "response": "```python\ndef matrix_transpose(matrix):\n    \"\"\"2차원 행렬의 전치(transpose)를 반환합니다.\n    >>> matrix_transpose([[1, 2, 3], [4, 5, 6]])\n    [[1, 4], [2, 5], [3, 6]]\n    \"\"\"\n    return [list(row) for row in zip(*matrix)]\n```",
+        "extracted_code": "def matrix_transpose(matrix):\n    \"\"\"2차원 행렬의 전치(transpose)를 반환합니다.\n    >>> matrix_transpose([[1, 2, 3], [4, 5, 6]])\n    [[1, 4], [2, 5], [3, 6]]\n    \"\"\"\n    return [list(row) for row in zip(*matrix)]"
+      },
+      {
+        "task_id": "py_024",
+        "difficulty": "easy",
+        "passed": true,
+        "detail": "ok",
+        "time": 22.99,
+        "response": "```python\ndef to_snake_case(camel):\n    \"\"\"camelCase 문자열을 snake_case로 변환하여 반환합니다.\n    >>> to_snake_case('helloWorldFoo')\n    'hello_world_foo'\n    \"\"\"\n    res = []\n    for char in camel:\n        if char.isupper():\n            res.append('_')\n            res.append(char.lower())\n        else:\n            res.append(char)\n    return ''.join(res)\n```",
+        "extracted_code": "def to_snake_case(camel):\n    \"\"\"camelCase 문자열을 snake_case로 변환하여 반환합니다.\n    >>> to_snake_case('helloWorldFoo')\n    'hello_world_foo'\n    \"\"\"\n    res = []\n    for char in camel:\n        if char.isupper():\n            res.append('_')\n            res.append(char.lower())\n        else:\n            res.append(char)\n    return ''.join(res)"
+      }
+    ]
+  }
+]
